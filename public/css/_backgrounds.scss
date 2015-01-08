@@ -71,8 +71,8 @@
   }
 }
 
-.bg-orange{
-  background-color: #f36506;
+.main_blue{
+  @include linear-gradient(75deg, #c74331 0%, #ec531e 100%);
 }
 .bg-green{
   background-color: #63a30f;
@@ -86,7 +86,6 @@
 .bg_gray {
   background: #E2E5E7 !important;
 }
-
 .white_transparent {
   background: rgba(255,255,255,0.2) !important;
 }
@@ -98,16 +97,4 @@
 }
 .bg-greengradient {
   @include linear-gradient(75deg, #4f8805 0%, #6cb012 100%);
-}
-.bg-greengradient2 {
-  @include linear-gradient(75deg, #306d1b 0%, #68ae29 100%);
-} 
-.bg-bluegradient {
-  @include linear-gradient(135deg, #1B4251 0%, #296D7F 100%);
-  p {
-  color: $white;
-  }
-}
-.bg-blue-gradient2 {
-  @include linear-gradient(135deg, #0E5083 0%, #145889 100%);
 }
