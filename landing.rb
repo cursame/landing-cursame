@@ -2,6 +2,8 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'sass'
 require 'sinatra/r18n'
+require 'bourbon'
+
 enable :sessions
 
 	###### tranlating methods ########
