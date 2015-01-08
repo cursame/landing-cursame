@@ -4,17 +4,34 @@ require 'sass'
 require 'sinatra/r18n'
 enable :sessions
 
-R18n::I18n.default = 'es'
-R18n.default_places { './i1n8' }
+	###### tranlating methods ########
+
+    R18n.default_places { './i1n8' }
     
     get '/' do 
+    	R18n::I18n.default = 'es' if session[:locale] == nil
     	session[:locale] = R18n::I18n.default if session[:locale] == nil
     	redirect  "/#{session[:locale]}"
     end
 
+    get '/to_en' do 
+    	R18n::I18n.default = 'en'
+        session[:locale] = R18n::I18n.default
+    	redirect  "/#{session[:locale]}"  
+    end
+
+    get '/to_es' do 
+    	R18n::I18n.default = 'es'
+        session[:locale] = R18n::I18n.default
+    	redirect  "/#{session[:locale]}"  
+    end
+
+    ###### route map ########
+
 	get '/:locale' do
 	  erb :index, :layout => :"layouts/aplication"
-	end
+	end 
+
 	get '/:locale/us' do 
 	  erb  :"static_views/us", :layout => :"layouts/aplication"
 	end
