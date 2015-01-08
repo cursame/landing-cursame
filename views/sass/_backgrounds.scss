@@ -1,0 +1,100 @@
+.intro {
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  @include cover-background(cover);
+  
+  &.home-intro {
+    background-image: image-url('bg_home.png');
+  }
+
+  &.intro-foco {
+    background-image: image-url('headaer_denuncia.png');
+  }
+
+  &.intro-diagnostico {
+    background-image: image-url('headaer_diagnostico.png');
+  }
+
+  &.intro-us {
+    background-image: image-url('headaer_us.png');
+  }
+
+  &.intro-contact {
+    background-image: image-url('header_contact.png');
+  }
+
+  &.intro-panel {
+    background-image: image-url('bg_panel.png');
+  }
+
+  &.intro-expert {
+    background-image: image-url('bg_experto.png');  
+  }
+
+  &.intro_foco1{
+    background-image: image-url('bg_foco1.png');
+  }
+
+  &.intro_diagnostico{
+    background-image: image-url('bg_diagnostico.png');
+  }
+  &.intro_autod{
+  background-image: image-url('bg_autod.png');
+  background-position: top center;
+  }
+
+  &.intro_login{
+  background-image: image-url('bg_login.png');
+  }
+
+  &.intro_code {
+    height: 100%;
+    background-image: image-url('bg_code.png');
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    @include cover-background(initial);
+  }
+
+  &.comments {
+    background:#1A4859;
+  }
+
+  
+  @include max-screen (900px) {
+    margin-top: 55px;
+    padding-top: 15px;
+    
+    &.home-intro, &.intro-panel, &.bg-bluegradient, {
+      margin: 0;
+    }
+  }
+}
+
+.main_blue{
+  @include linear-gradient(75deg, #c74331 0%, #ec531e 100%);
+}
+.bg-green{
+  background-color: #63a30f;
+}
+.bg-blue{
+  background-color: #21386a;
+}
+.bg-blue2 {
+  background-color: #15548a;
+}
+.bg_gray {
+  background: #E2E5E7 !important;
+}
+.white_transparent {
+  background: rgba(255,255,255,0.2) !important;
+}
+.black_transparent {
+  background: rgba(5,31,52,0.7) !important;
+}
+.bg-redgradient {
+  @include linear-gradient(75deg, #c74331 0%, #ec531e 100%);
+}
+.bg-greengradient {
+  @include linear-gradient(75deg, #4f8805 0%, #6cb012 100%);
+}

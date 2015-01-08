@@ -1,0 +1,24 @@
+.btn {
+  font-family: $font-radar;
+  border-radius: 3px;
+  text-align: center;
+
+  &.btn-input {
+    @include inline-block;
+
+    input {
+      font-size: 13px;
+      font-weight: lighter;
+      color: $white;
+      background: none;
+      border: none;
+    }
+
+    input:hover {
+      background: none;
+      color: #0A5F8A;
+      border: none;
+    }
+  }
+}
+
