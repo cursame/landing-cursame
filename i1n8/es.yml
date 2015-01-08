@@ -6,6 +6,8 @@
     plugins: Integraciones
     rse: RSE
     us: Nosotros
+    already_a_member: '¿Ya eres usuario?'
+    find_your_network: 'Find your network'
   footer:
     news: Noticias
     social: 'Impacto Social'

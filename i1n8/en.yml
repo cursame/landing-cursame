@@ -6,6 +6,8 @@
     plugins: Plugins
     rse: CSR
     us: Us
+    already_a_member: 'Already a member?'
+    find_your_network: 'Find your netwrok'
   footer:
     news: News
     social: 'Social Impact'
