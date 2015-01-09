@@ -5,6 +5,7 @@ require 'sass'
 require 'sinatra/r18n'
 require 'bourbon'
 
+#http://version4.cursa.me/users/sign_in?auth_token=
 enable :sessions
   
   ##### sass #####
@@ -38,7 +39,7 @@ enable :sessions
     get '/to_es' do 
     	R18n::I18n.default = 'es'
         session[:locale] = R18n::I18n.default
-      sredirect  "/#{session[:locale]}#{session[:current_route]}"  
+        redirect  "/#{session[:locale]}#{session[:current_route]}"  
     end
 
     ###### route map ########

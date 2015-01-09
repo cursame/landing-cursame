@@ -72,14 +72,14 @@ a:visited {
 }
 
 .header {
-	background:#000;
+	//background:#00B1D6;
 	height: 75px;
 	width: 100%;
 	margin: auto;
 	display: block;
-	box-shadow: 0px 2px 2px #888888;
+	//box-shadow: 0px 2px 2px #888888;
 	padding-bottom: 12px;
-	background:gray;
+	//background:gray;
 
 	@include max-screen (900px) {
 	 position: fixed;
@@ -1417,4 +1417,17 @@ padding: 25px 0 10px 0;
 		margin-left: 0 !important;
 	}
 
+}
+
+.to_top{
+	position: absolute;
+	width:100%;
+	z-index:-5;
+	margin-top:-75px;
+
+}
+
+.top_banner_index{
+	padding:70px;
+	min-height:600px
 }
