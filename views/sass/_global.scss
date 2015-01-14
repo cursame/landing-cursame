@@ -24,19 +24,20 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-	font-size: 36px;
+	font-size: 3px;
 	line-height: 54px;
 	color: #323232;
 }
 
 h1.home {
-	font-size: 58px;
+	font-size: 34px;
 	line-height: 64px;
 	margin-bottom: 30px;
 	padding-top: 80px;
 	text-shadow: 1px 2px #204E62;
 	color: white;
 	font-weight: bold;
+	font-weight: lighter;
 }
 
 h2{
@@ -64,26 +65,18 @@ h6{
 	font-size: 23px;
 	line-height: 32px;
 	font-weight: lighter;
-	text-shadow: 1px 2px #204E62;
 }
 
 a:visited {
-	color: #666;
+	
 }
 
 .header {
-	//background:#00B1D6;
 	height: 75px;
 	width: 100%;
 	margin: auto;
-	display: block;
-	//box-shadow: 0px 2px 2px #888888;
+	display: block;;
 	padding-bottom: 12px;
-<<<<<<< HEAD
-
-=======
-	//background:gray;
->>>>>>> 161235498385e0a4d6cf3ab0b3a9a0fec18e71fb
 
 	@include max-screen (900px) {
 	 position: fixed;
@@ -134,7 +127,6 @@ a:visited {
 	}
 }
 
-
 .menu-main{
 
 	& li {
@@ -147,14 +139,16 @@ a:visited {
 	& a {
 		display: block;
 		font-family: $font-radar;
-		color: $main-blue;
-		font-size: 13px;
+		color: $white;
+		font-size: 15px;
 		padding: 27px 10px;
 	}
 
 	& a:hover {
-		background:$white;
-		color: $gray;
+		background:rgba(255,255,255,0.1);
+		color: $main-blue;
+		border-radius:0 0 3px 3px;
+		display: block;
 		}
 	}
 		@include max-screen (900px) {
@@ -162,67 +156,28 @@ a:visited {
 	}
 }
 
-.block{
-	opacity: 0.9;
-	height: 220px;
-	width: 100%;
-	display: block;
-	text-align: justify;
-	margin: 80px 0 80px 0;
-	border-radius: 3px;
+
+.dashboard {
 	position: relative;
+	top: 0;
+	left: 0;
+}
 
-	.block-content {
-		padding: 30px;
-	}
+.img-center {
+	display: table;
+  margin: 0 auto;
+  vertical-align: baseline;
 
-	.img-block{
-		display: block;
-		float: right;
-		position: absolute;
-		bottom: 30px;
-		right: 35px;
-	}
-
-	.btn {
-		position: absolute;
-		bottom: 30px;
-	}
-
-	.nav-btn{
-		color:#FFFFFF;
-		font-size: 14px;
-	}
-	& p{
-		color: white;
-	}
-
-	@include max-screen(800px) {
-			margin: 5px 0 25px 0;
-
-		h3 {
-			font-size:25px;
-		}
-
-		.block-content {
-			padding: 15px;
-		}
-
-	.img-block {
-		position: absolute;
-		right: -17px;
-	}
-
-		img {
-			width: 65%;
-		}
-	}
+  img {
+  	width: 100%;
+  	display: block;
+  }
 }
 
 .footer{
 	text-align: left;
 	width: 100%;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	padding: 20px 0;
 	background-color: $white;
@@ -238,7 +193,6 @@ a:visited {
 	.footermenu {
 
 		li {
-			height: 40px;
 			float:left;
 			list-style-type: none;
 			padding-top: 10px;
@@ -663,7 +617,7 @@ a:visited {
 
 	@include max-screen (650px) {
 
-		.buttons{
+		.buttons_footer{
 			text-align:left;
 			float: left;
 			}
@@ -1432,6 +1386,5 @@ padding: 25px 0 10px 0;
 }
 
 .top_banner_index{
-	padding:70px;
-	min-height:600px
+
 }

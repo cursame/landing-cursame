@@ -9,7 +9,6 @@
     input {
       font-size: 13px;
       font-weight: lighter;
-      color: $white;
       background: none;
       border: none;
     }
@@ -22,3 +21,9 @@
   }
 }
 
+.btn-border {
+  background:none;
+  border: solid 1px white;
+  padding: 10px;
+  color: #fff;
+}
