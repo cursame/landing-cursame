@@ -1,30 +1,5 @@
-<div class="main_blue to_top top_banner_index">
-    <div class="wrapper">
-      <div class="cols-12">
-        <div class="col col-12">
-          <div class="col-inner">
-            <div class="dashboard">
-              <h1 class="home">Mejora los procesos de aprendizaje <br/>
-              y la calidad educativa</h1>
-              <h6>La mejor plataforma al precio más accesible</h6>
-              <div class="buttons_cta">
-                <ul>
-                  <li>
-                    <a class="btn" href="/<%=session[:locale] %>">
-                    Solicita un demo en tu plantel</a>
-                  </li>
-                  <li>
-                    <a class="btn btn-border" href="/<%=session[:locale] %>">
-                    ¿Cómo Funciona?</a>
-                  </li>
-                </ul>
-              </div> 
-              <div class="img-center">
-                <img src="/img/lap.png" alt="">
-              </div> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<%=  erb :'/static_views/index_renders/banner_head'%>
+<%=  erb :'/static_views/index_renders/functions'%>
+<%=  erb :'/static_views/index_renders/offer'%>
+<%=  erb :'/static_views/index_renders/social'%>
+<%=  erb :'/static_views/index_renders/stats'%>
