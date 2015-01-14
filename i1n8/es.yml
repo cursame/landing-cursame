@@ -7,7 +7,7 @@
     rse: RSE
     us: Nosotros
     already_a_member: '¿Ya eres usuario?'
-    find_your_network: 'Find your network'
+    loggin: 'Ingresa'
   footer:
     news: Noticias
     social: 'Impacto Social'
@@ -15,3 +15,8 @@
     contact: Contacto
     spanish: Español
     english: Ingles
+  banner_index_head: 
+    m1: 'Mejora los procesos de aprendizaje y la calidad educativa'
+    m2: 'La mejor plataforma al precio más accesible'
+    m3: '&nbsp; Solicita un demo en tu plantel &nbsp;'
+    m4: '&nbsp; &nbsp; ¿Cómo Funciona? &nbsp;  &#8595;'
