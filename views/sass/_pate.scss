@@ -1,0 +1,51 @@
+.header_pate{
+	height: 75px;
+	width: 100%;
+	margin: auto;
+	display: block;;
+	padding-bottom: 12px;
+    position: fixed;
+    background: #8E367A;
+    border-bottom: #E7E7E7 solid 2px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+	@include max-screen (900px) {
+	 position: fixed;
+	 top: 0;
+	 text-align: center;
+	}
+}
+
+.logo-pate {
+  float: left;
+  position: relative;
+  top:10px;
+  margin-right: 30px;
+
+  @include max-screen(900px) {
+  	position: absolute;
+		left: 10px;
+		right: 0;
+		 
+		 img {
+		 	width: 120px;
+		}
+	}
+}
+
+.image-banner{
+  top: 0;
+  height:690px;
+  width: 100%;
+  background-image: url('/img/pate/img1.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 240px;
+  color: #fff; 
+}
+
+.objetive{
+	padding: 20px;
+}

@@ -1,0 +1,73 @@
+<div class="content">
+    <div class="wrapper">
+        <div class="cols-11">
+            <div class="col col-12">
+                <div class="col-inner">
+                    <b>Impacto Cúrsame</b>
+                    <ul>
+                        <li> Hemos beneficiado a 108,734 estudiantes de nivel básico, medio-superior y superior</li>
+                        <li> Participamos en 314 instituciones en distintos estados de la república Mexicana</li>
+                        <li> Tenemos una adopción del 80% los primeros 6 meses de uso.</li>
+                        <li> El 90% de maestros consideran que cúrsame tiene un impacto positivo en el aprendizaje.</li>
+                        <li> El 70% considera que cúrsame promueve el intercambio y búsqueda de información.</li>
+                        <li> El 75% considera que se ha promovido el aprendizaje colaborativo.</li>
+                        <li> El 100% considera que facilita el acceso e intercambio de material de aprendizaje.</li>
+                        <li> El 100% considera que a través de cúrsame se han promovido competencias en sus alumnos.</li>
+                    </ul>
+                    <div id="chart"></div>
+                    <script type="text/javascript">
+                    $(function () {
+                    $('#chart').highcharts({
+                    chart: {
+                    type: 'bar'
+                    },
+                    title: {
+                    text: 'Gráfica de impacto'
+                    },
+                    xAxis: {
+                    categories: ['Adopcción por escuela en 6 meses', 'Impacto lo que han dicho nuestros usuarios', 'La escuela considera']
+                    },
+                    yAxis: {
+                    min: 0,
+                    title: {
+                    text: 'Porcentaje de la población 108,734 estudiantes'
+                    }
+                    },
+                    legend: {
+                    reversed: true
+                    },
+                    plotOptions: {
+                    series: {
+                    stacking: 'normal'
+                    }
+                    },
+                    series: [{
+                    name: 'Usuarios',
+                    data: [80, 0, 0]
+                    }, {
+                    name: 'No usuarios',
+                    data: [20, 0, 0]
+                    }, {
+                    name: 'Impacto Positivo',
+                    data: [0, 90, 0]
+                    }, {
+                    name: 'Promuebe el flujo de información',
+                    data: [0, 70, 0]
+                    }, {
+                    name: 'Se ha promovido el aprendizaje Colaborativo',
+                    data: [0, 75, 0]
+                    }, {
+                    name: 'Facilita acceso a material de aprendizaje',
+                    data: [0, 0 ,100]
+                    }, {
+                    name: 'Se ha promovido la mejora por competencias en sus alumnos',
+                    data: [0, 0 ,100]
+                    }]
+                    });
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
