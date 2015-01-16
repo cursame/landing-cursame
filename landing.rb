@@ -5,6 +5,7 @@ require 'sass'
 require 'sinatra/r18n'
 require 'bourbon'
 
+
 #http://version4.cursa.me/users/sign_in?auth_token=
 enable :sessions
   
@@ -103,9 +104,14 @@ enable :sessions
     session[:current_route] = '/find_network'
 	  erb  :"static_views/find_network", :layout => :"layouts/application"
 	end	
-
+	
+	get '/:locale/pate' do 
+    session[:current_route] = '/find_network'
+	  erb  :"static_views/pate", :layout => :"layouts/pate" 
+	end	
   
- 
+
+
 
 
 

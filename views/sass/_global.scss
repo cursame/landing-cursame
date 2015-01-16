@@ -31,10 +31,10 @@ h1{
 
 h1.home {
 	font-size: 34px;
-	line-height: 64px;
+	line-height: 44px;
 	margin-bottom: 30px;
 	padding-top: 80px;
-	text-shadow: 1px 2px #204E62;
+	text-shadow: 1px 2px #80ABBE;
 	color: white;
 	font-weight: bold;
 	font-weight: lighter;
@@ -77,13 +77,32 @@ a:visited {
 	margin: auto;
 	display: block;;
 	padding-bottom: 12px;
-
+    position: fixed;
 	@include max-screen (900px) {
 	 position: fixed;
 	 top: 0;
 	 text-align: center;
 	}
 }
+
+.header_scroll{
+	height: 75px;
+	width: 100%;
+	margin: auto;
+	display: block;;
+	padding-bottom: 12px;
+    position: fixed;
+    background: #fff;
+    border-bottom: #E7E7E7 solid 2px;
+	@include max-screen (900px) {
+	 position: fixed;
+	 top: 0;
+	 text-align: center;
+	}
+
+}
+
+
 
 .logo {
   float: left;
@@ -101,6 +120,8 @@ a:visited {
 		}
 	}
 }
+
+
 
 .logo2 {
   float: left;
@@ -140,6 +161,35 @@ a:visited {
 		display: block;
 		font-family: $font-radar;
 		color: $white;
+		font-size: 15px;
+		padding: 27px 10px;
+	}
+
+	& a:hover {
+		background:rgba(255,255,255,0.1);
+		color: $main-blue;
+		border-radius:0 0 3px 3px;
+		display: block;
+		}
+	}
+		@include max-screen (900px) {
+		display: none;
+	}
+}
+
+.menu-main-bottom{
+    background: #fff;
+	& li {
+		float:left;
+		list-style-type: none;
+		display: block;
+		cursor: pointer;
+		margin-right: 5px;
+
+	& a {
+		display: block;
+		font-family: $font-radar;
+		color: #00B2D3;
 		font-size: 15px;
 		padding: 27px 10px;
 	}
@@ -1378,13 +1428,86 @@ padding: 25px 0 10px 0;
 }
 
 .to_top{
-	position: absolute;
+	position: relative;
 	width:100%;
 	z-index:-5;
 	margin-top:-75px;
 
 }
 
-.top_banner_index{
+.singin-button{
+    list-style-type: none;
+     margin-left:76px;
+	& li{
+	  float:left;
+	  margin-left:3px;
+      padding: 27px 1px;
+	  & a{
+	  	color:#fff;
 
+	  	&.blue{
+	  		color: #005A7B;
+	  	}
+
+	  }
+      
+	}
+}
+
+.singin-button-bottom{
+    list-style-type: none;
+     margin-left:76px;
+	& li{
+	  float:left;
+	  margin-left:3px;
+      padding: 27px 1px;
+	  & a{
+	  	color:#A3A3A3;
+
+	  	&.blue{
+	  		color: #00B2D3;
+	  	}
+
+	  }
+      
+	}
+}
+
+.login{
+	float: left;
+	margin-left: 20px;
+}
+
+.buttons_cta{
+	width:100%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+
+.button_banner{
+	list-style-type: none;
+	& li{
+		display: inline;
+        list-style-type: none;
+        padding-right: 20px;
+	}
+
+}
+.second_text{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 5%;
+
+}
+.h1_content{
+	width:53%;
+    margin-top: 8%;
+}
+
+.functions{
+	position: relative;
+	padding: 100px;
+	height: 1000px;
+	background: #fff;
+	z-index: -5;
 }

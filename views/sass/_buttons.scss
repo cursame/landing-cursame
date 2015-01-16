@@ -2,6 +2,7 @@
   font-family: $font-radar;
   border-radius: 3px;
   text-align: center;
+  padding: 15px 10px;
 
   &.btn-input {
     @include inline-block;
@@ -21,9 +22,18 @@
   }
 }
 
+.btn-cta{
+    background: #004A69;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: bold ;
+
+}
+
 .btn-border {
   background:none;
   border: solid 1px white;
-  padding: 10px;
   color: #fff;
+  font-size: 12px;
+  font-weight: bold ;
 }
