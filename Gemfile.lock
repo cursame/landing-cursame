@@ -7,10 +7,6 @@ GEM
       thor
     haml (4.0.6)
       tilt
-    hash-deep-merge (0.1.1)
-    lazy_high_charts (1.5.4)
-      bundler (>= 1.0)
-      hash-deep-merge
     multi_json (1.10.1)
     r18n-core (2.0.3)
     rack (1.6.0)
@@ -44,7 +40,6 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   haml
-  lazy_high_charts
   sass
   sinatra
   sinatra-r18n
