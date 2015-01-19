@@ -1,208 +1,23 @@
 .i {
-  background: image-url('pack.png');
+  background: url('/img/pack.png');
   background-repeat: no-repeat;
   @include inline-block;
   vertical-align: middle;
+  //background:gray;
 }
 
 .i-title {
   margin-right: 10px;
 }
 
-.i-stats {
-  width: 16px;
-  height: 16px;
-  background-position: 0 4px;
+.i-tareas {
+  width: 62px;
+  height: 62px;
+  background-position: 0px 0px;
 }
 
-.i-config {
-  width: 16px;
-  height: 16px;
-  background-position: -16px 0;
-}
-
-.i-autod {
-  width: 16px;
-  height: 16px;
-  background-position: -46px 0;
-}
-
-.i-arrow1 {
-  width: 14px;
-  height: 9px;
-  background-position: 0 -26px;
-}
-
-.i-arrow2 {
-  width: 14px;
-  height: 9px;
-  background-position: 0 -16px;
-}
-
-.i-back {
-  width: 18px;
-  height:18px;
-  background-position: 0 -54px;
-}
-
-.i-go {
-  width: 18px;
-  height:18px;
-  background-position: -18px -54px;
-}
-
-.i-school {
-  width: 46px;
-  height: 18px;
-  background-position: 0 -75px;
-  float: left;
-}
-
-.i-alert {
-  width: 17px;
-  height:17px;
-  background-position: 0 -126px;
-}
-
-.i-menu {
-  width: 27px;
-  height:21px;
-  background-position: -62px 0;
-}
-
-.i-analytics {
-  width: 33px;
-  height: 21px;
-  background-position: -92px 0;
-}
-
-.i-solicitudes {
-  width: 33px;
-  height: 17px;
-  background-position: -127px 0;
-}
-
-.i-users {
-  width: 33px;
-  height: 15px;
-  background-position: -160px 0;
-}
-
-.i-inst {
-  width: 33px;
-  height: 10px;
-  background-position: -195px 0;
-}
-
-.i-focos {
-  width: 33px;
-  height: 14px;
-  background-position: -227px 0;
-}
-
-.i-arrow3 {
-  width: 33px;
-  height: 18px;
-  background-position: -260px 0;
-}
-
-.i-exit {
-  width: 33px;
-  height: 19px;
-  background-position: -295px 0;
-}
-
-.i-analytics_title {
-  width: 37px;
-  height: 25px;
-  background-position:  -51px -26px;
-}
-
-.i-solicitudes_title {
-  width: 37px;
-  height: 25px;
-  background-position: -92px -28px;
-}
-
-.i-users_title {
-  width: 37px;
-  height: 30px;
-  background-position: -148px -29px;
-}
-
-.i-inst_title {
-  width: 37px;
-  height: 25px;
-  background-position: -196px -29px;
-}
-
-.i-focos_title {
-  width: 37px;
-  height: 25px;
-  background-position: -248px -27px;
-}
-
-.i-test_title {
-  width: 37px;
-  height: 25px;
-  background-position: -281px -27px;
-}
-
-.i-face-green {
-  width: 35px;
-  height: 35px;
-  background-position: -52px -60px;
-  margin:0 0 20px 20px;
-}
-
-.i-face-yellow {
-  width: 35px;
-  height: 35px;
-  background-position: -107px -60px;
-  margin:0 0 20px 20px;
-}
-
-.i-face-red {
-  width: 35px;
-  height: 35px;
-  background-position: -162px -60px;
-  margin:0 0 20px 20px;
-}
-
-.i-ES {
-width: 17px;
-height: 10px;
-background-position: -29px -131px ;
-}
-
-.i-EN {
-width: 17px;
-height: 10px;
-background-position: -56px -131px ;
-}
-
-.i-tip-act {
-  width: 15px;
-  height: 21px;
-  background-position: -56px -131px;
-}
-
-.i-check {
-  width: 20px;
-  height: 20px;
-  background-position: -84px -126px;
-  margin: 12px 0 0 10px;
-}
-
-.i-pendiente {
-  width: 18px;
-  height: 20px;
-  background-position: -116px -123px;
-  margin: 10px 0 0 14px;
-}
-
-.i-test {
-  width: 20px;
-  height: 18px;
-  background-position: -296px -58px;
+.i-cuestionarios {
+  width: 62px;
+  height: 62px;
+  background-position: 63px 0px;
 }
