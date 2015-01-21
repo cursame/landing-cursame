@@ -47,7 +47,8 @@ enable :sessions
 
 	get '/:locale' do
 		session[:current_route] = ''
-	  erb :index, :layout => :"layouts/application"
+	    erb :index, :layout => :"layouts/application"
+
 	end 
 
 	get '/:locale/us' do 

@@ -8,7 +8,11 @@
 
 </head>
 <body>
-   <%=  erb :'static_renders/header'%>
+   <% if session[:current_route] == '' %>
+   <%=  erb :'static_renders/header', locals: {transparent_head: true}%>
+   <%else%>
+   <%=  erb :'static_renders/header', locals: {transparent_head: false}%>
+   <%end%>
    <%= yield %>
    <%#=  erb :'static_renders/footer'%>
 </body>
