@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   @include inline-block;
   vertical-align: middle;
-  //background:gray;
 }
 
 .i-title {
@@ -56,4 +55,16 @@
   width: 62px;
   height: 62px;
   background-position: -186px -64px;
+}
+
+.i-rs {
+  width: 78px;
+  height: 50px;
+  background-position: -252px -2px;
+}
+
+.i-checked {
+    width: 25px;
+  height: 25px;
+  background-position: -252px -65px;
 }
