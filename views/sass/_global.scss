@@ -14,8 +14,8 @@ body{
 }
 
 p{
-	font-size: 15px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 28px;
 	color: #323232;
 }
 
@@ -25,15 +25,13 @@ h1,h2,h3,h4,h5{
 
 h1{
 	font-size: 3px;
-	line-height: 54px;
+	line-height: 58px;
 	color: #323232;
 }
 
 h1.home {
-	font-size: 34px;
-	line-height: 44px;
-	margin-bottom: 30px;
-	padding-top: 80px;
+	font-size: 2.4em;
+	line-height: 1.2em;
 	text-shadow: 1px 2px #80ABBE;
 	color: white;
 	font-weight: bold;
@@ -41,7 +39,12 @@ h1.home {
 }
 
 h2{
-	font-size: 44px;
+	font-size: 34px;
+}
+h2.second_text{
+    font-size: 21px;
+    color: #fff;
+    margin-top: 5%;
 }
 
 h3{
@@ -51,6 +54,12 @@ h3{
 h4{
 	font-size: 20px;
 	line-height: 22px;
+}
+
+h4.sub {
+    vertical-align: sub;
+    font-size: 13px;
+    float: left;
 }
 
 h5{
@@ -65,10 +74,6 @@ h6{
 	font-size: 23px;
 	line-height: 32px;
 	font-weight: lighter;
-}
-
-a:visited {
-	
 }
 
 .header {
@@ -102,8 +107,6 @@ a:visited {
 
 }
 
-
-
 .logo {
   float: left;
   position: relative;
@@ -120,8 +123,6 @@ a:visited {
 		}
 	}
 }
-
-
 
 .logo2 {
   float: left;
@@ -206,6 +207,9 @@ a:visited {
 	}
 }
 
+.main-title {
+	padding-top: 20%;
+}
 
 .dashboard {
 	position: relative;
@@ -283,6 +287,7 @@ a:visited {
 
 .center-content {
 	text-align: center;
+	z-index: -5;
 
 	@include max-screen(500px) {
 
@@ -361,12 +366,22 @@ a:visited {
 }
 
 .info{
+	width: 100%;
 	float: left;
 	text-align: left;
-	padding: 90px 0; 
+	padding: 30px 0; 
 
-	& h3{
+	& h2{
 		margin-bottom: 25px;
+	}
+	p {
+		text-align: justify;
+	}
+	a {
+		color: #44BAF4;
+	}
+	a:hover{
+		color: #4387A8;
 	}
 }
 
@@ -531,13 +546,16 @@ a:visited {
 
 .content {
 	text-align: left;
-	padding: 0 40px;
+	padding: 0 0px;
+
+	img {
+		position: relative;
+	}
 } 
 
-	.register {
-		margin: 100px 10% !important;
-	}
-
+.register {
+	margin: 100px 10% !important;
+}
 
 .loginbox{
 	text-align: left;
@@ -1493,21 +1511,31 @@ padding: 25px 0 10px 0;
 	}
 
 }
-.second_text{
-    font-size: 18px;
-    color: #fff;
-    margin-top: 5%;
-
-}
-.h1_content{
-	width:53%;
-    margin-top: 8%;
-}
 
 .functions{
 	position: relative;
-	padding: 100px;
-	height: 1000px;
+	padding: 70px 0;
 	background: #fff;
 	z-index: -5;
+}
+
+.tools {
+	width: 100%;
+	margin-bottom: 50px;
+
+	.tool {
+		width: 74px;
+		margin-right: 10%;
+		float: left;
+		text-align: center;
+	}
+}
+
+.right {
+	float: right;
+	img {
+		position: relative;
+		display: block;
+		right: 0;
+	}
 }
