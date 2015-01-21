@@ -231,10 +231,10 @@ h6{
 .footer{
 	text-align: left;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	padding: 20px 0;
-	background-color: $white;
+	background-color: #41596b;
 	vertical-align: middle;
 	@include clearfix;
 	float: left;
@@ -385,95 +385,9 @@ h6{
 	}
 }
 
-.bullying-detection{
-	padding: 100px 0px 50px 0;
-	margin-top: 0;
-
-	.section-title  {
-		text-align: center;
-		margin-top: 30px;
-	}
-	
-	img {
-		margin-bottom: 20px;
-	}
-
-	p {
-		color: $white;
-		@include text-size-medium;
-		margin-bottom: 30px;
-	}
-	span{
-		color: #b5e018;
-	}
-}
-
-
-.tipos-bullying {
-
-	.section-title  {
-		text-align: center;
-		margin-top: 50px;
-	}
-
-		img {
-
-		margin-bottom: 40px;
-		}
-
-		.big {
-			width: 100%;
-		}
-
-		.small {
-			display: none;
-		}
-
-		@include max-screen (800px) {
-				.big {
-			display: none;
-		}
-
-		.small {
-			display: block;
-		}
-	}
-}
-
-.bulying-types {
-	font-family: $font-radar;
-	font-size: 13px;
-	color: #666;
-	margin:40px auto 60px 0; 
-	text-align: center;
-	@include clearfix;
-	
-
-	.b-tipe {
-		text-align: center;
-
-		label {
-			float: left;
-			text-align: center;
-			background:#fefefe;
-			display: block;
-			padding: 10px 38px;
-			margin: 0 10px 10px 0;
-			border-radius: 3px;
-			border: #efefef 1px solid;
-		}
-
-		@include max-screen (650px) {
-			label {
-				width: 100%;
-				padding: 10px 0;
-			}
-		}
-	}
-}
 
 .funcion{
-	text-align: center;
+	text-align: left;
 	padding: 80px 0;
 
 	.section-title  {
@@ -483,6 +397,25 @@ h6{
 
 	& p{
 		margin-bottom: 20px;
+	}
+}
+
+.social {
+	text-align: center;
+	color:$orange;
+
+	ul.social_list {
+		
+		margin-bottom: 80px;
+
+		li {
+			text-align: left;
+			color: #323232;
+			list-style-image: url('/img/check.png');
+			padding: 0 5px;
+			margin: 2% 5% 40px 5%;
+			vertical-align: middle;
+		}
 	}
 }
 
@@ -545,7 +478,6 @@ h6{
 }
 
 .content {
-	text-align: left;
 	padding: 0 0px;
 
 	img {
@@ -1515,7 +1447,6 @@ padding: 25px 0 10px 0;
 .functions{
 	position: relative;
 	padding: 70px 0;
-	background: #fff;
 	z-index: -5;
 }
 
