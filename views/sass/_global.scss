@@ -24,9 +24,7 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-	font-size: 3px;
 	line-height: 58px;
-	color: #323232;
 }
 
 h1.home {
@@ -83,6 +81,7 @@ h6{
 	display: block;;
 	padding-bottom: 12px;
     position: fixed;
+    z-index: 5;
 	@include max-screen (900px) {
 	 position: fixed;
 	 top: 0;
@@ -94,11 +93,12 @@ h6{
 	height: 75px;
 	width: 100%;
 	margin: auto;
-	display: block;;
+	display: block;
 	padding-bottom: 12px;
     position: fixed;
     background: #fff;
     border-bottom: #E7E7E7 solid 2px;
+    z-index: 5;
 	@include max-screen (900px) {
 	 position: fixed;
 	 top: 0;
@@ -233,35 +233,39 @@ h6{
 	width: 100%;
 	position: relative;
 	bottom: 0;
-	padding: 20px 0;
+	padding: 3% 0 10% 0;
 	background-color: #41596b;
 	vertical-align: middle;
 	@include clearfix;
 	float: left;
+
+	.rights {
+		float: left;
+		color: #C8CFD7;
+		font-size: 12px;
+		margin-top: 30px;
+	}
 
 	.footer-menu{
 		float: left;
 		text-align: left;
 	}
 
-	.footermenu {
+	ul.footermenu {
 
 		li {
-			float:left;
 			list-style-type: none;
-			padding-top: 10px;
+			padding: 10px 0;
 			display: block;
-
-			.space{
-				padding-top: 12px;
-				padding-right: 25px; 
-			}
+			color: $white;
+			font-weight: bold;
 		}
 	
-		a.nav-bottom{
-			color: #076DA9;
-			font-size: 13px;
+		a {
+			color: #C8CFD7;
+			font-size: 14px;
 			padding-right: 30px;
+			font-weight: lighter;
 		}
 	}
 
@@ -400,12 +404,33 @@ h6{
 	}
 }
 
+.item {
+	padding: 16%;
+	color: $white;
+	font-size: 18px;
+	text-align: left;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	line-height: 25px;
+
+
+	h2 {
+		text-shadow: 1px 1px 1px #46B3D3;
+		font-size: 20px;
+		margin: 15px 0;
+		color: #e1ff56;
+	} 
+
+	.center {
+		text-align: center;
+	}
+}
+
 .social {
 	text-align: center;
 	color:$orange;
 
 	ul.social_list {
-		
 		margin-bottom: 80px;
 
 		li {
@@ -413,8 +438,17 @@ h6{
 			color: #323232;
 			list-style-image: url('/img/check.png');
 			padding: 0 5px;
-			margin: 2% 5% 40px 5%;
-			vertical-align: middle;
+			margin: 0 5% 40px 5%;
+			vertical-align: top;
+		}
+
+		li.title  {
+			list-style: none;
+			color: #FF9E09;
+			position: relative;
+			left: -30px;
+			font-size: 19px;
+			z-index: -6;
 		}
 	}
 }
@@ -616,15 +650,6 @@ h6{
 	}
 
 	@include max-screen (650px) {
-
-		.buttons_footer{
-			text-align:left;
-			float: left;
-			}
-		
-		.copy-script {
-			width: 100%;
-		}
 
 		p {
 			text-align: left;
@@ -873,84 +898,6 @@ h6{
 	}
 }
 
-.list {
-	font-family: $font-radar;
-
-	.list-item {
-		display: block;
-		background: #Fcfcfc;
-		color: #666666;
-		position: relative;
-		text-align: left;
-		padding: 20px 40px 20px 25px;
-		margin: 8px 0;
-		border: #ccc solid 1px;
-		border-radius: 5px;
-
-		&:hover {
-			background: darken(#Fcfcfc, 3%);
-		}
-	}
-
-	h5 {
-		color: #323232;
-	}
-
-	& p {
-		color: #999999;
-		font-size: 14px;
-	}
-
-	.arrow-link {
-		position: absolute;
-		right: 15px;
-		top: 50%;
-		margin-top: -7px;
-	}
-
-	.list-item-grade {
-		position: absolute;
-		width: 7px;
-		height: 100%;
-		left: 0;
-		top: 0;
-		margin: 0px 0 0px -1px;
-		border-radius: 5px 0 0 5px;
-
-		&.peligrosidad-grave {
-			background: $red-light-red;
-		}
-
-		&.peligrosidad-media {
-			background-color: $red-light-yellow;
-		}
-
-		&.peligrosidad-moderada {
-			background-color: $red-light-green;
-		}
-	}
-	
-	@include max-screen (500px) {
-	
-	.list-item {
-		padding: 5px 0 5px 25px;
-		font-size: 13px;
-	}
-
-		& p {
-			color: #999999;
-			font-size: 13px;
-		}
-
-		span.case-grade {
-			display: none;
-		}
-
-		span.case-id {
-			font-size: 13px;
-		}
-	}
-}
 
 .copy-script {
 
@@ -1380,7 +1327,7 @@ padding: 25px 0 10px 0;
 .to_top{
 	position: relative;
 	width:100%;
-	z-index:-5;
+	z-index:0;
 	margin-top:-75px;
 
 }

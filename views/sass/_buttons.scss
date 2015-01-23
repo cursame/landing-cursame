@@ -3,6 +3,7 @@
   border-radius: 3px;
   text-align: center;
   padding: 15px 10px;
+  cursor: pointer;
 
   &.btn-input {
     @include inline-block;
@@ -24,9 +25,10 @@
 
 .btn-cta{
     background: #004A69;
-    font-size: 12px;
+    font-size: 1em;
     color: #FFFFFF;
     font-weight: bold ;
+    z-index: 325;
 
 }
 
@@ -34,6 +36,6 @@
   background:none;
   border: solid 1px white;
   color: #fff;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: bold ;
 }
