@@ -74,6 +74,25 @@ h6{
 	font-weight: lighter;
 }
 
+.quote {
+	text-align: right;
+	float: right;
+	padding-right: 12%;
+	padding-top: 30px;
+} 
+
+.quote-box {
+	background:$white;
+	border: 1px solid #ccc;
+	padding: 60px 10%;
+
+	p {
+		line-height: 35px;
+		font-size: 18px;
+		color: #9B9B9B;
+	}
+}
+
 .header {
 	height: 75px;
 	width: 100%;
