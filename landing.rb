@@ -105,11 +105,28 @@ enable :sessions
     session[:current_route] = '/find_network'
 	  erb  :"static_views/find_network", :layout => :"layouts/application"
 	end	
+
+	get '/:locale/inpact' do 
+    session[:current_route] = '/inpact'
+	  erb  :"static_views/inpact", :layout => :"layouts/application" 
+	end	
 	
 	get '/:locale/pate' do 
-    session[:current_route] = '/find_network'
+    session[:current_route] = '/pate'
 	  erb  :"static_views/pate", :layout => :"layouts/pate" 
 	end	
+
+helpers do
+  def image_tag(name)
+    "<img src='img/#{name}' alt='#{name}' />"
+  end
+
+  def link_to(name, url)
+  	"<a href='/#{session[:locale]}/#{url}'>#{name}</a>"
+  end
+end
+
+	
   
 
 

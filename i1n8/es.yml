@@ -4,10 +4,11 @@
     functions: Funciones
     home: Inicio
     plugins: Integraciones
-    rse: RSE
+    rse: 'Educación Pública'
+    inpact: Impacto
     us: Nosotros
     already_a_member: '¿Ya eres usuario?'
-    loggin: 'Ingresa'
+    loggin: 'Inicia sesión'
   footer:
     news: Noticias
     social: 'Impacto Social'
@@ -16,7 +17,43 @@
     spanish: Español
     english: Ingles
   banner_index_head: 
-    m1: 'Mejora los procesos de aprendizaje y la calidad educativa'
+    m1: 'Mejora los proceso de aprendizaje y la calidad educativa'
     m2: 'La mejor plataforma al precio más accesible'
     m3: '&nbsp; Solicita un demo en tu plantel &nbsp;'
     m4: '&nbsp; &nbsp; ¿Cómo Funciona? &nbsp;  &#8595;'
+    m5: 'Licencia ilimitada para tu escuela desde $30 mil anuales.'
+  functions_text: 
+    head: Funciones
+    m1: 'Te brindamos la herramientas más eficientes para mejorar los procesos de enseñanza, aprendizaje y administración para los alumnos, profesores y directivos de tu institución. '
+    f1: Tareas
+    f2: Cuestionarios
+    f3: Discusiones
+    f3: Comentarios
+    f4: Chat
+    f5: Comunidad
+    f6: Calificaciones
+    f7: Estadísticas
+    f8: RADAR
+    f9: 'Mix Panel'
+    f10: Bit 
+    f11: 'GOSPEL'
+    link: 'Descubre la funcionalidad de cada herramienta ❯'
+  bnefits_text: 
+    t1: 'Conexión entre directivos, maestros y alumnos'
+    t2: 'Administración de la institución'
+    t3: 'Todas tus actividades en un solo lugar en la nuve'
+    tx1: 'Mantenten tu institución conectada en todo momento en cualquier lugar.'
+    tx2: 'Administra de una manera eficiente el proceso enseñanza amprendizaje.'
+    tx3: 'Accede a tu escuela en cualquier momento y en cualquier lugar'
+  trust_us:
+    head: 'Ellos confían en Cúrsame:'
+    testimonial1: 'Cursame me ha servido como profesor para trabajar con los grupos teniendo una herramienta que permite, seguir a distancia las actividades y dudas de los chicos, así como tener el respaldo de la evidencia de sus trabajos a lo largo del desarrollo de la materia'
+    autor1: 'Ana Ma. López Rangel'
+    institution1: 'Tecnológico de Estudios Superiores de Ecatepec'
+    testimonial2: 'Mi testimonio tiene que ver con cursame como una experiencia educativa. La educación es un proceso, y en eso consiste su valía. en esta época estamos presionados socialmente para alabar las virtudes de las nuevas tecnologías.No es mi intención caer en esa vorágine. Lo importante de cursame es que permite catalizar el proceso educativo dentro de dicho ámbito. es decir, nos permite descubrir que nuestro papel, dentro de las nuevas tecnologías educativas tiene un potencial enorme y que la labor que podemos desarrollar en ellas es la construcción de una nueva sociedad, mediante los medios a nuestro alcance. ¡Gracias por ser un medio educativo de jóvenes y para los jóvenes!.'
+    autor2: 'Victor Cervantes Garcia'
+    institution2: 'IEMS'
+    testimonial3: 'Soy licenciada en biología, actualmente yo y otros profesores de la Asociación a la que pertenezco utilizamos Cúrsame como plataforma de cabecera para nuestros  alumnos, es eficiente rápida y con múltiples herramientas para utilizar después de clases. Puedo subir tareas, examenes, archivos como presentaciones y lecturas, me gusta por que hay un calendario para colocar eventos relevantes y un chat para contactar a mis alumnos más fácilmente. Creo que Cúrsame puede ser competente al nivel de un Google o un Facebook'
+    autor3: 'Biol. Claudia Fabián'
+    institution3: 'Tecnológico de Estudios Superiores de Ecatepec'
+

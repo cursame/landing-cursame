@@ -4,8 +4,8 @@
   color: white;
   @include cover-background(cover);
   
-  &.home-intro {
-    background-image: image-url('bg_home.png');
+  &.pate-intro {
+    background-image: image-url('/pate/img.png');
   }
 
   &.intro-foco {
@@ -88,7 +88,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
   background-color: #63a30f;
 }
 .bg-blue{
-  background-color: #16BD4A;
+  background-color: #0BC3DB;
 }
 .bg-blue2 {
   background-color: #15548a;

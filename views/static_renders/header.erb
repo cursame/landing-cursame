@@ -3,6 +3,7 @@
     <div class="cols-12">
       <div class="col col-12">
         <div class="col-inner">
+          <a href="/<%=session[:locale] %>">
            <div class="logo">
             <% if transparent_head %>
             <img src="/img/mainlogo.png" alt="">
@@ -10,15 +11,14 @@
             <img src="/img/mainlogo_color.png" alt="">
             <%end%>
           </div>
+          </a>
         <div class="menu-home">
           <ul class=" <%= 'menu-main' if transparent_head %> <%= 'menu-main-bottom' if !transparent_head %> nav-top">
-            <li><a href="/<%=session[:locale] %>"><%= t.menu.home %></a></li>
-            <li><a href="/<%=session[:locale] %>/us"><%= t.menu.us %></a></li>
-            <li><a href="/<%=session[:locale] %>/functions"><%= t.menu.functions %></a></li>
-            <li><a href="/<%=session[:locale] %>/rse"><%= t.menu.rse %></a></li>
-            <li><a href="/<%=session[:locale] %>/plugins"><%= t.menu.plugins %></a></li>
-            <li><a href="/<%=session[:locale] %>/benefits"><%= t.menu.benefits %></a></li>
-            <li><a href="/<%=session[:locale] %>/contact"><%= t.menu.contact %></a></li>
+            <li><%= link_to(t.menu.functions, 'functions') %></li>
+            <li><%= link_to(t.menu.benefits, 'benefits') %></li>
+            <li><%= link_to(t.menu.inpact, 'inpact')  %></li>
+            <li><%= link_to(t.menu.rse, 'pate') %></li>
+            <li><%= link_to(t.menu.contact, 'contact')%></li>
           </ul>
         </div>
 
