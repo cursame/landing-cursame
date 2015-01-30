@@ -56,8 +56,8 @@ enable :sessions
 	  erb  :"static_views/us", :layout => :"layouts/application"
 	end
 
-	get '/:locale/functions' do 
-		session[:current_route] = '/functions'
+	get '/:locale/features' do 
+		session[:current_route] = '/features'
 	  erb  :"static_views/functions", :layout => :"layouts/application"
 	end
 
@@ -123,6 +123,10 @@ helpers do
 
   def link_to(name, url)
   	"<a href='/#{session[:locale]}/#{url}'>#{name}</a>"
+  end
+
+  def icon_bottom_text(class_icon, text)
+  	 "<div class='jump'><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
   end
 end
 
