@@ -2,7 +2,7 @@
 	<ul class="features-links">
 		<div class="wrapper">
 			<li id="tab1" class="active" onclick="changeTab('tab1');"><%= icon_bottom_text('tareas', t.functions.f1) %>
-			<div class="arrow-down"></div>
+				<div class="arrow-down"></div>
 			</li>
 			<li id="tab2" class="unactive" onclick="changeTab('tab2');"><%= icon_bottom_text('cuestionarios', t.functions.f2) %></li>
 			<li id="tab3" class="unactive" onclick="changeTab('tab3');"><%= icon_bottom_text('discuciones', t.functions.f3) %></li>
@@ -13,13 +13,109 @@
 			<li id="tab8" class="unactive" onclick="changeTab('tab8');"><%= icon_bottom_text('estadisticas', t.functions.f8) %></li>
 		</div>
 	</ul>
+	<div class="wrapper">
+		<div class="cols-12">
+			<div class="col col-12">
+				<div class="col-inner">
+					<div id="to-tab1">
+						
+						<div class="col col-6">
+							<h2><%=t.functions.f1%></h2>
+							<p><%=t.functions.text1%></p>
+							<p><%=t.functions.features1%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+						
+					</div>
 
+					<div id="to-tab2" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f2%></h2>
+							<p><%=t.functions.text2%></p>
+							<p><%=t.functions.features2%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					<div id="to-tab3" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f3%></h2>
+							<p><%=t.functions.text3%></p>
+							<p><%=t.functions.features3%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					
+					<div id="to-tab4" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f4%></h2>
+							<p><%=t.functions.text4%></p>
+							<p><%=t.functions.features4%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					<div id="to-tab5" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f5%></h2>
+							<p><%=t.functions.text5%></p>
+							<p><%=t.functions.features5%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					<div id="to-tab6" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f6%></h2>
+							<p><%=t.functions.text6%></p>
+							<p><%=t.functions.features6%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					<div id="to-tab7" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f7%></h2>
+							<p><%=t.functions.text7%></p>
+							<p><%=t.functions.features7%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+					<div id="to-tab8" style="display:none;">
+						<div class="col col-6">
+							<h2><%=t.functions.f8%></h2>
+							<p><%=t.functions.text8%></p>
+							<p><%=t.functions.features8%></p>
+						</div>
+						<div class="col col-6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="wrapper">
 		<div class="cols-12">
 			<div class="col col-12">
 				<div class="col-inner">
-					
+				<h2><%=t.functions.plugins%></h2>
+				<p><%=t.functions.textplugins%></p>
+				<div class="col col-4">
+				<%=t.functions.radar%></br>
+				<%= t.functions.radartext %>
+				</div>
+				<div class="col col-4">
+				<%=t.functions.vlex%></br>
+				<%= t.functions.vlextext %>
+				</div>
+				<div class="col col-4">
+				 <%=t.functions.mixpanel%></br>
+                 <%=t.functions.mixpaneltext%>
+				</div>
 				</div>
 			</div>
 		</div>

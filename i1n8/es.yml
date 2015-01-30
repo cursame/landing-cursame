@@ -81,6 +81,14 @@
     f8: Estadísticas
     text8: "Los administradores de la institución tienen acceso a un panel de estadísticas que les permite conocer lo que está sucediendo dentro del plantel y con esto tomar decisiones importantes con conocimiento de causa."
     features8: "Algunas de sus características son: </br>-Uso de las herramientas de la plataforma </br>-Ingreso al sistema </br>-Calificaciones </br>-Por curso </br>-Por alumno"
+    plugins: Integraciones
+    radar: Radar
+    radartext: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa."
+    vlex: Vlex 
+    vlextext: "Información jurídica inteligente que da soporte a los mejores abogados de México."
+    mixpanel: MixPanel
+    mixpaneltext: "La mas avnazada plataforma de análisis de datos del mercado"
+    textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
 
 
 
