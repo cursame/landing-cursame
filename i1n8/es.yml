@@ -89,6 +89,38 @@
     mixpanel: MixPanel
     mixpaneltext: "La mas avnazada plataforma de análisis de datos del mercado"
     textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
+  benefits:
+    title: Beneficios
+    benefit1: "Fácil de usar"
+    benefit2: "Funciones simples y poderosas"
+    benefit3: "Multiplataforma"
+    benefit4: "Conexión entre alumnos y profesores"
+    benefit5: "Administración escolar"
+    benefit6: "Todo en la nube"
+    section1: "Maestros"
+    mbenefit1: "Herramientas de creación de contenido académico"
+    mbenefit2: "Planeacion y control de todas tus actividades"
+    mbenefit3: "Chat grupal con todo tu curso"
+    mbenefit4: "Administrar tus calificaciones"
+    mbenefit5: "Interacción con tus alumnos y directivos"
+    section2: "Alumno"
+    ebenefit1: "Herramientas para mejorar la interacción con el profesor."
+    ebenefit2: "Comunicación con tus compañeros de clase"
+    ebenefit3: "Calendarizacion de todas tus actividades"
+    ebenefit4: "Consulta de calificaciones"
+    ebenefit5: "Toda tu escuela al alcance de tu mano con tu tableta o celular"
+    section3: "Directivo"
+    dbenefit1: "Visualizar el plan de trabajo de tus docentes."
+    dbenefit2: "Realizar seguimiento académico"
+    dbenefit3: "Alta y baja de usuarios"
+    dbenefit4: "Herramienta de correo masivo"
+    dbenefit5: "Capacidad de configuración para tu red"
+    section4: "Institución"
+    ibenefit1: "Uso de tecnología en educación."
+    ibenefit2: "Reducción de violencia escolar"
+    ibenefit3: "Mejorar los canales de comunicación"
+    ibenefit4: "Tener un control total de tu comunidad escolar"
+    ibenefit5: "Estadísticas de uso en el plantel"
 
 
 
