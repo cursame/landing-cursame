@@ -1,0 +1,26 @@
+<%=  erb :'/static_views/index_renders/social'%>
+<div class="content">
+	<div class="wrapper">
+		<div class="col-12">
+			<div class="dashboard">
+				<h2><%= t.impact.general_impact %></h2>
+				<ul>
+					<li><%= t.impact.li1 %></li>
+					<li><%= t.impact.li2 %></li>
+					<li><%= t.impact.li3 %></li>
+					<li><%= t.impact.li4 %></li>
+					<li><%= t.impact.li5 %></li>
+					<li><%= t.impact.li6 %></li>
+					<li><%= t.impact.li7 %></li>
+				</ul>
+				<%= image_tag 'chart1.png'%>
+				<%= image_tag 'chart2.png'%>
+				<%= image_tag 'chart3.png'%>
+				<div class="col-10">
+				<%= t.impact.libutton %></br></br>
+			    </div>
+				<%= link_to t.impact.link_public, 'pate' %></br>
+			</div>
+		</div>
+	</div>
+</div>

@@ -118,7 +118,7 @@ enable :sessions
 
 helpers do
   def image_tag(name)
-    "<img src='img/#{name}' alt='#{name}' />"
+    "<img src='/img/#{name}' alt='#{name}' width='80%' />"
   end
 
   def link_to(name, url)
