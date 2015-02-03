@@ -126,7 +126,7 @@ helpers do
   end
 
   def icon_bottom_text(class_icon, text)
-  	 "<div class='jump'><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
+  	 "<div><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
   end
 end
 

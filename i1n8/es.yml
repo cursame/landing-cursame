@@ -17,9 +17,9 @@
     spanish: Español
     english: Ingles
   banner_index_head: 
-    m1: 'Mejora los proceso de aprendizaje y la calidad educativa'
+    m1: 'Mejora los proceso de aprendizaje <br/> y la calidad educativa'
     m2: 'La mejor plataforma al precio más accesible'
-    m3: '&nbsp; Solicita un demo en tu plantel &nbsp;'
+    m3: '&nbsp; Adquiere tu licencia desde $30 mil anuales &nbsp;'
     m4: '&nbsp; &nbsp; ¿Cómo Funciona? &nbsp;  &#8595;'
     m5: 'Licencia ilimitada para tu escuela desde $30 mil anuales.'
   functions_text: 
@@ -46,8 +46,8 @@
     tx2: 'Administra de una manera eficiente el proceso enseñanza amprendizaje.'
     tx3: 'Accede a tu escuela en cualquier momento y en cualquier lugar'
   trust_us:
-    head: 'Ellos confían en Cúrsame:'
-    testimonial1: 'Cursame me ha servido como profesor para trabajar con los grupos teniendo una herramienta que permite, seguir a distancia las actividades y dudas de los chicos, así como tener el respaldo de la evidencia de sus trabajos a lo largo del desarrollo de la materia'
+    head: 'Ellos confían en Cúrsame'
+    testimonial1: 'Me ha servido, como profesor, para trabajar con los grupos teniendo y seguir a distancia las actividades y dudas de los chicos, así como tener el respaldo de la evidencia de sus trabajos a lo largo del desarrollo de la materia'
     autor1: 'Ana Ma. López Rangel'
     institution1: 'Tecnológico de Estudios Superiores de Ecatepec'
     testimonial2: 'Mi testimonio tiene que ver con cursame como una experiencia educativa. La educación es un proceso, y en eso consiste su valía. en esta época estamos presionados socialmente para alabar las virtudes de las nuevas tecnologías.No es mi intención caer en esa vorágine. Lo importante de cursame es que permite catalizar el proceso educativo dentro de dicho ámbito. es decir, nos permite descubrir que nuestro papel, dentro de las nuevas tecnologías educativas tiene un potencial enorme y que la labor que podemos desarrollar en ellas es la construcción de una nueva sociedad, mediante los medios a nuestro alcance. ¡Gracias por ser un medio educativo de jóvenes y para los jóvenes!.'
@@ -91,12 +91,12 @@
     textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
   benefits:
     title: Beneficios
-    benefit1: "Fácil de usar"
+    benefit1: "Amigable al usuario"
     benefit2: "Funciones simples y poderosas"
     benefit3: "Multiplataforma"
     benefit4: "Conexión entre alumnos y profesores"
     benefit5: "Administración escolar"
-    benefit6: "Todo en la nube"
+    benefit6: "Todo almacenado en la nube"
     section1: "Maestros"
     mbenefit1: "Herramientas de creación de contenido académico"
     mbenefit2: "Planeacion y control de todas tus actividades"

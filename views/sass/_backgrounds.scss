@@ -85,16 +85,26 @@ background: linear-gradient(to bottom, #00b7ea 0%,#00b7ea 24%,#00b7ea 45%,#00b7e
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-8 */
 }
 .bg-green{
-  background-color: #63a30f;
+  background-color: #50A64A;
 }
 .bg-blue{
-  background-color: #0BC3DB;
+  background-color: #2AB6F4;
+    color: $white;
 }
 .bg-purple {
   background-color: rgba(107,46,94,1);
+  color: $white;
+
+  & p {
+    color: $white;
+  }
 }
 .bg-gray {
-  background: #ebebeb !important;
+  background: #E0E0E0 !important;
+}
+.bg-gray2 {
+  background:#958e88;
+  color: $white;
 }
 .white_transparent {
   background: rgba(255,255,255,0.2) !important;
@@ -106,5 +116,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
   @include linear-gradient(75deg, #c74331 0%, #ec531e 100%);
 }
 .bg-greengradient {
-  @include linear-gradient(75deg, #4f8805 0%, #6cb012 100%);
+  @include linear-gradient(75deg, #197174 0%, #396879 100%);
+  color: $white;
 }
