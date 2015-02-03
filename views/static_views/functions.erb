@@ -183,30 +183,46 @@
 	</div>
 
 
-<div class="content-top bg-gray2">
+<div class="content">
 	<div class="wrapper">
 		<div class="cols-12">
-			<div class="col-inner">
+			<h2><%=t.functions.plugins%></h2>
+			<p><%=t.functions.textplugins%></p>
+		  
+		  <div class="col col-4">
+        <div class="col-inner">
+					<div class="item2">
+					<div class="img-center">
+						<%= image_tag 'l_radar.png', '50%' %>
+					</div>
+						<span> <%= t.functions.radartext %></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-4">
+        <div class="col-inner">
+					<div class="item2">
+					<div class="img-center">
+							<%= image_tag 'l_bit.png', '50%' %>
+						</div>
+						<span> <%= t.functions.vlextext %></span>					
+					</div>
+				</div>
+			</div>
 
 
+			<div class="col col-4">
+        <div class="col-inner">
+					<div class="item2">
+						<div class="img-center">
+							<%= image_tag 'l_mix.png', '50%' %>
+						</div>
+		        <span> <%= t.functions.mixpaneltext%></span>
+		      </div>
+		    </div>
+		  </div>
 
-
-				<h2><%=t.functions.plugins%></h2>
-				<p><%=t.functions.textplugins%></p>
-				<div class="col col-4">
-						<%=t.functions.radar%></br>
-						<%= t.functions.radartext %>
-				</div>
-				<div class="col col-4">
-						<%=t.functions.vlex%></br>
-						<%= t.functions.vlextext %>
-				</div>
-				<div class="col col-4">
-						  <%=t.functions.mixpanel%></br>
-			        <%=t.functions.mixpaneltext%>
-				</div>
-				</div>
 			</div>
 		</div>
 	</div>
-</div>

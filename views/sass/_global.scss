@@ -463,6 +463,19 @@ h6{
 	}
 }
 
+.item2 {
+	background:none;
+	padding: 30% 12%;
+	font-size: 18px;
+	text-align: left;
+	line-height: 25px;
+	margin-bottom: 15px;
+	
+		span {
+			margin-top: 15px;
+		}
+	}
+
 .social {
 	text-align: center;
 	color:$orange;
