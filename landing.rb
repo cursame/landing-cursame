@@ -122,15 +122,15 @@ enable :sessions
 	end	
 
 helpers do
-  def image_tag(name)
-    "<img src='/img/#{name}' alt='#{name}' width='80%' />"
+  def image_tag(name, width_x = '80%')
+    "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' />"
   end
 
-  def link_to(name, url)
+  def link_to(name, url, target = '')
   	if url == 'es' || url == 'en'
-  	"<a href='#{url}'>#{name}</a>" 
+  	"<a href='#{url}' target='#{target}'>#{name}</a>" 
   	else
-  	"<a href='/#{session[:locale]}/#{url}'>#{name}</a>"
+  	"<a href='/#{session[:locale]}/#{url}' target='#{target}' >#{name}</a>"
     end
   end
 

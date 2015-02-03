@@ -405,8 +405,19 @@ h6{
 	& h2{
 		margin-bottom: 25px;
 	}
+
+	& h3 {
+		color: #9D0A7B;
+		font-size: 21px;
+		margin: 10px 0 20px 0;
+	}
+
 	p {
 		text-align: justify;
+	}
+
+	span {
+		color: white;
 	}
 	a {
 		color: #44BAF4;
@@ -1646,11 +1657,24 @@ ul.benefit-list {
 		margin-bottom: 15px;
 
 	}
-
 		&	h4 {
 		color: rgb(179, 179,179);
 		margin-bottom: 25px;
 	}
+}
 
+.chart {
+	margin: 4% 0;
 
+	h4.blue {
+		color: blue;
+		margin-top: 35px;
+	}
+}
+
+.priv {
+	font-size: 11px;
+	padding: 0 0 60px 0;
+	margin-top: 35px;
+	text-align: justify;
 }
