@@ -17,10 +17,12 @@
         <div class="col-inner">
             <ul class="footermenu">
               <li>Cúrsame</li>
-              <li><a href="/<%=session[:locale] %>/features"><%= link_to(t.menu.functions, 'features') %></a></li>
-              <li><a href="/<%=session[:locale] %>/social"><%= t.footer.social %></a></li>
-              <li><a href="/<%=session[:locale] %>/jobs"><%= t.footer.jobs %></a></li>
-              <li><a href="/<%=session[:locale] %>/contact"><%= t.footer.contact %></a></li>
+              <li><%= link_to t.menu.functions, 'features' %></li>
+              <li><%= link_to t.footer.social, 'social' %></li>
+              <li><%= link_to t.footer.jobs, 'jobs' %></li>
+              <li><%= link_to t.footer.contact, 'contact' %></li>
+              <li><%= external_link t.footer.gospel, 'http://capacitate.cursa.me' %></li>
+              <li><%= external_link t.footer.radar, 'http://radarescolar.com' %></li>
            </ul>
           </div>
         </div>
@@ -28,10 +30,11 @@
         <div class="col-inner">
             <ul class="footermenu">
               <li>Ayuda</li>
-              <li><a href="/<%=session[:locale] %>/news"><%= t.footer.news %></a></li>
-              <li><a href="/<%=session[:locale] %>/social"><%= t.footer.social %></a></li>
-              <li><a href="/<%=session[:locale] %>/jobs"><%= t.footer.jobs %></a></li>
-              <li><a href="/<%=session[:locale] %>/contact"><%= t.footer.contact %></a></li>
+              <li><%= link_to t.footer.news, 'news' %></li>
+              <li><%= link_to t.footer.social, 'social' %></li>
+              <li><%= link_to t.footer.jobs, 'jobs' %></li>
+              <li><%= link_to t.footer.contact, 'contact' %></li>
+              <li><%= link_to t.footer.terms, 'terms' %></li>
            </ul>
           </div>
         </div>
@@ -39,13 +42,13 @@
         <div class="col-inner">
             <ul class="footermenu">
               <li>Síguenos</li>
-              <li> <a href="#">Facebook </a></li>
-              <li><a href="#">Twitter</a></li>
+              <li><%= external_link 'Facebook', 'https://www.facebook.com/Cursameoficial?ref=hl' %></li>
+              <li><%= external_link 'Twitter','https://twitter.com/cursame' %> </li>
            </ul>
             <ul class="footermenu">
               <li>Lenguaje</li>
-              <li> <a href="#"><%= t.footer.spanish %> </a></li>
-              <li><a href="#"><%= t.footer.english %></a></li>
+              <li><%= link_to t.footer.spanish, 'es' %> </li>
+              <li><%= link_to t.footer.english, 'en' %></li>
            </ul>
           </div>
         </div>

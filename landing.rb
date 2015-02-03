@@ -116,17 +116,30 @@ enable :sessions
 	  erb  :"static_views/pate", :layout => :"layouts/pate" 
 	end	
 
+     get '/:locale/terms' do 
+    session[:current_route] = '/terms'
+	  erb  :"static_views/terms", :layout => :"layouts/application" 
+	end	
+
 helpers do
   def image_tag(name)
     "<img src='/img/#{name}' alt='#{name}' width='80%' />"
   end
 
   def link_to(name, url)
+  	if url == 'es' || url == 'en'
+  	"<a href='#{url}'>#{name}</a>" 
+  	else
   	"<a href='/#{session[:locale]}/#{url}'>#{name}</a>"
+    end
   end
 
   def icon_bottom_text(class_icon, text)
   	 "<div><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
+  end
+
+  def external_link(name, url)
+  	"<a href='#{url}' target='_blank'>#{name}</a>"
   end
 end
 
