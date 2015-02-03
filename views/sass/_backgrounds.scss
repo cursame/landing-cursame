@@ -114,8 +114,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
 }
 .bg-redgradient {
   @include linear-gradient(75deg, #c74331 0%, #ec531e 100%);
+  color: $white;
+}
+.bg-bluegradient {
+  @include linear-gradient(75deg, #50A516 0%, #73CB40 100%);
+  color: $white;
 }
 .bg-greengradient {
-  @include linear-gradient(75deg, #197174 0%, #396879 100%);
+  @include linear-gradient(75deg, #396879  0%, #42A3A6 100%);
+  color: $white;
+}
+.bg-orangegradient {
+  @include linear-gradient(75deg, #E7581A 0%, #F7AA32 100%);
   color: $white;
 }
