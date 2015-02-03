@@ -106,8 +106,8 @@ enable :sessions
 	  erb  :"static_views/find_network", :layout => :"layouts/application"
 	end	
 
-	get '/:locale/inpact' do 
-    session[:current_route] = '/inpact'
+	get '/:locale/impact' do 
+    session[:current_route] = '/impact'
 	  erb  :"static_views/inpact", :layout => :"layouts/application" 
 	end	
 	
