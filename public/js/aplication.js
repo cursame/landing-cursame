@@ -1,6 +1,7 @@
 // app cursame
 //file
 $(document).ready(function(){
+	sendForm();
 	$(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
 	var topHeader = $('.to_top').height();
@@ -45,5 +46,38 @@ function changeTab(tab){
   var oppTab = 'to-' + tab;
   $('#'+closeTab).hide();
   $('#'+oppTab).show();
+
+}
+
+function sendForm(){
+   $('form').submit(function() {
+       var $form = $(this),
+   	   url = $form.attr('action'),
+       formData = new FormData( $form[0] );
+   	   sendingAJAX(url, formData, function(data, err){
+   	   	if (err) 
+            return alert("Ha ocurrido un error al enviar el formulario");
+        console.log(data);
+   	   });
+   	   return false; 
+   });
+}
+
+
+function sendingAJAX(url, formData, callback){
+
+	$.ajax({
+	    url: url,
+	    data: formData,
+	    processData: false,
+	    contentType: false,
+	    type: 'POST',
+	    success: function(data) {
+	        callback(data, null);
+	    },
+	    error: function(err) {
+	        callback(null, err);
+	    }
+	});
 
 }

@@ -1,14 +1,18 @@
 # encoding: utf-8
+# set_session
+# set_cookie
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'sass'
 require 'sinatra/r18n'
 require 'bourbon'
+require 'json'
+require 'pony'
 
 
 #http://version4.cursa.me/users/sign_in?auth_token=
 enable :sessions
-  
+
   ##### sass #####
   configure do
     set :scss, {:style => :compressed, :debug_info => false}
@@ -23,7 +27,8 @@ enable :sessions
 	###### tranlating methods ########
 
     R18n.default_places { './i1n8' }
-    
+  
+###################### routes ####################################
     get '/' do 
     	R18n::I18n.default = 'es' if session[:locale] == nil
     	session[:locale] = R18n::I18n.default if session[:locale] == nil
@@ -116,13 +121,21 @@ enable :sessions
 	  erb  :"static_views/pate", :layout => :"layouts/pate" 
 	end	
 
-     get '/:locale/terms' do 
+    get '/:locale/terms' do 
     session[:current_route] = '/terms'
 	  erb  :"static_views/terms", :layout => :"layouts/application" 
 	end	
 
+	post '/mailer' do 
+       puts "************>>>> send mail"	
+       mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
+       puts "************>>>> sending "	
+       mail_to('jose_alfredo@cursa.me', params[:email], 'Mail de contacto', mail_stablish )  
+	end	
+
+################################ helpers ###############################
 helpers do
-  def image_tag(name, width_x = '80%')
+  def image_tag(name, width_x = '')
     "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' />"
   end
 
@@ -140,6 +153,10 @@ helpers do
 
   def external_link(name, url)
   	"<a href='#{url}' target='_blank'>#{name}</a>"
+  end
+
+  def mail_to(to_email, from_email, subject, body_mail )
+  	Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html")
   end
 end
 
