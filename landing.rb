@@ -130,7 +130,8 @@ enable :sessions
        puts "************>>>> send mail"	
        mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
        puts "************>>>> sending "	
-       mail_to('jose_alfredo@cursa.me', params[:email], 'Mail de contacto', mail_stablish )  
+       mail_to_as = ['jose_alfredo@cursa.me', 'gabriel@cursa.me', 'rafael@cursa.me', 'juan@cursa.me']
+       mail_to(mail_to_as, params[:email], 'Te han contactado para Cúrsame', mail_stablish )  
 	end	
 
 ################################ helpers ###############################
