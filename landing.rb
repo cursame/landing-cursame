@@ -121,6 +121,11 @@ enable :sessions
 	  erb  :"static_views/pate", :layout => :"layouts/pate" 
 	end	
 
+    get '/:locale/pate/call' do 
+    session[:current_route] = '/pate/call'
+	  erb  :"static_views/pate/call", :layout => :"layouts/pate" 
+	end	
+
     get '/:locale/terms' do 
     session[:current_route] = '/terms'
 	  erb  :"static_views/terms", :layout => :"layouts/application" 
