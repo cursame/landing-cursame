@@ -139,6 +139,11 @@ enable :sessions
        mail_to(mail_to_as, params[:email], 'Te han contactado para Cúrsame', mail_stablish )  
 	end	
 
+	get '/:locale/localities' do
+		@locality = params[:locality]
+		localities = erb :"/static_views/pate/locations/#{@locality}", :layout => false
+	end
+
 ################################ helpers ###############################
 helpers do
   def image_tag(name, width_x = '')

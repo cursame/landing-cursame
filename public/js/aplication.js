@@ -28,6 +28,7 @@ $(document).ready(function(){
 	  }
 	  
     });
+    addNameINattrToSelect();
 });
 
 function changeTab(tab){
@@ -47,6 +48,14 @@ function changeTab(tab){
   $('#'+closeTab).hide();
   $('#'+oppTab).show();
 
+}
+
+function callViewRemote(urlToLoad, divTo){
+	$.get( urlToLoad, function( data ) {
+    	$( divTo ).html( data );
+    	addNameINattrToSelect();
+    });
+    return false; 
 }
 
 function sendForm(){
@@ -80,4 +89,12 @@ function sendingAJAX(url, formData, callback){
 	    }
 	});
 
+}
+
+function addNameINattrToSelect(){
+	$( "select > option" ).each(function() {
+		    var content  = $(this).html() ;
+			$(this).attr('data-info', content);
+			console.log($(this).html());
+	});
 }

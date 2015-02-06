@@ -1,0 +1,13 @@
+Estado <div id="state"><%= erb :'/static_views/pate/locations/states_select'%></div>
+Municipio <div id="locality"><%= erb :'/static_views/pate/locations/locality0'%></div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+	$( ".mutant_selct" ).change(function() {
+		var urlToLoad =  '/'+'<%=session[:locale]%>'+'/localities?locality=locality'+$(this).val();
+		console.log(urlToLoad);
+		var divTo = "#locality";
+		callViewRemote(urlToLoad, divTo);
+    });
+});
+</script>
