@@ -3,9 +3,9 @@ Municipio <div id="locality"><%= erb :'/static_views/pate/locations/locality0'%>
 
 <script type="text/javascript">
   $(document).ready(function(){
-	$( ".mutant_selct" ).change(function() {
+	$( ".mutant_select" ).change(function() {
 		var urlToLoad =  '/'+'<%=session[:locale]%>'+'/localities?locality=locality'+$(this).val();
-		console.log(urlToLoad);
+		//console.log(urlToLoad);
 		var divTo = "#locality";
 		callViewRemote(urlToLoad, divTo);
     });

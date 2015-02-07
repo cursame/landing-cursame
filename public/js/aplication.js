@@ -95,6 +95,6 @@ function addNameINattrToSelect(){
 	$( "select > option" ).each(function() {
 		    var content  = $(this).html() ;
 			$(this).attr('data-info', content);
-			console.log($(this).html());
+			//console.log($(this).html());
 	});
 }

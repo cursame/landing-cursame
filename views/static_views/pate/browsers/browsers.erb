@@ -1,0 +1,22 @@
+<p>¿Cual es el navegador que usas? y ¿Que versión de este tienes?</p>
+<select class="mutant_select_1" name="browser">
+	<option value="1">Internet Explorer (IE)</option>
+	<option value="2">Firefox</option>
+	<option value="3">Chrome</option>
+	<option value="4">Safari</option>
+	<option value="5">Opera</option>
+	<option value="6">Maxthon</option>
+</select>
+
+<div id="browser"><%= erb :'/static_views/pate/browsers/browser1'%></div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+	$( ".mutant_select_1" ).change(function() {
+		var urlToLoad =  '/'+'<%=session[:locale]%>'+'/browsers?browser=browser'+$(this).val();
+		//console.log(urlToLoad);
+		var divTo = "#browser";
+		callViewRemote(urlToLoad, divTo);
+    });
+});
+</script>

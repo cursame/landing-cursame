@@ -144,6 +144,11 @@ enable :sessions
 		localities = erb :"/static_views/pate/locations/#{@locality}", :layout => false
 	end
 
+	get '/:locale/browsers' do
+		@browser = params[:browser]
+		localities = erb :"/static_views/pate/browsers/#{@browser}", :layout => false
+	end
+
 ################################ helpers ###############################
 helpers do
   def image_tag(name, width_x = '')
