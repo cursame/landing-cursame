@@ -26,10 +26,9 @@
           <ul class=" <%= 'signin-button' if transparent_head %>  
                       <%= 'signin-button-bottom' if !transparent_head %>">
             <li> <span><%= t.menu.already_a_member %></span></li>
-            <li><a href="/<%=session[:locale] %>/find_network" class="blue"><%= t.menu.loggin %></a></li>
+            <li><a href="#" data-featherlight="#loginbox" class="blue"><%= t.menu.loggin %></a></li>
           </ul>
         </div>
-
 
         <div class="menu-mobile totarget" data-target="menu-imobile">
          <ul>
@@ -41,4 +40,7 @@
       </div>
     </div>
   </div>
+</div>
+<div id="loginbox" class=" featherlight featherlight-content">  
+<%=  erb :'/static_renders/login'%>
 </div>

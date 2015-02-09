@@ -1,7 +1,9 @@
 // app cursame
 //file
 $(document).ready(function(){
+
 	sendForm();
+
 	$(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
 	var topHeader = $('.to_top').height();
@@ -58,21 +60,22 @@ function callViewRemote(urlToLoad, divTo){
     return false; 
 }
 
-function sendForm(){
+function sendForm(validate){
    $('form').submit(function() {
-   	   changeValForDataInfo();
-       var $form = $(this),
-   	   url = $form.attr('action'),
-       formData = new FormData( $form[0] );
-   	   sendingAJAX(url, formData, function(data, err){
-   	   	if (err) 
-            return alert("Ha ocurrido un error al enviar el formulario");
-        alert('Se ha enviado correctamente su solicitud.')
-        rescueValueSelect();
-        $('form')[0].reset();
+   	       changeValForDataInfo();
 
-   	   });
+	       var $form = $(this),
+	   	   url = $form.attr('action'),
+	       formData = new FormData( $form[0] );
+	   	   sendingAJAX(url, formData, function(data, err){
+	   	   	if (err) 
+	            return alert("Ha ocurrido un error al enviar el formulario");
+	        alert('Se ha enviado correctamente su solicitud.')
+	        rescueValueSelect();
+	        $('form')[0].reset();
 
+	   	   });
+   	   
    	   return false; 
    });
 }

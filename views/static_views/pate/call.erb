@@ -6,20 +6,20 @@
 		<div class="col col-12">
 			<div class="col-inner">
 				<div class="info">
-					<form class="form" action="/send_call" method="POST" enctype="multipart/form-data">
+					<form class="form validate" action="/send_call" method="POST" enctype="multipart/form-data">
 						<h1>Contacto</h1>
-						Nombre Completo: <input type="text" name="name" />
-						Cargo que actualmente ocupa: <input type="text" name="name" />
-						Email de contacto: <input type="text" name="email" />
-						Teléfono de la escuela: <input type="text" name="phone" />
-						Nombre de la Institución: <input type="text" name="institution" />
+						Nombre Completo: <input type="text" name="name" required/>
+						Cargo que actualmente ocupa: <input type="text" name="charge" required/>
+						Email de contacto: <input type="email" name="email" required/>
+						Teléfono de la escuela: <input type="text" name="phone" required/>
+						Nombre de la Institución: <input type="text" name="institution" required/>
 						<%= erb :'/static_views/pate/locations/states'%>
-						<p>Nivel de escolarida</p><br>
-						<input type="checkbox" name="option1" value="Básica"> Básica<br>
-						<input type="checkbox" name="option2" value="Media Superior"> Media Superior<br>
+						<p>Nivel de escolaridad</p><br>
+						<input type="checkbox" name="option1" value="Básica" > Básica<br>
+						<input type="checkbox" name="option2" value="Media Superior" > Media Superior<br>
 						<input type="checkbox" name="option3" value="Superior"> Superior<br>
 						<input type="checkbox" name="option4" value="Posgrado"> Posgrado<br>
-						<p>Matrícula de la escuela en alumnos.</p><input type="text" name="number_of_users" />
+						<p>Matrícula de la escuela en alumnos.</p><input type="text" name="number_of_users" required/>
 						<p>Turno(s):</p><br>
 						<input type="checkbox" name="option5" value="Matutino"> Matutino<br>
 						<input type="checkbox" name="option6" value="Vespertino"> Vespertino<br>
