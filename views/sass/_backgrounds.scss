@@ -8,40 +8,12 @@
     background-image: image-url('/pate/img.png');
   }
 
-  &.intro-foco {
-    background-image: image-url('headaer_denuncia.png');
+  &.intro-stats {
+    background: url('bg_stats.png');
   }
 
   &.intro-diagnostico {
     background-image: image-url('headaer_diagnostico.png');
-  }
-
-  &.intro-us {
-    background-image: image-url('headaer_us.png');
-  }
-
-  &.intro-contact {
-    background-image: image-url('header_contact.png');
-  }
-
-  &.intro-panel {
-    background-image: image-url('bg_panel.png');
-  }
-
-  &.intro-expert {
-    background-image: image-url('bg_experto.png');  
-  }
-
-  &.intro_foco1{
-    background-image: image-url('bg_foco1.png');
-  }
-
-  &.intro_diagnostico{
-    background-image: image-url('bg_diagnostico.png');
-  }
-  &.intro_autod{
-  background-image: image-url('bg_autod.png');
-  background-position: top center;
   }
 
   &.intro_login{
@@ -83,9 +55,18 @@ background: -o-linear-gradient(top, #00b7ea 0%,#00b7ea 24%,#00b7ea 45%,#00b7ea 6
 background: -ms-linear-gradient(top, #00b7ea 0%,#00b7ea 24%,#00b7ea 45%,#00b7ea 67%,#009ec3 100%); /* IE10+ */
 background: linear-gradient(to bottom, #00b7ea 0%,#00b7ea 24%,#00b7ea 45%,#00b7ea 67%,#009ec3 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-8 */
+height: 100%;
+margin: 0;
+min-height: 100%
 }
+
+.bg-darkgray {
+  background: rgba(35,45,51,1);
+  color: $white;
+}
+
 .bg-green{
-  background-color: #50A64A;
+  background-color: rgba(29,182,170,1);
 }
 .bg-blue{
   background-color: #2AB6F4;

@@ -22,17 +22,21 @@
           </ul>
         </div>
 
-          <div class="menu-mobile totarget" data-target="menu-imobile">
-           <ul>
-             <li><i class="i i-menu " ></i>=</li>
-           </ul>
-          </div>
-          <div class="login">
-            <ul class=" <%= 'singin-button' if transparent_head %>  <%= 'singin-button-bottom' if !transparent_head %>">
-              <li><a href="/<%=session[:locale] %>/member"><%= t.menu.already_a_member %></a></li>
-              <li><a href="/<%=session[:locale] %>/find_network" class="blue"><%= t.menu.loggin %></a></li>
-            </ul>
-          </div>
+        <div class="login">
+          <ul class=" <%= 'signin-button' if transparent_head %>  
+                      <%= 'signin-button-bottom' if !transparent_head %>">
+            <li> <span><%= t.menu.already_a_member %></span></li>
+            <li><a href="/<%=session[:locale] %>/find_network" class="blue"><%= t.menu.loggin %></a></li>
+          </ul>
+        </div>
+
+
+        <div class="menu-mobile totarget" data-target="menu-imobile">
+         <ul>
+           <li><i class="i i-menu " ></i>=</li>
+         </ul>
+        </div>
+
         </div>
       </div>
     </div>
