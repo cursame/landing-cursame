@@ -60,21 +60,25 @@ function callViewRemote(urlToLoad, divTo){
 
 function sendForm(){
    $('form').submit(function() {
+   	   changeValForDataInfo();
        var $form = $(this),
    	   url = $form.attr('action'),
        formData = new FormData( $form[0] );
    	   sendingAJAX(url, formData, function(data, err){
    	   	if (err) 
             return alert("Ha ocurrido un error al enviar el formulario");
-        console.log(data);
+        alert('Se ha enviado correctamente su solicitud.')
+        rescueValueSelect();
+        $('form')[0].reset();
+
    	   });
+
    	   return false; 
    });
 }
 
 
 function sendingAJAX(url, formData, callback){
-
 	$.ajax({
 	    url: url,
 	    data: formData,
@@ -83,18 +87,36 @@ function sendingAJAX(url, formData, callback){
 	    type: 'POST',
 	    success: function(data) {
 	        callback(data, null);
+
 	    },
 	    error: function(err) {
 	        callback(null, err);
+
 	    }
 	});
+}
 
+function rescueValueSelect(){
+    $( "select > option" ).each(function() {
+	 var simple_val = $(this).attr('data-simplevalue');
+	  $(this).attr('value' ,simple_val);
+	});
+
+}
+
+function changeValForDataInfo(){
+	$( "select > option" ).each(function() {
+		var simple_val = $(this).attr('value');
+		var vlauex  = $(this).attr('data-info');
+		$(this).attr('value' ,vlauex);
+		$(this).attr('data-simplevalue' ,simple_val);
+
+	});
 }
 
 function addNameINattrToSelect(){
 	$( "select > option" ).each(function() {
 		    var content  = $(this).html() ;
 			$(this).attr('data-info', content);
-			//console.log($(this).html());
 	});
 }

@@ -136,8 +136,17 @@ enable :sessions
        mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
        puts "************>>>> sending "	
        mail_to_as = ['jose_alfredo@cursa.me', 'gabriel@cursa.me', 'rafael@cursa.me', 'juan@cursa.me']
-       mail_to(mail_to_as, params[:email], 'Te han contactado para Cúrsame', mail_stablish )  
+       mail_to(mail_to_as, 'non-reply@cursa.me', 'Te han contactado para Cúrsame', mail_stablish )  
 	end	
+
+	post '/send_call' do 
+	   puts "************>>>> send mail"
+	   puts params
+       mail_stablish = erb :"mailer/call", locals: {name: params[:name], email: params[:email], phone: params[:phone], institution: params[:institution], states: params[:states], locations: params[:municipios], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], number_of_users: params[:number_of_users], option5: params[:option5], option6: params[:option6], enlace: params[:enlace], calenlace: params[:calenlace], internet: params[:internet], option7: params[:option7], option8: params[:option8], option9: params[:option9], option10: params[:option10], option11: params[:option11], velinternet: params[:velinternet], browser: params[:browser], versionbrowser: params[:versionbrowser], computers: params[:computers], functional_computers: params[:functional_computers], interesdedocentes: params[:interesdedocentes], usodetics: params[:usodetics], examples_from_user_tics: params[:examples_from_user_tics], teacheshavecomputers: params[:teacheshavecomputers], imactfromtecnologicineducation: params[:imactfromtecnologicineducation], option12: params[:option12], option13: params[:option13], option14: params[:option14], option15: params[:option15], option16: params[:option16], option17: params[:option17],  familiarizadoprofesores: params[:familiarizadoprofesores] }, :layout => false
+       puts "************>>>> sending "	
+       mail_to_as = ['leon@cursa.me', 'juan@cursa.me', 'erika@cursa.me', 'jose_alfredo@cursa.me']
+       mail_to(mail_to_as, 'non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
+	end
 
 	get '/:locale/localities' do
 		@locality = params[:locality]
