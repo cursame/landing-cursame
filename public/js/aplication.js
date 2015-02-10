@@ -63,11 +63,12 @@ function callViewRemote(urlToLoad, divTo){
 function sendForm(){
    $('form').submit(function() {
    	       changeValForDataInfo();
+           var dataexternal = $(this).attr("data-external");
 
 	       var $form = $(this),
 	   	   url = $form.attr('action'),
 	       formData = new FormData( $form[0] );
-	   	   sendingAJAX(url, formData, function(data, err){
+	   	   sendingAJAX(url, formData, dataexternal,function(data, err){
 	   	   	if (err) 
 	            return console.log("Ha ocurrido un error al enviar el formulario");
 	        console.log('Se ha enviado correctamente su solicitud.')
@@ -81,22 +82,34 @@ function sendForm(){
 }
 
 
-function sendingAJAX(url, formData, callback){
+function sendingAJAX(url, formData, external ,callback){
+	external = typeof external !== 'undefined' ? external : false;
+		
+		if (external == 'true'){
+		  var external = true;
+		}else{
+		   var external = false;
+		}
+
 	$.ajax({
 	    url: url,
 	    data: formData,
 	    processData: false,
 	    contentType: false,
 	    type: 'POST',
-	    xhrFields: {
-         withCredentials: true
-        },
 	    success: function(data) {
 	        callback(data, null);
-
+	        //console.log(external_to);
+	        if ( external == true ) {
+	        	var token =  data.response.token
+	        	window.location.href = "http://"+data.response.subdomain+".cursa.me/users/sign_in?auth_token="+data.response.token;
+	        }
 	    },
 	    error: function(err) {
 	        callback(null, err);
+	        console.log(err);
+	        
+
 
 	    }
 	});
