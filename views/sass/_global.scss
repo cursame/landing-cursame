@@ -224,11 +224,12 @@ h6{
 }
 
 .head-title {
-	padding: 6% 0 3% 0;
+	padding: 9% 0 4% 0;
 	text-align: left;
 
 	h3 {
 		text-align: left;
+		font-size: 26px;
 	}
 }
 
@@ -251,7 +252,7 @@ h6{
 
 .img-bottom {
 	position: relative;
-	bottom: -1.7em;
+	bottom: 1.3em;
 }
 
 .footer{
@@ -259,7 +260,7 @@ h6{
 	width: 100%;
 	position: relative;
 	bottom: 0;
-	padding: 4% 0 6% 0;
+	padding: 4% 0;
 	background-color: #41596b;
 	vertical-align: middle;
 	@include clearfix;
@@ -459,11 +460,11 @@ h6{
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 20px;
 		margin: 15px 0 25px 0;
 		color: rgba(206,249,82,1);
 		padding: 10px;
-		line-height: 20px;
+		line-height: 24px;
 	} 
 
 	span {
@@ -478,8 +479,7 @@ h6{
 	font-size: 18px;
 	text-align: left;
 	line-height: 25px;
-	margin-bottom: 15px;
-	border-radius: 3px;
+	border-radius: 3px 3px 0 0; 
 	height: 350px;
 	
 		span {
@@ -1516,6 +1516,14 @@ padding: 25px 0 10px 0;
 	}
 }
 
+.plugins {
+	padding-top: 35px;
+
+	  p {
+    color: $white;
+    padding: 40px 0;
+  }
+}
 .right {
 	float: right;
 	img {
@@ -1645,7 +1653,7 @@ padding: 25px 0 10px 0;
   position: relative;
     
     & li{
-    width: 130px;
+    width: 98px;
     float:left;
 		list-style-type: none;
 		display: block;
@@ -1698,9 +1706,9 @@ padding: 25px 0 10px 0;
 
 ul.benefit-list {
 	margin-bottom: 35px;
-			background:white;
-			padding: 35px 0;
-			border: 3px solid #ccc;
+	background:white;
+	padding: 35px 0;
+	border: 3px solid #ccc;
 
 	li {
 		list-style-type: none;

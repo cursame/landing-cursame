@@ -9,7 +9,7 @@
   }
 
   &.intro-stats {
-    background: url('bg_stats.png');
+    background-image: url('/img/bg_stats.png');
   }
 
   &.intro-diagnostico {
@@ -66,11 +66,15 @@ min-height: 100%
 }
 
 .bg-green{
-  background-color: rgba(29,182,170,1);
+  background-color: rgba(85,192,33,1);
 }
 .bg-blue{
   background-color: #2AB6F4;
-    color: $white;
+  color: $white;
+}
+.bg-darkblue {
+  background:rgba(57,115,119,1);
+  color: $white;
 }
 .bg-purple {
   background-color: rgba(107,46,94,1);
