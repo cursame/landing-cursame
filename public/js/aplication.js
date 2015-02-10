@@ -60,7 +60,7 @@ function callViewRemote(urlToLoad, divTo){
     return false; 
 }
 
-function sendForm(validate){
+function sendForm(){
    $('form').submit(function() {
    	       changeValForDataInfo();
 
@@ -69,8 +69,8 @@ function sendForm(validate){
 	       formData = new FormData( $form[0] );
 	   	   sendingAJAX(url, formData, function(data, err){
 	   	   	if (err) 
-	            return alert("Ha ocurrido un error al enviar el formulario");
-	        alert('Se ha enviado correctamente su solicitud.')
+	            return console.log("Ha ocurrido un error al enviar el formulario");
+	        console.log('Se ha enviado correctamente su solicitud.')
 	        rescueValueSelect();
 	        $('form')[0].reset();
 
@@ -88,6 +88,9 @@ function sendingAJAX(url, formData, callback){
 	    processData: false,
 	    contentType: false,
 	    type: 'POST',
+	    xhrFields: {
+         withCredentials: true
+        },
 	    success: function(data) {
 	        callback(data, null);
 

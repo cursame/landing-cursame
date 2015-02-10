@@ -8,14 +8,17 @@ require 'sinatra/r18n'
 require 'bourbon'
 require 'json'
 require 'pony'
+require 'sinatra/cross_origin'
 
 
 #http://version4.cursa.me/users/sign_in?auth_token=
 enable :sessions
+enable :cross_origin
 
   ##### sass #####
   configure do
     set :scss, {:style => :compressed, :debug_info => false}
+    set :allow_origin, :any
   end
   
   get '/css/:name.css' do |name|
@@ -158,6 +161,11 @@ enable :sessions
 		@browser = params[:browser]
 		localities = erb :"/static_views/pate/browsers/#{@browser}", :layout => false
 	end
+
+	get '/:locale/login' do
+		session[:current_route] = '/login'
+		erb  :"static_views/login", :layout => :"layouts/application" 
+    end
 
 ################################ helpers ###############################
 helpers do

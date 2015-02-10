@@ -10,3 +10,4 @@ gem 'json'
 gem 'pony'
 # dev
 gem 'sinatra-reloader'
+gem "sinatra-cross_origin", "~> 0.3.1"
