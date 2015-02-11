@@ -31,6 +31,7 @@ $(document).ready(function(){
 	  
     });
     addNameINattrToSelect();
+    superScroll();
 });
 
 function changeTab(tab){
@@ -148,5 +149,15 @@ function addNameINattrToSelect(){
 	$( "select > option" ).each(function() {
 		    var content  = $(this).html() ;
 			$(this).attr('data-info', content);
+	});
+}
+
+function superScroll(){
+	$('a.menu-get').click(function(e){
+		e.preventDefault();
+		var to = $(this).data('ft');
+		var target = $('#'+to);
+	 	$("html, body").animate({ scrollTop: $(target).offset().top}, 200);
+	 	return false;
 	});
 }
