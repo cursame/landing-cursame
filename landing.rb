@@ -24,7 +24,6 @@ register Sinatra::AssetPack
   configure do
     set :scss, {:style => :compressed, :debug_info => false}
     set :allow_origin, :any
-    set :environment, :production
   end
   
   get '/css/:name.css' do |name|
