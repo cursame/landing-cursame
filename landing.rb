@@ -57,13 +57,13 @@ register Sinatra::AssetPack
 
     get '/to_en' do 
     	R18n::I18n.default = 'en'
-        session[:locale] = R18n::I18n.default
+        session[:locale] = 'en'
     	redirect  "/#{session[:locale]}#{session[:current_route]}"  
     end
 
     get '/to_es' do 
     	R18n::I18n.default = 'es'
-        session[:locale] = R18n::I18n.default
+        session[:locale] = 'es'
         redirect  "/#{session[:locale]}#{session[:current_route]}"  
     end
 
