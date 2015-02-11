@@ -10,6 +10,8 @@ require 'json'
 require 'pony'
 require 'aws/ses'
 require 'sanitize'
+require 'sinatra/base'
+require 'sinatra/assetpack'
 require 'sinatra/cross_origin'
 
 
@@ -17,6 +19,7 @@ require 'sinatra/cross_origin'
 enable :sessions
 enable :cross_origin
 
+register Sinatra::AssetPack
   ##### sass #####
   configure do
     set :scss, {:style => :compressed, :debug_info => false}
@@ -33,6 +36,17 @@ enable :cross_origin
 	###### tranlating methods ########
 
     R18n.default_places { './i1n8' }
+
+    ###### compresors ########
+
+    assets {
+	    serve '/js',     from: 'public/js'        # Default
+	    serve '/sass',    from: 'views/sass'       # Default
+	    serve '/images', from: 'public/img'    # Default
+
+	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+	    css_compression :sass   # :simple | :sass | :yui | :sqwish
+	  }
   
 ###################### routes ####################################
     get '/' do 
@@ -193,7 +207,7 @@ helpers do
   end
 
   def mail_to(to_email, from_email, subject, body_mail )
-  	
+
   	ses = AWS::SES::Base.new(
 	  :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
 	  :secret_access_key => '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'
