@@ -8,6 +8,8 @@ require 'sinatra/r18n'
 require 'bourbon'
 require 'json'
 require 'pony'
+require 'aws/ses'
+require 'sanitize'
 require 'sinatra/cross_origin'
 
 
@@ -19,6 +21,7 @@ enable :cross_origin
   configure do
     set :scss, {:style => :compressed, :debug_info => false}
     set :allow_origin, :any
+    set :environment, :production
   end
   
   get '/css/:name.css' do |name|
@@ -190,7 +193,22 @@ helpers do
   end
 
   def mail_to(to_email, from_email, subject, body_mail )
-  	Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html")
+  	
+  	ses = AWS::SES::Base.new(
+	  :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
+	  :secret_access_key => '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'
+	)
+
+	  subject = Sanitize.clean(subject)
+	  body_mail = Sanitize.clean(body_mail)
+	ses.send_email(
+	    :to => to_email, 
+	    :from => from_email, 
+	    :subject => subject,
+	    :body => body_mail
+    )
+
+  	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
 end
 
