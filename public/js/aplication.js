@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 	sendForm();
 
-	$(window).scroll(function (event) {
+	/*$(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
 	var topHeader = $('.to_top').height();
-	var sscrollPointer = topHeader-140
+	var sscrollPointer = topHeader-140;
 	 
 	  if(scroll > sscrollPointer ){
 	  	$('.header').addClass("header_scroll");
@@ -29,7 +29,7 @@ $(document).ready(function(){
 	    $('.logo').html('<img src="/img/mainlogo.png" alt="">');
 	  }
 	  
-    });
+    });*/
     addNameINattrToSelect();
     superScroll();
 });
