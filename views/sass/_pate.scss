@@ -1,25 +1,33 @@
 .header_pate{
-	height: 75px;
 	width: 100%;
 	margin: auto;
 	display: block;;
-	padding-bottom: 12px;
-    position: fixed;
-    background: #9D0A7B;
-    border-bottom: #B25691 solid 1px;
-    opacity: 0.95;
-    filter: alpha(opacity=95);
+  position: fixed;
+  background: #9D0A7B;
+  border-bottom: #B25691 solid 1px;
+  padding: 0 2%;
 	@include max-screen (900px) {
 	 position: fixed;
 	 top: 0;
 	 text-align: center;
 	}
+}
 
-  h1 {
-    text-shadow: 1px #333;
-    color: white;
-    font-size: 35px;
-  }
+h1.pate {
+  font-size: 4.5em;
+  line-height: 1.3em;
+  text-shadow: 1px 3px 2px #370F2D;
+  color: white;
+  font-weight: normal;
+  padding-top: 2em;
+}
+
+h2.pate {
+    font-size: 2.7em;
+  text-shadow: 1px 3px 2px #370F2D;
+  color: white;
+  font-weight: normal;
+  padding-top: 1em;
 }
 
 .logo-pate {
@@ -41,18 +49,85 @@
 
 .image-banner{
   top: 0;
-  height:70%;
+  height:100%;
   width: 100%;
-  background-image: url('/img/pate/img1.jpg'); 
+  background-image: url('/img/pate/bg_main.png'); 
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   background-position: center;
-  padding-top: 240px;
   color: #fff; 
 }
 
 .objetive{
-  margin: 7% 0;
-	padding: 20px;
+  margin: 0;
+	padding: 40px 0;
+
+  h2 {
+    padding:0 5% 30px 5%;
+  }
+
+  p,span {
+    color: $white;
+    line-height: 30px;
+  }
+}
+
+.menu-main-pate{
+
+  & li {
+    float:right;
+    list-style-type: none;
+    display: block;
+    cursor: pointer;
+    margin-right: 5px;
+
+  & a {
+    display: block;
+    font-family: $font-radar;
+    color: $white;
+    font-size: 15px;
+    padding: 25px 10px;
+  }
+
+  & a:hover {
+    color: #5A0C47;
+    border-radius:0 0 3px 3px;
+    display: block;
+    }
+
+  }
+    @include max-screen (900px) {
+    display: none;
+  }
+}
+
+.item3 {
+  background:$white;
+  padding: 10% 12%;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 3px 3px 0 0; 
+  height: 350px;
+
+    h3 {
+      color: #1387d9;
+      line-height: 45px;
+    }
+  
+    span {
+      font-size: 18px;
+      text-align: justify;
+      color: #323232;
+      line-height: 25px;
+    }
+
+    img {
+      padding-bottom: 45px;
+    }
+  }
+
+.social {
+  text-align: center;
+  color:$orange;
 }

@@ -30,25 +30,27 @@
   font-weight: bold ;
   z-index: 325;
   border: 1px solid;
-  border-color: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
 }
 
 .btn-cta:hover  {
-  background: rgba(28,69,110,1);
+  background: #00B2FF;
+  border-color: rgba(255,255,255,0.8);
 }
 
 .btn-border {
   background:none;
-  border: solid 1px white;
   color: #fff;
   font-size: 1em;
-  font-weight: bold ;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: rgba(255,255,255,0.3);
 }
 
 .btn-border:hover  {
   background: rgba(0,0,0,0.18);
+  border-color: rgba(255,255,255,0.8);
 }
-
 
 
 .btn-goto {
@@ -61,4 +63,20 @@
 
 .btn-goto:hover  {
   background: rgba(23,64,103,1);
+}
+
+
+.btn-apply{
+  background: rgba(19,135,217,1);
+  font-size: 1.18em;
+  color: #FFFFFF;
+  font-weight: bold ;
+  z-index: 325;
+  border: 2px solid;
+  border-color: rgba(255,255,255,0.8);
+  padding: 25px 30px;
+}
+
+.btn-apply:hover  {
+  background: rgba(132,9,118,1);
 }

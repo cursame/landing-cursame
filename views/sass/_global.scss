@@ -28,11 +28,10 @@ h1{
 }
 
 h1.home {
-	font-size: 2.4em;
-	line-height: 1.7em;
-	text-shadow: 1px 2px #80ABBE;
+	font-size: 3em;
+	line-height: 1.6em;
+	text-shadow: 1px 2px 1px #323232;
 	color: white;
-	font-weight: bold;
 	font-weight: lighter;
 }
 
@@ -93,7 +92,7 @@ h6{
 	width: 100%;
 	margin: auto;
 	display: block;;
-	padding-bottom: 12px;
+	padding: 0 2% 12px 2%;
   position: fixed;
   z-index: 5;
 	@include max-screen (900px) {
@@ -108,7 +107,7 @@ h6{
 	width: 100%;
 	margin: auto;
 	display: block;
-	padding-bottom: 12px;
+	padding: 0 2% 12px 2%;
   position: fixed;
   background: #fff;
   border-bottom: #E7E7E7 solid 2px;
@@ -184,6 +183,7 @@ h6{
 		border-radius:0 0 3px 3px;
 		display: block;
 		}
+
 	}
 		@include max-screen (900px) {
 		display: none;
@@ -242,18 +242,22 @@ h6{
 .img-center {
 	display: table;
   margin: 0 auto;
-  vertical-align: baseline;
+  vertical-align: bottom;
 
   img {
   	width: auto;
   	display: block;
+  	vertical-align: bottom;
   }
 }
 
-.img-bottom {
-	position: relative;
-	bottom: 1.3em;
-}
+	.img-bottom {
+		z-index: 1;
+		position: relative;
+		bottom: -2em;
+	}
+
+
 
 .footer{
 	text-align: left;
@@ -455,8 +459,8 @@ h6{
 	text-align: center;
 	line-height: 23px;
 	
-	h1 {
-
+	span {
+		color: $white;
 	}
 
 	h2 {
@@ -1459,8 +1463,8 @@ padding: 25px 0 10px 0;
 
 .buttons_cta{
 	width:100%;
-	margin-top: 9%;
-	margin-bottom: 9%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 .button_banner{
@@ -1644,6 +1648,11 @@ padding: 25px 0 10px 0;
   p{
   	color: #323232;
   }
+
+  h2 {
+  	text-align: left;
+  	margin-bottom: 30px;
+  }
 }
 
 .features-links {
@@ -1696,7 +1705,7 @@ padding: 25px 0 10px 0;
 	border-right: 20px solid transparent;
 	border-bottom: 20px solid #fff;
 	margin-top: 13px;
-	margin-left: 43px;
+	margin-left: 30%;
 }
 
 .content-top{
@@ -1706,13 +1715,11 @@ padding: 25px 0 10px 0;
 
 ul.benefit-list {
 	margin-bottom: 35px;
-	background:white;
-	padding: 35px 0;
-	border: 3px solid #ccc;
+	text-align: left;
 
 	li {
 		list-style-type: none;
-		text-align: center;
+		text-align: left;
 		line-height: 20px;
 		margin-bottom: 15px;
 

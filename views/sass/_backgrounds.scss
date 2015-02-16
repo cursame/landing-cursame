@@ -3,43 +3,35 @@
   background-repeat: no-repeat;
   color: white;
   @include cover-background(cover);
+
+  &.intro-main {
+    background-image: url('/img/bg_main.png');
+  }
   
   &.pate-intro {
     background-image: image-url('/pate/img.png');
+
+    p,span {
+    color: $white;
+    }
+
+    a.under {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a.under:hover {
+      color: #1387d9;
+    }
   }
 
   &.intro-stats {
     background-image: url('/img/bg_stats.png');
   }
 
-  &.intro-diagnostico {
-    background-image: image-url('headaer_diagnostico.png');
-  }
-
-  &.intro_login{
-  background-image: image-url('bg_login.png');
-  }
-
-  &.intro_code {
-    height: 100%;
-    background-image: image-url('bg_code.png');
-    background-position: bottom;
-    background-repeat: no-repeat; 
-    @include cover-background(initial);
-  }
-
-  &.comments {
-    background:#1A4859;
-  }
-
-  
   @include max-screen (900px) {
     margin-top: 55px;
     padding-top: 15px;
-    
-    &.home-intro, &.intro-panel, &.bg-bluegradient, {
-      margin: 0;
-    }
   }
 }
 
@@ -57,7 +49,11 @@ background: linear-gradient(to bottom, #00b7ea 0%,#00b7ea 24%,#00b7ea 45%,#00b7e
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-8 */
 height: 100%;
 margin: 0;
-min-height: 100%
+border-collapse: collapse;
+}
+
+.bg-white {
+  background: rgba(255,255,255,1);
 }
 
 .bg-darkgray {
@@ -102,7 +98,7 @@ min-height: 100%
   color: $white;
 }
 .bg-bluegradient {
-  @include linear-gradient(75deg, #50A516 0%, #73CB40 100%);
+  @include linear-gradient(75deg, #0F5681 0%, #3EA7D5 100%);
   color: $white;
 }
 .bg-greengradient {
