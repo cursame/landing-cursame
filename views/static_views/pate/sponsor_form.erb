@@ -1,0 +1,48 @@
+<div class="head-title bg-greengradient">
+	<div class="wrapper">
+		<div class="cols-12">
+			<div class="col col-12">
+				<div class="col-inner">
+					<h3><i class="i i-functions"></i> Formulario de patrocinador</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="cols-12">
+		<div class="col col-12">
+			<div class="col-inner">
+				<div class="info">
+					<form class="form validate" action="/contact_sponsor" method="POST" enctype="multipart/form-data">
+						Nombre de la organización o institución a la que contacta: </br>
+						<input type="text" name="nameinstitution" required/>
+						Nombre del representante: </br>
+						<input type="text" name="name" required/>
+						<%= erb :'/static_views/pate/locations/states'%>
+						Dirección: </br>
+						<textarea name="adress" required></textarea>
+						Email de contacto:</br> <input type="email" name="email" required/>
+						Teléfono:</br> <input type="number" name="phone" required/>
+						Giro de la organización (puede marcar más de una):  </br>
+						<input type="checkbox" name="option1" value="Industrial" > Industrial<br>
+						<input type="checkbox" name="option2" value="Comercial" > Comercial<br>
+						<input type="checkbox" name="option3" value="Servicios"> Servicios<br>
+						<input type="checkbox" name="option4" value="Pública"> Pública<br>
+						<input type="checkbox" name="option5" value="Privada"> Privada<br>
+						Otra <input type="text" name="option6" /></br>
+						Régimen: </br>
+						<input type="radio" name="society" value="Sociedad anónima" checked>Sociedad anónima<br>
+						<input type="radio" name="society" value="Sociedad de responsabilidad límitada" >Sociedad de responsabilidad límitada<br>
+						<input type="radio" name="society" value="Sociedad anónima promotora de inverisón"> Sociedad anónima promotora de inverisón<br>
+						<input type="radio" name="society" value="Sociedad cooperativa"> Sociedad cooperativa<br>
+						<input type="radio" name="society" value="Sociedad comandita simple"> Sociedad comandita simple<br>
+						<input type="radio" name="society" value="Sociedad en comandita por acciones"> Sociedad en comandita por acciones<br>
+						<input type="radio" name="society" value="Sociedad en nombre colectivo"> Sociedad en nombre colectivo<br>
+						<input type="submit" value="Contactar" class="btn" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -108,8 +108,6 @@ function sendingAJAX(url, formData, external ,callback){
 	    },
 	    error: function(err) {
 	        callback(null, err);
-	        console.log(err.responseJSON.description);
-
 	         if ( external == true ) {
 	         	var description = err.responseJSON.description;
 	         	if (description == 'Email incorrect'){
