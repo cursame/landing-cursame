@@ -5,20 +5,16 @@
         <div class="col-inner">
           <h1 class="pate"> Programa de Acceso a la Tecnología Educativa</h1>
           <h2 class="pate">¡El esfuerzo es de todos!</h2>
-            <div class="buttons_cta">
-              <ul class="button_banner">
-                <li>
-                  <a class="btn btn-apply" href="/<%=session[:locale] %>">
-                  Aplicar a la convocatoria</a>
-                </li>
-              </ul>
-            </div>
-            <p>Mira la convocatoria <a class="under" href="#"> aquí</a></p>
+          <div class="buttons_cta">
+            <ul class="button_banner">
+              <li>
+                <%= link_to 'Aplicar a la convocatoria', 'pate/call', '',  'btn btn-apply' %>
+              </li>
+            </ul>
+          </div>
+          <p>¿ Quieres ser patrocinador ? da click <%= link_to 'aquí', 'pate/sponsor_form' %>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-

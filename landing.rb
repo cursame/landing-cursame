@@ -182,8 +182,9 @@ register Sinatra::AssetPack
 	post '/contact_sponsor' do 
 	   puts  "************>>>> send mail"
        mail_stablish = erb :"mailer/sponsor", locals: {institution: params[:nameinstitution], name: params[:name], phone: params[:phone], email: params[:email], states: params[:states], locations: params[:municipios], adress: params[:adress], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], option5: params[:option5], option5: params[:option5], option6: params[:option6], society: params[:society] }, :layout => false
-	   #mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me']
-	   mail_to_as = 'jose_alfredo@cursa.me'
+	   puts "************>>>> sending "	
+	   mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me']
+	   #mail_to_as = 'jose_alfredo@cursa.me'
        mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
 	end
     
@@ -218,11 +219,11 @@ helpers do
 
   ####### insternal static link ###########
 
-  def link_to(name, url, target = '')
+  def link_to(name, url, target = '', classhtml = '')
   	if url == 'es' || url == 'en'
   	"<a href='#{url}' target='#{target}'>#{name}</a>" 
   	else
-  	"<a href='/#{session[:locale]}/#{url}' target='#{target}' >#{name}</a>"
+  	"<a href='/#{session[:locale]}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"
     end
   end
 
