@@ -7,7 +7,7 @@
 					<div class="bannerx ">
 						
 						<ul class="slider">
-							<li class="dot ">
+							<li class="dot">
 								<div class="divimage">
 									<%= image_tag('tese.png')%>
 								</div>
@@ -20,6 +20,7 @@
 									<span class="quote"><%= t.trust_us.institution1%></span>
 								</div>
 							</li >
+							
 							<li class="dot">
 								<div class="divimage"><%= image_tag('iems.png')%></div>
 								<div class="divtestimonial">
@@ -49,26 +50,27 @@
 		</div>
 	</div>
 </div>
+
 <script type="text/javascript">
 	$(document).ready(function(){
-			$('.bannerx').unslider({
-				delay: false,
-				keys: true,
-				dots: true,
-				loop: true,
-				fluid: false,
-				easing: 'swing'
-			});
-			$('.dot').click(function(){
-				$('li').removeClass( "active" );
-				$(this).addClass("active" );
-			});
-			
-			var unslider = $('.page_slider').unslider();
-			$('.unslider-arrow').click(function() {
-			var fn = this.className.split(' ')[1];
-			event.preventDefault();
-			unslider.data('unslider')[fn]();
-			});
+		$('.bannerx').unslider({
+			delay: false,
+			keys: true,
+			dots: true,
+			loop: true,
+			fluid: false,
+			easing: 'swing'
+		});
+		$('.dot').click(function(){
+			$('li').removeClass( "active" );
+			$(this).addClass("active" );
+		});
+		
+		var unslider = $('.page_slider').unslider();
+		$('.unslider-arrow').click(function() {
+		var fn = this.className.split(' ')[1];
+		event.preventDefault();
+		unslider.data('unslider')[fn]();
+		});
 	});
 </script>
