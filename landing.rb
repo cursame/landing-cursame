@@ -14,8 +14,7 @@ require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/cross_origin'
 
-
-#http://version4.cursa.me/users/sign_in?auth_token=
+###################### define run methods #########################
 enable :sessions
 enable :cross_origin
 
@@ -46,7 +45,8 @@ register Sinatra::AssetPack
 	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
-  
+ 
+
 ###################### routes ####################################
     get '/' do 
     	R18n::I18n.default = 'es' if session[:locale] == nil
@@ -68,12 +68,14 @@ register Sinatra::AssetPack
     end
 
     ###### route map ########
-
+    
+    ###### define index ########
 	get '/:locale' do
 		session[:current_route] = ''
 	    erb :index, :layout => :"layouts/application"
-
 	end 
+
+	###### define static routes #########
 
 	get '/:locale/us' do 
 		session[:current_route] = '/us'
@@ -134,6 +136,13 @@ register Sinatra::AssetPack
     session[:current_route] = '/impact'
 	  erb  :"static_views/inpact", :layout => :"layouts/application" 
 	end	
+
+    get '/:locale/terms' do 
+    session[:current_route] = '/terms'
+	  erb  :"static_views/terms", :layout => :"layouts/application" 
+	end	
+
+	######## PATE methods ########
 	
 	get '/:locale/pate' do 
     session[:current_route] = '/pate'
@@ -145,10 +154,12 @@ register Sinatra::AssetPack
 	  erb  :"static_views/pate/call", :layout => :"layouts/pate" 
 	end	
 
-    get '/:locale/terms' do 
-    session[:current_route] = '/terms'
-	  erb  :"static_views/terms", :layout => :"layouts/application" 
-	end	
+    get '/:locale/pate/sponsor_form' do 
+    session[:current_route] = '/pate/sponsor_form'
+      erb :"static_views/pate/sponsor_form", :layout => :"layouts/pate" 
+    end
+
+	####### define route forms ########
 
 	post '/mailer' do 
        puts "************>>>> send mail"	
@@ -168,6 +179,16 @@ register Sinatra::AssetPack
        mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
 	end
 
+	post '/contact_sponsor' do 
+	   puts  "************>>>> send mail"
+       mail_stablish = erb :"mailer/sponsor", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
+	   mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me']
+       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
+	end
+    
+
+    ######### define routes from selects ########
+
 	get '/:locale/localities' do
 		@locality = params[:locality]
 		localities = erb :"/static_views/pate/locations/#{@locality}", :layout => false
@@ -178,6 +199,8 @@ register Sinatra::AssetPack
 		localities = erb :"/static_views/pate/browsers/#{@browser}", :layout => false
 	end
 
+	####### define login routes #############
+
 	get '/:locale/login' do
 		session[:current_route] = '/login'
 		erb  :"static_views/login", :layout => :"layouts/application" 
@@ -185,9 +208,14 @@ register Sinatra::AssetPack
 
 ################################ helpers ###############################
 helpers do
+  
+  ####### call image ########
+
   def image_tag(name, width_x = '')
     "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' />"
   end
+
+  ####### insternal static link ###########
 
   def link_to(name, url, target = '')
   	if url == 'es' || url == 'en'
@@ -197,13 +225,19 @@ helpers do
     end
   end
 
+  ############ to puts icons #############
+
   def icon_bottom_text(class_icon, text)
   	 "<div><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
   end
 
+  ############ to puts external links #########
   def external_link(name, url)
   	"<a href='#{url}' target='_blank'>#{name}</a>"
   end
+
+
+  ############# mail method SES #############
 
   def mail_to(to_email, from_email, subject, body_mail )
 
