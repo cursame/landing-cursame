@@ -14,8 +14,7 @@ require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/cross_origin'
 
-
-#http://version4.cursa.me/users/sign_in?auth_token=
+###################### define run methods #########################
 enable :sessions
 enable :cross_origin
 
@@ -46,7 +45,8 @@ register Sinatra::AssetPack
 	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
-  
+ 
+
 ###################### routes ####################################
     get '/' do 
     	R18n::I18n.default = 'es' if session[:locale] == nil
@@ -68,12 +68,14 @@ register Sinatra::AssetPack
     end
 
     ###### route map ########
-
+    
+    ###### define index ########
 	get '/:locale' do
 		session[:current_route] = ''
 	    erb :index, :layout => :"layouts/application"
-
 	end 
+
+	###### define static routes #########
 
 	get '/:locale/us' do 
 		session[:current_route] = '/us'
@@ -134,6 +136,13 @@ register Sinatra::AssetPack
     session[:current_route] = '/impact'
 	  erb  :"static_views/inpact", :layout => :"layouts/application" 
 	end	
+
+    get '/:locale/terms' do 
+    session[:current_route] = '/terms'
+	  erb  :"static_views/terms", :layout => :"layouts/application" 
+	end	
+
+	######## PATE methods ########
 	
 	get '/:locale/pate' do 
     session[:current_route] = '/pate'
@@ -145,10 +154,12 @@ register Sinatra::AssetPack
 	  erb  :"static_views/pate/call", :layout => :"layouts/pate" 
 	end	
 
-    get '/:locale/terms' do 
-    session[:current_route] = '/terms'
-	  erb  :"static_views/terms", :layout => :"layouts/application" 
-	end	
+    get '/:locale/pate/sponsor_form' do 
+    session[:current_route] = '/pate/sponsor_form'
+      erb :"static_views/pate/sponsor_form", :layout => :"layouts/pate" 
+    end
+
+	####### define route forms ########
 
 	post '/mailer' do 
        puts "************>>>> send mail"	
@@ -164,9 +175,20 @@ register Sinatra::AssetPack
        mail_stablish = erb :"mailer/call", locals: {name: params[:name], charge: params[:charge],email: params[:email], phone: params[:phone], institution: params[:institution], states: params[:states], locations: params[:municipios], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], number_of_users: params[:number_of_users], option5: params[:option5], option6: params[:option6], enlace: params[:enlace], calenlace: params[:calenlace], internet: params[:internet], option7: params[:option7], option8: params[:option8], option9: params[:option9], option10: params[:option10], option11: params[:option11], velinternet: params[:velinternet], browser: params[:browser], versionbrowser: params[:versionbrowser], computers: params[:computers], functional_computers: params[:functional_computers], interesdedocentes: params[:interesdedocentes], usodetics: params[:usodetics], examples_from_user_tics: params[:examples_from_user_tics], teacheshavecomputers: params[:teacheshavecomputers], imactfromtecnologicineducation: params[:imactfromtecnologicineducation], option12: params[:option12], option13: params[:option13], option14: params[:option14], option15: params[:option15], option16: params[:option16], option17: params[:option17],  familiarizadoprofesores: params[:familiarizadoprofesores] }, :layout => false
        puts "************>>>> sending "	
        mail_to_as = ['leon@cursa.me', 'juan@cursa.me', 'erika@cursa.me', 'jose_alfredo@cursa.me']
-       #mail_to_as = 'jose_alfredo@cursa.me'
+      
        mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
 	end
+
+	post '/contact_sponsor' do 
+	   puts  "************>>>> send mail"
+       mail_stablish = erb :"mailer/sponsor", locals: {institution: params[:nameinstitution], name: params[:name], phone: params[:phone], email: params[:email], states: params[:states], locations: params[:municipios], adress: params[:adress], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], option5: params[:option5], option5: params[:option5], option6: params[:option6], society: params[:society] }, :layout => false
+	   #mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me']
+	   mail_to_as = 'jose_alfredo@cursa.me'
+       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
+	end
+    
+
+    ######### define routes from selects ########
 
 	get '/:locale/localities' do
 		@locality = params[:locality]
@@ -178,6 +200,8 @@ register Sinatra::AssetPack
 		localities = erb :"/static_views/pate/browsers/#{@browser}", :layout => false
 	end
 
+	####### define login routes #############
+
 	get '/:locale/login' do
 		session[:current_route] = '/login'
 		erb  :"static_views/login", :layout => :"layouts/application" 
@@ -185,9 +209,14 @@ register Sinatra::AssetPack
 
 ################################ helpers ###############################
 helpers do
+  
+  ####### call image ########
+
   def image_tag(name, width_x = '')
     "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' />"
   end
+
+  ####### insternal static link ###########
 
   def link_to(name, url, target = '')
   	if url == 'es' || url == 'en'
@@ -197,6 +226,9 @@ helpers do
     end
   end
 
+  ############ to puts icons #############
+
+
   def icon_bottom_text(class_icon, text= '')
   	 "<div><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
   end
@@ -205,9 +237,14 @@ helpers do
     "<i class='i i-#{class_icon}' /></i>"
   end
 
+
+  ############ to puts external links #########
   def external_link(name, url)
   	"<a href='#{url}' target='_blank'>#{name}</a>"
   end
+
+
+  ############# mail method SES #############
 
   def mail_to(to_email, from_email, subject, body_mail )
 
