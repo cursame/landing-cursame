@@ -35,6 +35,13 @@ h1.home {
 	font-weight: lighter;
 }
 
+p.p-big {
+	font-size: 20px;
+	color: #7C7C7C;
+	padding: 65px 0 10px 0;
+}
+
+
 h2{
 	font-size: 34px;
 }
@@ -423,6 +430,11 @@ h6{
 		margin: 10px 0 20px 0;
 	}
 
+	& h4 {
+		color: #323232;
+		margin-bottom: 25px;
+	}
+
 	p {
 		text-align: justify;
 	}
@@ -499,12 +511,12 @@ h6{
 
 .social {
 	text-align: center;
-	color:$orange;
 }
 
 ul.social_list {
 	margin-bottom: 80px;
 	list-style: none;
+	padding-top: 20px;
 
 	li {
 		text-align: left;
@@ -526,7 +538,7 @@ ul.social_list {
 
 	li.color {
 		text-align: left;
-		color: #323232;
+		color: $white;
 		list-style-image: url('/img/check_color.png');
 		padding: 0 5px;
 		margin: 0 5% 40px 5%;
@@ -551,24 +563,24 @@ ul.social_list {
 	}
 }
 
-	.suscribe {
-		text-align: left;
-		margin: auto;
-		background:none;
-		width: 300px;
-		height: auto;
-		color: #a4a4a4;
-		border-radius: 3px;
+.suscribe {
+	text-align: left;
+	margin: auto;
+	background:none;
+	width: 300px;
+	height: auto;
+	color: #a4a4a4;
+	border-radius: 3px;
 
-		.suscribe-field {
-			width: auto;
-			float: left;
-		}
+	.suscribe-field {
+		width: auto;
+		float: left;
+	}
 
-		input.mail {
-			height: 60px;
-			margin-right: 5px;
-			margin-left: 10px;
+	input.mail {
+		height: 60px;
+		margin-right: 5px;
+		margin-left: 10px;
 	} 
 
 	@include max-screen(500px) {
@@ -594,12 +606,16 @@ ul.social_list {
 }
 
 .content {
-	padding: 35px 0px;
+	padding: 45px 0px 15px 0;
 	position: relative;
 	display: block;
 
 	img {
 		position: relative;
+	}
+
+	h4 {
+		padding-bottom: 25px;
 	}
 } 
 
@@ -1548,6 +1564,9 @@ padding: 25px 0 10px 0;
 	    width:80%;
 	    margin: 0 0 3%10%; 
 
+      & ul { 
+      	float: left;
+      }
 
 	    & li {
 	       list-style: none; 
@@ -1558,11 +1577,9 @@ padding: 25px 0 10px 0;
 	       	font-size: 14px;
 	       	line-height: 16px;
 	       	color: #333;
+	       	margin-left: 5%;
 	       }
-	   }
-        & ul { 
-        	float: left;
-        }
+		   }
 
 	    & .dots {
 	    	display: block;
@@ -1570,7 +1587,7 @@ padding: 25px 0 10px 0;
 				left: 0;
 				right: 0;
 				bottom: 0px;
-				padding: 45px;
+				padding: 75px 5%;
 
 		  & li {
 				display: inline-block;
@@ -1615,6 +1632,7 @@ padding: 25px 0 10px 0;
 
 		& .autor{
 			text-align: right;
+			padding-right: 10px;
 		}
 
 		& .triangle {
@@ -1632,7 +1650,6 @@ padding: 25px 0 10px 0;
 			color: #333;
 			text-align: right;
 			float: right;
-			padding-right: 12%;
 			padding-top: 10px;
 			font-size: 13px;
 		}

@@ -1,5 +1,6 @@
 <%=  erb :'/static_views/index_renders/social'%>
-<div class="functions bg-gray">
+
+<div class="content bg-darkgray">
   <div class="wrapper">
     <div class="cols-12">
       <h4><%= t.impact.general_impact %></h4>
@@ -29,16 +30,22 @@
     </div>
   </div>
 </div>
+
 <div class="social content-top">
   <div class="wrapper">
     <div class="cols-12">
-      <div class="col col-12">
+      <div class="col col-6">
         <div class="col-inner">
-          <div class="img_center">
-            <h4>Impacto en la práctica docente</h4>
-            <div class="col col-4">
-            </div>
-            <div class="col col-8">
+          <div class="info">
+            <h2>Impacto en la práctica docente</h2>
+            <p>La percepción que se tiene de la mejora de gestión, organización y administración a través de la plataforma de las actividades de enseñanza aprendizaje en el aula y que tanto se favorecen con el uso de la plataforma.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6">
+        <div class="col-inner">
+          <div class="info">
+            <div class="img_center">
               <%= image_tag 'chart1.png'%>
             </div>
           </div>
@@ -46,42 +53,74 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="social content-top">
   <div class="wrapper">
     <div class="cols-12">
-      <div class="col col-12">
+
+      <div class="col col-6">
         <div class="col-inner">
-          <div class="img_center">
-            <h4>Impacto educativo</h4>
-            <div class="col col-4">
-            </div>
-            <div class="col col-8">
+          <div class="info">
+            <div class="img_center">
               <%= image_tag 'chart2.png'%>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="cols-12">
-      <div class="col col-12">
+      <div class="col col-6">
         <div class="col-inner">
-          <div class="img_center">
-            <h4> Mejora de Habilidades tecnológicas </h4>
-             <div class="col col-4">
-            </div>
-            <div class="col col-8">
-            <%= image_tag 'chart3.png'%>
-            </div>
-          </div>
-          <div >
-            <%= t.impact.libutton %></br></br>
-          </div>
-          <div>
-            <%= link_to t.impact.link_public, 'pate' %></br>
+          <div class="info">
+            <h2>Impacto educativo</h2>
+            <p>La percepción que los docentes tienen sobre la mejora en el desarrollo de competencias a través de la plataforma.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="social content-top">
+  <div class="wrapper">
+    <div class="cols-12">
+      <div class="col col-5">
+        <div class="col-inner">
+          <div class="info">
+            <h2>Impacto en el desarrollo de habilidades tecnologicas</h2>
+            <p>La mejora en la capacidad de uso y apropiación de la tecnología en el ambito educativo y en la vida diaria de docentes y alumnos promovida por el uso de la plataforma.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-7">
+        <div class="col-inner">
+          <div class="info">
+            <div class="img_center">
+              <%= image_tag 'chart3.png','100%'%>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12">
+        <div class="col-inner">
+          <p class="p-big"> <%= t.impact.libutton %></p>
+          <div class="buttons_cta">
+            <ul class="button_banner">
+              <li>
+                <a class="btn btn-apply" href="/<%=session[:locale] %>">
+                Quiero aplicar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          
+
+          
+
+

@@ -197,8 +197,12 @@ helpers do
     end
   end
 
-  def icon_bottom_text(class_icon, text)
+  def icon_bottom_text(class_icon, text= '')
   	 "<div><i class='i i-#{class_icon}' /></i></div><span>#{text}</span></p>"
+  end
+
+  def help_icon(class_icon)
+    "<i class='i i-#{class_icon}' /></i>"
   end
 
   def external_link(name, url)
