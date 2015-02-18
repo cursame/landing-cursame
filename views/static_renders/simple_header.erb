@@ -3,7 +3,11 @@
 		<div class="cols-12">
 			<div class="col col-12">
 				<div class="col-inner">
-					<h3><i class="i i-functions"></i> <%= title %></h3>
+				 <% if icon %>
+					<h3><%= help_icon(call_icon)%> <%= title %></h3>
+				 <%else%>
+				    <h3> <%= title %> </h3>
+				 <%end%>
 				</div>
 			</div>
 		</div>
