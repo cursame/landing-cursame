@@ -1,15 +1,17 @@
-<%= erb :'/static_renders/simple_header', locals: {title: 'Ingresa a Cúrsame', icon: true,  call_icon: 'conect'}%>
+<%= erb :'/static_renders/simple_header', locals: {title: 'Ingresa a Cúrsame', icon: true,  call_icon: 'login'}%>
 <div class="wrapper">
 	<div class="cols-12">
 		<div class="col col-12">
 			<div class="col-inner">
-				<div class="info">
-					<div class="errors"></div>
-					<form class="form" action="http://api.cursa.me/api/sessions/create" method="POST" enctype="multipart/form-data" data-external="true">
-						Email: <input type="email" name="email" value="jose_alfredo+version4@cursa.me"required/>
-						Contraseña: <input type="password" name="password" value="alfredo2008"required/>
-						<input type="submit" value="Ingresar" class="btn btn-cta menu-get" />
-					</form>
+				<div class="loginbox">
+					<div class="info">
+						<div class="errors"></div>
+						<form class="form" action="http://api.cursa.me/api/sessions/create" method="POST" enctype="multipart/form-data" data-external="true">
+							Email: <input type="email" name="email" value="" placeholder="Ingresa tu email" required/>
+							Contraseña: <input type="password" name="password" value="" placeholder="Ingresa tu contraseña" required/>
+							<input type="submit" value="Ingresar" class="btn btn-cta menu-get" />
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

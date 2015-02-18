@@ -636,13 +636,21 @@ ul.social_list {
 	margin: 100px 30%;
 	width: auto;
 	height: auto;
-	color: #a4a4a4;
 	border-radius: 3px;
 	@include clearfix;
 
+
+	border: solid 2px #eee; 
+    width:40%;
+    color: #363434;
+	padding: 2%;
+	background: #fff;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
  p {
 		float: left;
-		color: $white;
 		font-size: 17px;
 		text-align: left;
 		line-height: 22px;
@@ -663,8 +671,8 @@ ul.social_list {
 	}
 
 	form,label,textarea{
-		color: $white;
 		font-size: 14px;
+
 	}
 
 	.title-sign {
