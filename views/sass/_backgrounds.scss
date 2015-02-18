@@ -54,10 +54,19 @@ border-collapse: collapse;
 .bg-white {
   background: rgba(255,255,255,1);
 }
-
+.bg-gray {
+  background: #E0E0E0 !important;
+}
+.bg-gray2 {
+  background:#958e88;
+  color: $white;
+}
 .bg-darkgray {
   background: rgba(35,45,51,1);
   color: $white;
+}
+.bg-lightgray {
+  background: rgba(240,240,240,1);
 }
 
 .bg-green{
@@ -79,13 +88,7 @@ border-collapse: collapse;
     color: $white;
   }
 }
-.bg-gray {
-  background: #E0E0E0 !important;
-}
-.bg-gray2 {
-  background:#958e88;
-  color: $white;
-}
+
 .white_transparent {
   background: rgba(255,255,255,0.2) !important;
 }
