@@ -60,7 +60,7 @@
     testimonial3: 'Soy licenciada en biología, actualmente yo y otros profesores de la Asociación a la que pertenezco utilizamos Cúrsame como plataforma de cabecera para nuestros  alumnos, es eficiente rápida y con múltiples herramientas para utilizar después de clases. Puedo subir tareas, examenes, archivos como presentaciones y lecturas, me gusta por que hay un calendario para colocar eventos relevantes y un chat para contactar a mis alumnos más fácilmente. Creo que Cúrsame puede ser competente al nivel de un Google o un Facebook'
     autor3: 'Biol. Claudia Fabián'
     institution3: 'Tecnológico de Estudios Superiores de Ecatepec'
-    go_benefits: 'Quiero ver todos los beneficios de usar Cúrsame'
+    go_benefits: 'Lo quiero en mi institución'
   functions:
     f1: Tareas
     text1: "Permite a los profesores crear actividades académicas y a los estudiantes responderlas desde cualquier lugar sin necesidad de utilizar papel y aumentando la productividad de ambos."
@@ -86,6 +86,9 @@
     f8: Estadísticas
     text8: "Los administradores de la institución tienen acceso a un panel de estadísticas que les permite conocer lo que está sucediendo dentro del plantel y con esto tomar decisiones importantes con conocimiento de causa."
     features8: "Algunas de sus características son: </br>-Uso de las herramientas de la plataforma </br>-Ingreso al sistema </br>-Calificaciones </br>-Por curso </br>-Por alumno"
+    f9: Radar
+    text9: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa <a href='http://radarescolar.com' targer='_blank'>Ir a Radar Escolar</a>."
+    features9: "Algunas de sus características son: </br>-Análisis y reportes de bullying </br>- Sistema de alerta de bullying </br>- Asesoría para prevención, detección y manejo de bullying"
     plugins: Integraciones
     radar: Radar
     radartext: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa."
