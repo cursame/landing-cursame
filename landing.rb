@@ -207,6 +207,7 @@ register Sinatra::AssetPack
 		session[:current_route] = '/login'
 		erb  :"static_views/login", :layout => :"layouts/application" 
     end
+    
 
 ################################ helpers ###############################
 helpers do

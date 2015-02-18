@@ -4,3 +4,4 @@ require './landing'
 use Sass::Plugin::Rack
  
 run Sinatra::Application
+
