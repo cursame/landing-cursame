@@ -1,9 +1,19 @@
-<h1>Contacto</h1>
-<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
-	Name: <input type="text" name="name" />
-	Email: <input type="text" name="email" />
-	Phone: <input type="text" name="phone" />
-	Institution: <input type="text" name="institution" />
-	Content: <textarea name="content"></textarea>
-	<input type="submit" value="Submit Comment" />
-</form>
+<%= erb :'/static_renders/head_forms', locals: {title: 'Formulario de contacto'}%>
+<div class="wrapper">
+	<div class="cols-12">
+		<div class="col col-12">
+			<div class="col-inner">
+				<div class="info">
+					<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
+						Name: <input type="text" name="name" />
+						Email: <input type="text" name="email" />
+						Phone: <input type="text" name="phone" />
+						Institution: <input type="text" name="institution" />
+						Content: <textarea name="content"></textarea>
+						<input type="submit" value="Enviar" class="btn btn-cta menu-get" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

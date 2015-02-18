@@ -1,14 +1,4 @@
-<div class="head-title bg-greengradient">
-	<div class="wrapper">
-		<div class="cols-12">
-			<div class="col col-12">
-				<div class="col-inner">
-					<h3><i class="i i-functions"></i> Formulario de patrocinador</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<%= erb :'/static_renders/head_forms', locals: {title: 'Formulario de patrocinador'}%>
 <div class="wrapper">
 	<div class="cols-12">
 		<div class="col col-12">
@@ -39,7 +29,7 @@
 						<input type="radio" name="society" value="Sociedad comandita simple"> Sociedad comandita simple<br>
 						<input type="radio" name="society" value="Sociedad en comandita por acciones"> Sociedad en comandita por acciones<br>
 						<input type="radio" name="society" value="Sociedad en nombre colectivo"> Sociedad en nombre colectivo<br>
-						<input type="submit" value="Contactar" class="btn" />
+						<input type="submit" value="Contactar" class="btn btn-cta menu-get" />
 					</form>
 				</div>
 			</div>

@@ -1,6 +1,5 @@
-<div class="intro pate-intro image-banner">
-	<h2>Formulario de convocatoria</h2>
-</div>
+<%= erb :'/static_renders/head_forms', locals: {title: 'Convocatoria'}%>
+
 <div class="wrapper">
 	<div class="cols-12">
 		<div class="col col-12">
@@ -82,7 +81,7 @@
 						<input type="radio" name="familiarizadoprofesores" value="Regular"> Regular<br>
 						<input type="radio" name="familiarizadoprofesores" value="Mucho" checked> Mucho<br>
 						<input type="radio" name="familiarizadoprofesores" value="Totalmente"> Totalmente<br>
-						<input type="submit" value="Enviar convocatoria" class="btn" />
+						<input type="submit" value="Enviar convocatoria" class="btn btn-cta menu-get" />
 					</form>
 				</div>
 			</div>
