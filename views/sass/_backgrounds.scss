@@ -103,6 +103,12 @@ border-collapse: collapse;
   @include linear-gradient(75deg, #0F5681 0%, #3EA7D5 100%);
   color: $white;
 }
+
+.bg-blueg {
+  @include linear-gradient(75deg, #37AEE2 0%, #1D93D2 100%);
+  color: $white;
+}
+
 .bg-greengradient {
   @include linear-gradient(75deg, #396879  0%, #42A3A6 100%);
   color: $white;
