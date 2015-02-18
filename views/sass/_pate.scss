@@ -92,7 +92,7 @@ h2.pate {
   }
 
   & a:hover {
-    color: #9970DC;
+    color: #DA7FED;
     border-radius:0 0 3px 3px;
     display: block;
     }
@@ -129,17 +129,16 @@ h2.pate {
     }
   }
 .itempl {
-  padding: 12% 5%;
+  padding: 7% 20%;
   text-align: center;
-  line-height: 25px;
-  border-radius: 3px 3px 0 0; 
-  height: 350px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  border-radius: 3px; 
+  margin-bottom: 25px;
 
     h3 {
+      font-size: 21px;
       color: #1387d9;
-      line-height: 45px;
+      line-height: 30px;
+      padding-top: 4%;
     }
   
     span {

@@ -11,6 +11,10 @@
   &.pate-intro {
     background-image: image-url('/pate/img.png');
 
+  &.pate-how {
+    background-image: image-url('/pate/how.jpg');
+}
+
     p,span {
     color: $white;
     }
