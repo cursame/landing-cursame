@@ -3,9 +3,10 @@
 	margin: auto;
 	display: block;;
   position: fixed;
-  background: #9D0A7B;
-  border-bottom: #B25691 solid 1px;
+  background: #49054A;
+  border-bottom: #682283 solid 1px;
   padding: 0 2%;
+  z-index: 9999999;
 	@include max-screen (900px) {
 	 position: fixed;
 	 top: 0;

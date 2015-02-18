@@ -1,21 +1,19 @@
 <div class="header_pate">
   <div class="logo-pate">
-   <%= link_to  image_tag('mainlogo.png', '100%'),'../'%> 
+    <%= link_to  image_tag('mainlogo.png', '100%'),'../'%>
   </div>
   <div class="menu-home">
     <ul class="menu-main-pate nav-pate">
+      <li><%= link_to(t.menu.contact, 'contact')%></li>
       <li><%= link_to(t.menu.functions, 'features') %></li>
       <li><%= link_to(t.menu.benefits, 'benefits') %></li>
       <li><%= link_to(t.menu.inpact, 'impact')  %></li>
       <li><%= link_to(t.menu.rse, 'pate') %></li>
-      <li><%= link_to(t.menu.contact, 'contact')%></li>
     </ul>
   </div>
   <div class="menu-mobile totarget" data-target="menu-imobile"></div>
   <div class="login">
-    <ul class="singin-button">          
+    <ul class="singin-button">
     </ul>
   </div>
 </div>
-
-
