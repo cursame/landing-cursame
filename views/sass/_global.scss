@@ -1762,7 +1762,14 @@ ul.benefit-list {
 		text-align: left;
 		line-height: 20px;
 		margin-bottom: 15px;
+	}
 
+	li.block {
+		list-style-image: url('/img/checkblue.png');
+		text-align: left;
+		line-height: 30px;
+		margin-bottom: 15px;
+		margin-left: 25px;
 	}
 		&	h4 {
 		color: rgb(179, 179,179);
