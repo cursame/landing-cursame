@@ -3,13 +3,13 @@
       <div class="cols-12">
         <div class="col col-12">
           <div class="col-inner">
-            <h3><i class="i i-ben"></i>Beneficios</h3>
+            <h3><i class="i i-ben"></i><%=t.benefits.title%></h3>
+            <h4> <%=t.benefits.subtitle%></h4>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <div class="bg-darkgray">
   <div class="wrapper">
     <div class="cols-12">
@@ -40,8 +40,8 @@
   <div class="wrapper">
     <div class="cols-12">
 
-      <div class="tools-info" id="to-tab1">
-        <div class="col col-7">
+      <div id="to-tab1">
+        <div class="col col-5">
           <div class="col-inner">
             <h2><%= t.benefits.section4 %></h2>
               <ul class="benefit-list">
@@ -53,7 +53,7 @@
               </ul>
           </div>
         </div>
-        <div class="col col-5">
+        <div class="col col-7">
           <div class="col-inner">
             <div class="img-center">
               <%= image_tag 'role-school.png', '40%' %>
@@ -62,12 +62,17 @@
         </div>
       </div>
 
-      <div class="tools-info" id="to-tab2" style="display:none;">
+      <div id="to-tab2" style="display:none;">
         <div class="col col-5">
           <div class="col-inner">
-            <h2> </h2>
-            <p> </p>
-            <p> </p>
+            <h2><%= t.benefits.section3 %></h2>
+              <ul class="benefit-list">
+                <li class=""><%= t.benefits.dbenefit1 %></li>
+                <li><%= t.benefits.dbenefit2 %></li>
+                <li><%= t.benefits.dbenefit3 %></li>
+                <li><%= t.benefits.dbenefit4 %></li>
+                <li><%= t.benefits.dbenefit5 %></li>
+              </ul>
           </div>
         </div>
 
@@ -78,7 +83,7 @@
         </div>
       </div>
 
-          <div class="tools-info" id="to-tab3" style="display:none;">
+          <div id="to-tab3" style="display:none;">
               <div class="col col-5">
                   <div class="col-inner">
                           <h2><%= t.benefits.section1 %> </h2>
@@ -93,7 +98,7 @@
               </div>
           </div>
                   
-          <div class="tools-info" id="to-tab4" style="display:none;">
+          <div id="to-tab4" style="display:none;">
             <div class="col col-5">
                 <div class="col-inner">
                   <h2> </h2>
@@ -108,7 +113,7 @@
             </div>
           </div>
 
-          <div class="tools-info" id="to-tab5" style="display:none;">
+          <div id="to-tab5" style="display:none;">
             <div class="col col-5">
               <div class="col-inner">
                 <h2><%=t.functions.f5%></h2>
@@ -123,7 +128,7 @@
             </div>
           </div>
 
-          <div class="tools-info" id="to-tab6" style="display:none;">
+          <div id="to-tab6" style="display:none;">
             <div class="col col-5">
               <div class="col-inner">
                 <h2><%=t.functions.f6%></h2>
@@ -138,8 +143,7 @@
             </div>
           </div>
 
-
-          <div class="tools-info" id="to-tab7" style="display:none;">
+          <div id="to-tab7" style="display:none;">
             <div class="col col-6">
               <div class="col-inner">
                 <h2><%=t.functions.f7%></h2>
@@ -154,7 +158,7 @@
             </div>
           </div>
 
-          <div class="tools-info" id="to-tab8" style="display:none;">
+          <div id="to-tab8" style="display:none;">
             <div class="col col-5">
               <div class="col-inner">
                 <h2><%=t.functions.f8%></h2>
@@ -172,19 +176,9 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -215,7 +209,6 @@
     			</div>
     		</div>
 
-
       <div class="col col-6">
         <div class="col-inner">
     			<div class="dashboard">
@@ -227,23 +220,6 @@
     						<li><%= t.benefits.ebenefit3 %></li>
     						<li><%= t.benefits.ebenefit4 %></li>
     						<li><%= t.benefits.ebenefit5 %></li>
-    					</ul>
-    				</div>
-    			</div>
-    		</div>
-
-
-      <div class="col col-6">
-        <div class="col-inner">
-    			<div class="dashboard">
-    					<ul class="benefit-list">
-    						<li class="img-center"> <img src="/img/role-admin.png" alt=""> </li>
-    						<h4><%= t.benefits.section3 %></h4>
-    						<li><%= t.benefits.dbenefit1 %></li>
-    						<li><%= t.benefits.dbenefit2 %></li>
-    						<li><%= t.benefits.dbenefit3 %></li>
-    						<li><%= t.benefits.dbenefit4 %></li>
-    						<li><%= t.benefits.dbenefit5 %></li>
     					</ul>
     				</div>
     			</div>

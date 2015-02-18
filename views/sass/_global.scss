@@ -79,13 +79,14 @@ h6{
 	font-size: 23px;
 	line-height: 32px;
 	font-weight: lighter;
+	padding: 3% 0;
 }
 
 
 .quote-box {
 	background:$white;
 	border: 1px solid #ccc;
-	padding: 60px 10%;
+	padding: 60px 0;
 
 	p {
 		line-height: 35px;
@@ -231,7 +232,7 @@ h6{
 }
 
 .head-title {
-	padding: 9% 0 3% 0;
+	padding: 8% 0 3% 0;
 	text-align: left;
 
 	h3 {
@@ -1537,11 +1538,14 @@ padding: 25px 0 10px 0;
 }
 
 .plugins {
+	margin-top: 5%;
 	padding-top: 35px;
 
 	  p {
     color: $white;
-    padding: 40px 0;
+    padding: 5% 0 7% 0;
+    font-size: 21px;
+    font-weight: lighter;
   }
 }
 .right {
@@ -1561,8 +1565,9 @@ padding: 25px 0 10px 0;
 .bannerx { 
 	    position: relative; 
 	    overflow: auto;
-	    width:80%;
-	    margin: 0 0 3%10%; 
+	    width:100%;
+	    margin:3% 0 5% 0;
+	    padding:0;
 
       & ul { 
       	float: left;
@@ -1573,11 +1578,20 @@ padding: 25px 0 10px 0;
 	       float: left;
 	       font-size: 13px;
 
-	       p {
-	       	font-size: 14px;
-	       	line-height: 16px;
+	      p {
+	       	font-size: 17px;
+	       	line-height: 26px;
 	       	color: #333;
 	       	margin-left: 5%;
+	       	margin-right: 3%;
+	      }
+
+	      span {
+	       	font-size: 16px;
+	       	line-height: 26px;
+	       	color: $white;
+	       	margin-left: 5%;
+	       	margin-right: 3%;
 	       }
 		   }
 
@@ -1587,52 +1601,56 @@ padding: 25px 0 10px 0;
 				left: 0;
 				right: 0;
 				bottom: 0px;
-				padding: 75px 5%;
+				padding:0 5% 45px 2% ;
+
 
 		  & li {
+				cursor: pointer !important;
 				display: inline-block;
-				width: 12px;
-				height: 12px;
-				margin: 0 4px;
+				width: 18px;
+				height: 18px;
+				margin: 0 13px;
 				text-indent: -999em;
-				border: 2px solid #848484;
-				border-radius: 6px;
-				cursor: pointer;
-				opacity: .4;
-				-webkit-transition: background .5s, opacity .5s;
-				-moz-transition: background .5s, opacity .5s;
-				transition: background .5s, opacity .5s;
+				border: 2px solid #ececec;
+				border-radius: 10px;
+				opacity: .6;
+				-webkit-transition: background .6s, opacity .6s;
+				-moz-transition: background .6s, opacity .6s;
+				transition: background .6s, opacity .6s;
 				bottom:0;
 			}
 
 			& li.active {
-				background: #848484;
-				opacity: 1;
+				background: #0D5C84;
+				opacity: 0.6;
 			}
 		}
 
 		& .divimage {
 			float:left;
 			width:16%;
-			padding-top: 10px;
-	    height: 190px;
+			padding-top: 4%;
       background: #fff; 
+      height: 240px;
+      border-right: 1px solid #ececec;
+      border-right-style: dashed;
 		}
 
 		& .divtestimonial{
 			float: right;
 			width: 84%;
-	    height: auto;
 	    text-align: justify ;
 	    border-left:none;
 	    background: #fff; 
-	    padding: 4% 2% 0 0;
-	    height: 190px;
+	    padding: 4% 3% 4% 0;
+	    height: 240px;
 		}
 
 		& .autor{
+			float: right;
+			margin: 15px 15px 20px 0;
 			text-align: right;
-			padding-right: 10px;
+			color: $white;
 		}
 
 		& .triangle {
@@ -1641,17 +1659,17 @@ padding: 25px 0 10px 0;
 			border-top: 50px solid #fff;
 			border-right: 50px solid transparent;
 			float:right;
-			margin-top:-25px;
-			margin-right: 20px;
+			margin-top:-18px;
+			margin-right: 3%;
 
 		}
 
 		& .quote {
-			color: #333;
+			color: #9BE5FF;
 			text-align: right;
 			float: right;
-			padding-top: 10px;
-			font-size: 13px;
+			padding-top: 5px;
+			font-size: 18px;
 		}
 }
 
@@ -1723,11 +1741,11 @@ padding: 25px 0 10px 0;
 .arrow-down {
 	width: 0; 
 	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 20px solid #fff;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 10px solid #fff;
 	margin-top: 13px;
-	margin-left: 30%;
+	margin-left: 37%;
 }
 
 .content-top{
