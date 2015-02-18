@@ -15,14 +15,14 @@
     jobs: Empleos
     contact: Contacto
     spanish: Español
-    english: Ingles
+    english: Inglés
     terms: 'Términos y condiciones'
     gospel: 'Capacitación'
     radar: 'Radar antibullying'
     privatex: 'Aviso de privacidad'
   banner_index_head: 
     m1: 'La mejor plataforma educativa <br/> al precio más accesible del mercado.'
-    m3: '&nbsp; ¿Cuales son los beneficios de usar Cúrsame? &nbsp;'
+    m3: '&nbsp; ¿Cuáles son los beneficios de usar Cúrsame? &nbsp;'
     m4: '&nbsp; &nbsp; ¿Cómo Funciona? &nbsp;'
     m5: 'Licencia ilimitada para tu escuela desde $30 mil anuales'
   functions_text: 
@@ -89,13 +89,20 @@
     f9: Radar
     text9: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa <a href='http://radarescolar.com' targer='_blank'>Ir a Radar Escolar</a>."
     features9: "Algunas de sus características son: </br>-Análisis y reportes de bullying </br>- Sistema de alerta de bullying </br>- Asesoría para prevención, detección y manejo de bullying"
+    f10: Gospel
+    f10_sub: "Auto implementación"
+    text10: "Ingresa al sistema de implementación especializada de Cúrsame para administradores, profesores y alumnos, capacita a tu escuela rapidamente."
+    features10: "Algunas de sus características son: </br>-Capacitación escolar por tipo de usuario </br>- Capacitación escolar por institución </br>- Maximizador de capacidades por módulo"
+    f11: Analytics
+    text11: "Ingresa de manera avanzada a nustro sistema de análisis y reporte que te permitirá de una manera dinámica visualizar las actividades de tu institución."
+    features11: ""
     plugins: Integraciones
     radar: Radar
     radartext: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa."
     bit: Bit
-    bittext: "Información jurídica inteligente que da soporte a los mejores abogados de México."
+    bittext: "Software de control escolar y administrativo flexible e integral para llevar el control de todos los procesos de las instituciones."
     mixpanel: MixPanel
-    mixpaneltext: "La mas avnazada plataforma de análisis de datos del mercado"
+    mixpaneltext: "La más avanzada plataforma de análisis de datos del mercado y la plataforma jurídica más grande de México."
     textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
   benefits:
     title: Beneficios
