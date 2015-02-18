@@ -142,6 +142,11 @@ register Sinatra::AssetPack
 	  erb  :"static_views/terms", :layout => :"layouts/application" 
 	end	
 
+	get  '/:locale/private' do
+		session[:current_route] = '/private'
+        erb  :"static_views/private", :layout => :"layouts/application" 
+	end
+
 	######## PATE methods ########
 	
 	get '/:locale/pate' do 
