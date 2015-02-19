@@ -12,7 +12,7 @@
     background-image: image-url('/pate/img.png');
 
   &.pate-how {
-    background-image: image-url('/pate/how.jpg');
+    background-image: url('img/pate/how.jpg');
 }
 
     p,span {
@@ -29,15 +29,35 @@
     }
   }
 
-  &.intro-stats {
-    background-image: url('/img/bg_stats.png');
-  }
-
   @include max-screen (900px) {
     margin-top: 55px;
     padding-top: 15px;
   }
 }
+
+.image-banner {
+  top: 0;
+  height:100%;
+  width: 100%;
+  background-image: url('/img/pate/bg_main.png'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  color: $white; 
+}
+
+.pate-how {
+  top: 0;
+  height:auto;
+  width: 100%;
+  background-image: url('/img/pate/how.png'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position: center; 
+}
+
 
 .main_blue{
  //@include linear-gradient(75deg, #c74331 0%, #ec531e 100%);

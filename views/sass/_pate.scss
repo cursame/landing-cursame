@@ -48,29 +48,21 @@ h2.pate {
 	}
 }
 
-.image-banner{
-  top: 0;
-  height:100%;
-  width: 100%;
-  background-image: url('/img/pate/bg_main.png'); 
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  color: #fff; 
-}
 
 .objetive{
   margin: 0;
-	padding: 40px 0;
+	padding: 4% 0;
+  text-align: center;
 
   h2 {
     padding:0 5% 30px 5%;
   }
 
   p,span {
+    font-size: 17px;
+    padding: 0 10%;
     color: $white;
-    line-height: 30px;
+    line-height: 50px;
   }
 }
 
