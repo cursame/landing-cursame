@@ -182,6 +182,8 @@
     institution: "Institución"
     content: "Contenido"
     send_contact: "Enviar"
+    password: "Contraseña"
+    send_login: "Ingresar"
 
 
 
