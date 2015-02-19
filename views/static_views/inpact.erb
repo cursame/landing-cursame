@@ -35,8 +35,8 @@
       <div class="col col-6">
         <div class="col-inner">
           <div class="info">
-            <h2>Impacto en la práctica docente</h2>
-            <p>La percepción que se tiene de la mejora de gestión, organización y administración a través de la plataforma de las actividades de enseñanza aprendizaje en el aula y que tanto se favorecen con el uso de la plataforma.</p>
+            <h2><%= t.impact.impact_teachers %></h2>
+            <p><%= t.impact.chart_1_txt %></p>
           </div>
         </div>
       </div>
@@ -67,8 +67,8 @@
       <div class="col col-6">
         <div class="col-inner">
           <div class="info">
-            <h2>Impacto educativo</h2>
-            <p>La percepción que los docentes tienen sobre la mejora en el desarrollo de competencias a través de la plataforma.</p>
+            <h2><%= t.impact.impact_in_education %></h2>
+            <p><%= t.impact.chart_2_txt %></p>
           </div>
         </div>
       </div>
@@ -81,8 +81,8 @@
       <div class="col col-5">
         <div class="col-inner">
           <div class="info">
-            <h2>Impacto en el desarrollo de habilidades tecnologicas</h2>
-            <p>La mejora en la capacidad de uso y apropiación de la tecnología en el ambito educativo y en la vida diaria de docentes y alumnos promovida por el uso de la plataforma.</p>
+            <h2><%= t.impact.impact_in_tech %></h2>
+            <p><%= t.impact.chart_3_txt%></p>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
           <div class="buttons_cta">
             <ul class="button_banner">
               <li>
-                <%= link_to 'Quiero aplicar', 'pate/call', '',  'btn btn-apply' %>
+                <%= link_to t.impact.link_public , 'pate/call', '',  'btn btn-apply' %>
               </li>
             </ul>
           </div>

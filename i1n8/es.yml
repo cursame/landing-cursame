@@ -149,6 +149,12 @@
     li7: "El 70% considera que Cúrsame impacta en los aprendizajes significativos y pensamiento crítico y que han mejorado bastante las calificaciones."
     libutton: " Licencia ilimitada para tu escuela desde $30 mil anuales"
     link_public: "Quiero aplicar"
+    impact_teachers: "Impacto en la práctica docente"
+    chart_1_txt: "La percepción que se tiene de la mejora de gestión, organización y administración a través de la plataforma de las actividades de enseñanza aprendizaje en el aula y que tanto se favorecen con el uso de la plataforma."
+    impact_in_education: "Impacto educativo"
+    chart_2_txt: "La percepción que los docentes tienen sobre la mejora en el desarrollo de competencias a través de la plataforma."
+    impact_in_tech: "Impacto en el desarrollo de habilidades tecnologicas"
+    chart_3_txt: "La mejora en la capacidad de uso y apropiación de la tecnología en el ambito educativo y en la vida diaria de docentes y alumnos promovida por el uso de la plataforma."
   social:
     title: "Compromiso e impacto social"
     sub1: "Mejora la calidad educativa"
