@@ -178,6 +178,7 @@
   forms:
     contact_title: "Formulario de contacto"
     login_title: "Ingresa a Cúrsame"
+    sponsor_title: "Formulario de patrocinador"
     name: "Nombre"
     email: "Email"
     phone: "Teléfono"
@@ -186,7 +187,26 @@
     send_contact: "Enviar"
     password: "Contraseña"
     send_login: "Ingresar"
-    
+    institution_pate: "Nombre de la organización o institución a la que contacta"
+    name_of_representative: "Nombre del representante"
+    adress: "Dirección"
+    industrial: "Industrial"
+    commercial: "Comercial"
+    services: "Servicios"
+    public: "Pública"
+    private: "Privada"
+    another: "Otra"
+    business_scheme: "Régimen empresarial"
+    society1: "Sociedad anónima"
+    society2: "Sociedad de responsabilidad límitada"
+    society3: "Sociedad anónima promotora de inverisón"
+    society4: "Sociedad comandita simple"
+    society5: "Sociedad en comandita por acciones"
+    society6: "Sociedad en nombre colectivo"
+    society7: "Sociedad cooperativa"
+    send_sponsor: "Contactar"
+
+
 
 
 
