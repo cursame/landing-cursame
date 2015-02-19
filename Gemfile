@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
  
-gem 'sinatra'
+gem 'sinatra', "~> 1.4.5"
 gem 'haml'
 gem 'sass'
 gem 'sass'
@@ -14,3 +14,4 @@ gem "sinatra-cross_origin", "~> 0.3.1"
 gem "aws-ses", "~> 0.6.0", :require => 'aws/ses'
 gem "sanitize"
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
+gem "passenger"
