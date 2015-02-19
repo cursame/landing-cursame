@@ -7,13 +7,17 @@
   &.intro-main {
     background-image: url('/img/bg_main.png');
   }
-  
+  &.intro-stats {
+    background-image: url('/img/bg_stats.png');
+  }
   &.pate-intro {
     background-image: image-url('/pate/img.png');
 
   &.pate-how {
     background-image: url('img/pate/how.jpg');
 }
+
+
 
     p,span {
     color: $white;

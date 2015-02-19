@@ -38,7 +38,7 @@
     f6: Calificaciones
     f7: Estadísticas
     f8: RADAR
-    f9: 'Mix Panel'
+    f9: 'Analytics'
     f10: Bit 
     f11: 'GOSPEL'
     link: 'Descubre la funcionalidad de cada herramienta'
@@ -48,7 +48,8 @@
     t3: 'Todas tus actividades en un solo lugar en la nube'
     tx1: 'Mantenten tu institución conectada en todo momento en cualquier lugar.'
     tx2: 'Administra de una manera eficiente el proceso enseñanza amprendizaje.'
-    tx3: 'Accede a tu escuela en cualquier momento y en cualquier lugar'
+    tx3: 'Accede a tu escuela en cualquier momento y en cualquier lugar.'
+    call: 'Quiero conocer todos los beneficios'
   trust_us:
     head: 'Ellos confían en Cúrsame'
     testimonial1: 'Me ha servido, como profesor, para trabajar con los grupos teniendo y seguir a distancia las actividades y dudas de los chicos, así como tener el respaldo de la evidencia de sus trabajos a lo largo del desarrollo de la materia'
@@ -101,7 +102,7 @@
     radartext: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa."
     bit: Bit
     bittext: "Software de control escolar y administrativo flexible e integral para llevar el control de todos los procesos de las instituciones."
-    mixpanel: MixPanel
+    mixpanel: Analytics
     mixpaneltext: "La más avanzada plataforma de análisis de datos del mercado y la plataforma jurídica más grande de México."
     textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
   benefits:
@@ -175,7 +176,7 @@
     number2: "314"
     t2: "Instituciones usando Cúrsame"
     number3: "32"
-    t3: "Actividades en la República Mexicana"
+    t3: "Actividades en toda la República"
   pitch:
     t1: "Mejora el desempeño académico de tu institución"
     t2: "Comunicación en cualquier momento y lugar"

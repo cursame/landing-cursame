@@ -237,7 +237,13 @@ h6{
 
 	h3 {
 		text-align: left;
-		font-size: 26px;
+		font-size: 35px;
+	}
+
+	h4 {
+		font-weight: lighter;
+		opacity: 0.7;
+		padding-left: 60px;
 	}
 }
 
@@ -515,13 +521,31 @@ h6{
 }
 
 .clients {
+	padding: 1% 0;
 	text-align: center;
-	border-top: solid 1px #cecece;
-	margin: 2% 15% 0 10%;
-	padding-top: 50px;
-
+	hr {
+		border-top: solid 1px #cecece;
+		margin: 1% 4%;
+	}
 	h3 {
 		color: rgba(181,198,199,1);
+	}
+}
+.pitch {
+	padding: 6% 0 3% 0;
+	h5 {
+		color: #323232;
+		padding-top: 25px;
+		line-height: 30px;
+	}
+}
+
+.testimonials {
+	padding: 10% 0 7% 0;
+
+	h2 {
+		color: $white;
+		padding-bottom: 2%;
 	}
 }
 
@@ -1507,10 +1531,9 @@ padding: 25px 0 10px 0;
 	list-style-type: none;
 	& li{
 		display: inline;
-        list-style-type: none;
-        padding-right: 20px;
+    list-style-type: none;
+    padding-right: 20px;
 	}
-
 }
 
 .functions{
@@ -1606,7 +1629,7 @@ padding: 25px 0 10px 0;
 	      }
 
 	      span {
-	       	font-size: 16px;
+	       	font-size: 20px;
 	       	line-height: 26px;
 	       	color: $white;
 	       	margin-left: 5%;
@@ -1701,6 +1724,7 @@ padding: 25px 0 10px 0;
   h2 {
   	text-align: left;
   	margin-bottom: 30px;
+  	font-size: 28px;
   }
 }
 
