@@ -170,7 +170,7 @@
     li32: "Consumo de sustancias."
     li33: ' "Bullying" escolar.'
   lstats:
-    number1: "145, 700"
+    number1: "145, 734"
     t1: "Usuarios beneficiados"
     number2: "314"
     t2: "Instituciones usando Cúrsame"
@@ -211,6 +211,42 @@
     society6: "Sociedad en nombre colectivo"
     society7: "Sociedad cooperativa"
     send_sponsor: "Contactar"
+  pate:
+    t1: "Programa de Acceso a la Tecnología Educativa"
+    t2: "¡El esfuerzo es de todos!"
+    b1: "Aplicar a la convocatoria"
+    txt1: "¿ Quieres ser patrocinador ? da click"
+    here: "aquí"
+    ob1: "Objetivo general"
+    textob1: "Promover el acceso a la tecnología educativa de calidad a través de subsidios a las escuelas de nivel básico, medio superior y superior de sostenimiento público."
+    ob2: "Objetivo específico"
+    textob2: "Implementar la plataforma educativa Cúrsame en las escuelas que lo soliciten y cumplan con los requisitos de selección."
+    t3: "¿Cómo funciona?"
+    text2: "<p> La convocatoria para aplicar al programa será lanzada en Enero del 2015 y hasta el 1 de diciembre del 2015 estará vigente, o en su defecto hasta alcanzar un máximo de 500,000 Usuarios.</p> <p> Los participantes podrán ser todas las escuelas de la República Méxicana desde nivel básico hasta nivel superior, estas escuelas deben ser de sostenimiento público las escuelas privadas no podrán participar.</p>"
+    full_call: "Para obtener la convocatoria completa da click aquí"
+    testimonials: "Testimonios"
+    be_sponsor: "Quiero ser patrocinador"
+    sponsors: "Patrocinadores"
+    text3: "<p>La plataforma Cúrsame tiene un costo promedio de $40,000.00 (Cuarenta mil pesos mexicanos) al año por plantel educativo. El subsidio como beneficio del Programa de Acceso a la Tecnología Educativa varía del 20% al 100% por institución.</p><p>Unete al grupo de patricinadores que hacen posibles que los alumnos y profesores tengan a su alcance una de las mejores tecnologías educativas que se ha desarrollado.</p>"
+    private: Privacidad
+    text4: "Aplica la Ley Federal Protección de Datos Personales en Posesión de Particulares. Esta ley tiene la finalidad de regular el tratamiento legítimo controlado e informado de datos personales, a efecto de garantizar la privacidad y el derecho a la autodeterminación informativa de las personas."
+    t4: "Impacto de Cúrsame"
+    lic1: "Hemos beneficiado a 145,734 estudiantes de nivel básico, medio-superior y superior."
+    lic2: "Participamos en 314 instituciones en distintos estados de la república Mexicana."
+    lic3: "Tenemos una adopción del 80% los primeros 6 meses de uso."
+    lic4: "El 90% de maestros consideran que cúrsame tiene un impacto positivo en el aprendizaje."
+    lic5: "El 70% considera que cúrsame promueve el intercambio y búsqueda de información."
+    lic6: "El 75% considera que se ha promovido el aprendizaje colaborativo."
+    lic7: "El 100% considera que facilita el acceso e intercambio de material de aprendizaje."
+    lic8: "El 100% considera que a través de cúrsame se han promovido competencias en sus alumnos."
+    impact_chart_t1: "Gráfica de impacto por usuarios e institución"
+    impact_chart_txt1: "La percepción que se tiene de la mejora de gestión, organización y administración a través de la plataforma de las actividades de enseñanza aprendizaje en el aula y que tanto se favorecen con el uso de la plataforma."
+    impact_chart_t2: "Adopción por escuela (6 meses después de implementación)"
+    impact_chart_txt2: "La percepción que los docentes tienen sobre la mejora en el desarrollo de competencias a través de la plataforma."
+
+
+
+
 
 
 

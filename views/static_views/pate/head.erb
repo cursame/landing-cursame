@@ -3,16 +3,16 @@
     <div class="cols-12">
       <div class="col col-12">
         <div class="col-inner">
-          <h1 class="pate"> Programa de Acceso a la Tecnología Educativa</h1>
-          <h2 class="pate">¡El esfuerzo es de todos!</h2>
+          <h1 class="pate"> <%= t.pate.t1%> </h1>
+          <h2 class="pate"> <%= t.pate.t2%> </h2>
           <div class="buttons_cta">
             <ul class="button_banner">
               <li>
-                <%= link_to 'Aplicar a la convocatoria', 'pate/call', '',  'btn btn-apply' %>
+                <%= link_to t.pate.b1 , 'pate/call', '',  'btn btn-apply' %>
               </li>
             </ul>
           </div>
-          <p>¿ Quieres ser patrocinador ? da click <%= link_to 'aquí', 'pate/sponsor_form' %>
+          <p><%= t.pate.txt1 %> <%= link_to t.pate.here , 'pate/sponsor_form' %>
         </div>
       </div>
     </div>
