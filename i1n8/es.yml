@@ -149,6 +149,40 @@
     li7: "El 70% considera que Cúrsame impacta en los aprendizajes significativos y pensamiento crítico y que han mejorado bastante las calificaciones."
     libutton: " Licencia ilimitada para tu escuela desde $30 mil anuales"
     link_public: "Quiero aplicar"
+  social:
+    title: "Compromiso e impacto social"
+    sub1: "Mejora la calidad educativa"
+    li11: "Seguimiento personalizado del avance educativo de los estudiantes."
+    li12: "Entrega contenido especializado de acuerdo a las necesidades individuales."
+    li13: "Aumenta la productividad y permite potenciar la enseñanza y mejorar el aprendizaje."
+    sub2: "Reduce la brecha digital"
+    li21: "Con apoyo de nuestros aliados llevamos servidores y tabletas a las escuelas que más lo necesitan."
+    li22: "Apoyamos a los profesores con capacitación y asesoría tecnológica."
+    li23: "La plataforma promueve el intercambio digital de contenido educativo."
+    sub3: "Detección oportuna de focos rojos"
+    li31: "A través de diversos indicadores apoyamos en la detección de: Riesgo de deserción escolar."
+    li32: "Consumo de sustancias."
+    li33: ' "Bullying" escolar.'
+  lstats:
+    number1: "145, 700"
+    t1: "Usuarios beneficiados"
+    number2: "314"
+    t2: "Instituciones usando Cúrsame"
+    number3: "32"
+    t3: "Actividades en la República Mexicana"
+  pitch:
+    t1: "Mejora el desempeño académico de tu institución"
+    t2: "Comunicación en cualquier momento y lugar"
+    t3: "Toda la información de tu plantel a través de estadísticas"
+    t4: "Incrementa tus ingresos al aumentar tu matícula"
+  forms:
+    name: "Nombre"
+    email: "Email"
+    phone: "Teléfono"
+    institution: "Institución"
+    content: "Contenido"
+    send_contact: "Enviar"
+
 
 
 

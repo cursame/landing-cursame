@@ -5,12 +5,12 @@
 			<div class="col-inner">
 				<div class="info">
 					<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
-						Name: <input type="text" name="name" />
-						Email: <input type="text" name="email" />
-						Phone: <input type="text" name="phone" />
-						Institution: <input type="text" name="institution" />
-						Content: <textarea name="content"></textarea>
-						<input type="submit" value="Enviar" class="btn btn-cta menu-get" />
+						<%= t.forms.name %>: <input type="text" name="name" />
+						<%= t.forms.email %>: <input type="text" name="email" />
+						<%= t.forms.phone %>: <input type="text" name="phone" />
+						<%= t.forms.institution %>: <input type="text" name="institution" />
+						<%= t.forms.content %>: <textarea name="content"></textarea>
+						<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-cta menu-get" />
 					</form>
 				</div>
 			</div>
