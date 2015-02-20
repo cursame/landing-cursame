@@ -1,76 +1,44 @@
 <%= erb :'/static_renders/simple_header', locals: {title: t.forms.sponsor_title, icon: true,  call_icon: 'contact'}%>
-
-
-<div class="content bg-darkgray">
+<div class="content  bg-gray">
 	<div class="wrapper">
 		<div class="cols-12">
-
-			<form class="form validate" action="/contact_sponsor" method="POST" enctype="multipart/form-data">
-
-				<div class="col col-6">
-					<div class="col-inner">						
-						<%= t.forms.institution_pate %>:
-						<input type="text" name="nameinstitution" required/>
+			<div class="col col-12">
+				<div class="col-inner">
+					<div class="formsheet">		
+						<form class="form validate" action="/contact_sponsor" method="POST" enctype="multipart/form-data">	
+							<div class="question">		
+								<%= t.forms.institution_pate %>:
+								<input type="text" name="nameinstitution" required/>
+							</div>
+							<div class="question">	
+								<%= erb :'/static_views/pate/locations/states'%>
+								<%= t.forms.adress %>: </br>
+							</div>
+								<textarea name="adress" required></textarea>
+								<%= t.forms.email %>:</br> <input type="email" name="email" required/>
+								<%= t.forms.phone %>:</br> <input type="number" name="phone" required/>
+								Giro de la organización (puede marcar más de una):  </br>
+								<input type="checkbox" name="option1" value="Industrial" > <%= t.forms.industrial %><br>
+								<input type="checkbox" name="option2" value="Comercial" > <%= t.forms.commercial %><br>
+								<input type="checkbox" name="option3" value="Servicios"> <%= t.forms.services %><br>
+								<input type="checkbox" name="option4" value="Pública"> <%= t.forms.public %><br>
+								<input type="checkbox" name="option5" value="Privada"> <%= t.forms.private %><br>
+								<%= t.forms.another %> <input type="text" name="option6" /></br>
+								<%= t.forms.business_scheme %>: </br>
+								<input type="radio" name="society" value="<%= t.forms.society1 %>" checked> <%= t.forms.society1 %><br>
+								<input type="radio" name="society" value="<%= t.forms.society2 %>" > <%= t.forms.society2 %><br>
+								<input type="radio" name="society" value="<%= t.forms.society3 %>"> <%= t.forms.society3 %><br>
+								<input type="radio" name="society" value="<%= t.forms.society4 %>"> <%= t.forms.society4 %><br>
+								<input type="radio" name="society" value="<%= t.forms.society5 %>"> <%= t.forms.society5 %><br>
+								<input type="radio" name="society" value="<%= t.forms.society6 %>"> <%= t.forms.society6 %> <br>
+								<input type="radio" name="society" value="<%= t.forms.society7 %>o"><%= t.forms.society7 %><br>
+								<input type="submit" value="<%= t.forms.send_sponsor %>" class="btn btn-send menu-get" />
+						</form>	
 					</div>
 				</div>
-
-				<div class="col col-6">
-					<div class="col-inner">						
-						<%= t.forms.name_of_representative %>:
-						<input type="text" name="name" required/>
-					</div>
-				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-
-
-
-
-<div class="wrapper">
-	<div class="cols-12">
-
-		<div class="col col-6">
-			<div class="col-inner">
-				<div class="content functions">
-					
-						<%= erb :'/static_views/pate/locations/states'%>
-						<%= t.forms.adress %>: </br>
-						<textarea name="adress" required></textarea>
-						<%= t.forms.email %>:</br> <input type="email" name="email" required/>
-						<%= t.forms.phone %>:</br> <input type="number" name="phone" required/>
-						Giro de la organización (puede marcar más de una):  </br>
-						<input type="checkbox" name="option1" value="Industrial" > <%= t.forms.industrial %><br>
-						<input type="checkbox" name="option2" value="Comercial" > <%= t.forms.commercial %><br>
-						<input type="checkbox" name="option3" value="Servicios"> <%= t.forms.services %><br>
-						<input type="checkbox" name="option4" value="Pública"> <%= t.forms.public %><br>
-						<input type="checkbox" name="option5" value="Privada"> <%= t.forms.private %><br>
-					
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col col-6">
-			<div class="col-inner">
-				<div class="content functions">
-					
-							<%= t.forms.another %> <input type="text" name="option6" /></br>
-						<%= t.forms.business_scheme %>: </br>
-						<input type="radio" name="society" value="<%= t.forms.society1 %>" checked> <%= t.forms.society1 %><br>
-						<input type="radio" name="society" value="<%= t.forms.society2 %>" > <%= t.forms.society2 %><br>
-						<input type="radio" name="society" value="<%= t.forms.society3 %>"> <%= t.forms.society3 %><br>
-						<input type="radio" name="society" value="<%= t.forms.society4 %>"> <%= t.forms.society4 %><br>
-						<input type="radio" name="society" value="<%= t.forms.society5 %>"> <%= t.forms.society5 %><br>
-						<input type="radio" name="society" value="<%= t.forms.society6 %>"> <%= t.forms.society6 %> <br>
-						<input type="radio" name="society" value="<%= t.forms.society7 %>o"><%= t.forms.society7 %><br>
-						<input type="submit" value="<%= t.forms.send_sponsor %>" class="btn btn-send menu-get" />
-				</div>
-			</div>
-		</div>
-</form>
-
-	</div>
-</div>
 <%= erb :'/static_renders/footer'%>
