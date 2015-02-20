@@ -65,35 +65,35 @@
   functions:
     f1: Tareas
     text1: "Permite a los profesores crear actividades académicas y a los estudiantes responderlas desde cualquier lugar sin necesidad de utilizar papel y aumentando la productividad de ambos."
-    features1: "Algunas de sus características son: </br> -Creación a uno o varios cursos </br> -Fecha límite y hora de entrega </br> -Archivos adjuntos </br> -Contenido recomendado </br>-Rubros de evaluación"
+    features1: " </br> Características: </br></br> <li class='block'>  Creación a uno o varios cursos </li><li class='block'>  Fecha límite y hora de entrega </li><li class='block'>  Archivos adjuntos </li><li class='block'>  Contenido recomendado </li><li class='block'> Rubros de evaluación</li>"
     f2: Cuestionarios
     text2: "A través de los cuestionarios los profesores pueden evaluar a sus alumnos de manera fácil y automática sin tener que perder tiempo calificando reactivos o desperdiciando papel al imprimir los exámenes."
-    features2: "Algunas de sus características son: </br> -Creación en uno o varios cursos </br> -Fecha y hora límite de entrega </br> -Preguntas y respuestas ilimitadas </br> -Autoevaluación"
+    features2: "</br>Características: </br></br> <li class='block'>Creación en uno o varios cursos </li> <li class='block'>Fecha y hora límite de entrega </li> <li class='block'>Preguntas y respuestas ilimitadas </li> <li class='block'>Autoevaluación </li>"
     f3: Discusiones
     text3: "Los usuarios pueden crear foros de discusión con contenido recomendado y promover la participación de toda la comunidad en el aprendizaje."
-    features3: "Algunas de sus características son:</br> -Públicas o privadas </br>-A uno o varios cursos </br>-Contenido recomendado"
+    features3: "</br>Características: </br></br> <li class='block'>Públicas o privadas </li><li class='block'>A uno o varios cursos </li><li class='block'>Contenido recomendado </li>"
     f4: Comentarios
     text4: "Permite a todos los miembros de la comunidad comentarse de manera pública, grupal o personal para de esta forma interactuar social o académicamente."
-    features4: "Algunas de sus características son: </br>-Públicos o privados </br>-A uno o varios cursos </br>-Contenido enriquecido (multimedia)"
+    features4: "</br>Características: </br></br><li class='block'>Públicos o privados </li><li class='block'>A uno o varios cursos </li><li class='block'>Contenido enriquecido (multimedia)</li>"
     f5: Chat
     text5: "Cada usuario puede utilizar un canal de chat con sus amigos y compañeros. Además cada curso tiene una sala de chat grupal para compartir contenido en tiempo real."
-    features5: "Algunas de sus características son: </br>-Chat individual con amigos y compañeros </br>-Salas de chat grupal por curso </br>-Compartir multimedia </br>-Mensajes privados"
+    features5: "</br>Características: </br></br><li class='block'>Chat individual con amigos y compañeros </li><li class='block'>Salas de chat grupal por curso </li><li class='block'>Compartir multimedia </li><li class='block'>Mensajes privados</li>"
     f6: Comunidad
     text6: "Todos los usuarios tienen un perfil y pueden ver e interactuar con los de sus amigos promoviendo la interacción social dentro de la institución."
-    features6: "Algunas de sus características son: </br>-Encontrar amigos </br>-Encontrar compañeros de clase y profesores </br>-Solicitudes de amistad </br>-Interacción en perfiles"
+    features6: "</br>Características: </br></br><li class='block'>Encontrar amigos </li><li class='block'>Encontrar compañeros de clase y profesores </li><li class='block'>Solicitudes de amistad </li><li class='block'>Interacción en perfiles</li>"
     f7: Calificaciones
     text7: "Cada usuario puede ver su avance educativo. Los profesores visualizan los resultados de todos sus alumnos de una manera muy sencilla y en tiempo real."
-    features7: "Algunas de sus características son: </br>-Calificaciones por curso </br>-Calificaciones individuales </br>-Calificaciones por actividad"
+    features7: "</br>Características: </br></br><li class='block'>Calificaciones por curso</li><li class='block'>Calificaciones individuales</li><li class='block'>Calificaciones por actividad</li>"
     f8: Estadísticas
     text8: "Los administradores de la institución tienen acceso a un panel de estadísticas que les permite conocer lo que está sucediendo dentro del plantel y con esto tomar decisiones importantes con conocimiento de causa."
-    features8: "Algunas de sus características son: </br>-Uso de las herramientas de la plataforma </br>-Ingreso al sistema </br>-Calificaciones </br>-Por curso </br>-Por alumno"
+    features8: "</br>Características: </br></br><li class='block'>Uso de las herramientas de la plataforma </li><li class='block'>Ingreso al sistema </li><li class='block'>Calificaciones </li><li class='block'>Por curso </li><li class='block'>Por alumno</li>"
     f9: Radar
     text9: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa <a href='http://radarescolar.com' targer='_blank'>Ir a Radar Escolar</a>."
-    features9: "Algunas de sus características son: </br>-Análisis y reportes de bullying </br>- Sistema de alerta de bullying </br>- Asesoría para prevención, detección y manejo de bullying"
+    features9: "</br>Características: </br></br><li class='block'>Análisis y reportes de bullying </li><li class='block'> Sistema de alerta de bullying </li><li class='block'> Asesoría para prevención, detección y manejo de bullying</li>"
     f10: Gospel
     f10_sub: "Auto implementación"
     text10: "Ingresa al sistema de implementación especializada de Cúrsame para administradores, profesores y alumnos, capacita a tu escuela rapidamente."
-    features10: "Algunas de sus características son: </br>-Capacitación escolar por tipo de usuario </br>- Capacitación escolar por institución </br>- Maximizador de capacidades por módulo"
+    features10: "Características: </br></br><li class='block'>Capacitación escolar por tipo de usuario </li><li class='block'> Capacitación escolar por institución </li><li class='block'> Maximizador de capacidades por módulo</li>"
     f11: Analytics
     text11: "Ingresa de manera avanzada a nustro sistema de análisis y reporte que te permitirá de una manera dinámica visualizar las actividades de tu institución."
     features11: ""
