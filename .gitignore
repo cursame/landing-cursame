@@ -3,7 +3,7 @@
 .DS_STORE
 *.swp
 *.rbc
-.sass-cache
+/.sass-cache
 /pkg
 /doc/api
 /Gemfile.lock
