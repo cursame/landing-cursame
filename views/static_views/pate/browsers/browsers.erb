@@ -1,4 +1,6 @@
+<li>
 <p>¿Cual es el navegador que usas? y ¿Que versión de este tienes?</p>
+
 <select class="mutant_select_1" name="browser">
 	<option value="1">Internet Explorer (IE)</option>
 	<option value="2">Firefox</option>
@@ -7,9 +9,11 @@
 	<option value="5">Opera</option>
 	<option value="6">Maxthon</option>
 </select>
+</li>
 
-<div id="browser"><%= erb :'/static_views/pate/browsers/browser1'%></div>
-
+<li>
+	<div id="browser"><%= erb :'/static_views/pate/browsers/browser1'%></div>
+</li>
 <script type="text/javascript">
   $(document).ready(function(){
 	$( ".mutant_select_1" ).change(function() {

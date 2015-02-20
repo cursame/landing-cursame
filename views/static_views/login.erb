@@ -1,10 +1,10 @@
-<%= erb :'/static_renders/simple_header', locals: {title: t.forms.login_title , icon: true,  call_icon: 'login'}%>
-<div class="wrapper">
+<div class="intro intro-main"> 
 	<div class="cols-12">
 		<div class="col col-12">
 			<div class="col-inner">
-				<div class="loginbox">
-					<div class="info">
+				<div class="loginbox white_transparent">
+					<div class="content">
+							<%= erb :'/static_renders/simple_header', locals: {title: t.forms.login_title , icon: true,  call_icon: 'login'}%>
 						<div class="errors"></div>
 						<form class="form" action="http://api.cursa.me/api/sessions/create" method="POST" enctype="multipart/form-data" data-external="true">
 							<%= t.forms.email %>: <input type="email" name="email" value="" placeholder="your@email.com" required/>
