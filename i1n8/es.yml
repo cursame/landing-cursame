@@ -228,10 +228,11 @@
     testimonials: "Testimonios"
     be_sponsor: "Quiero ser patrocinador"
     sponsors: "Patrocinadores"
-    text3: "<p>La plataforma Cúrsame tiene un costo promedio de $40,000.00 (Cuarenta mil pesos mexicanos) al año por plantel educativo. El subsidio como beneficio del Programa de Acceso a la Tecnología Educativa varía del 20% al 100% por institución.</p><p>Unete al grupo de patricinadores que hacen posibles que los alumnos y profesores tengan a su alcance una de las mejores tecnologías educativas que se ha desarrollado.</p>"
+    text3: "<p>La plataforma Cúrsame tiene un costo promedio de $40,000.00 (Cuarenta mil pesos mexicanos) al año por plantel educativo. El subsidio como beneficio del Programa de Acceso a la Tecnología Educativa varía del 20% al 100% por institución.</p>"
     private: Privacidad
     text4: "Aplica la Ley Federal Protección de Datos Personales en Posesión de Particulares. Esta ley tiene la finalidad de regular el tratamiento legítimo controlado e informado de datos personales, a efecto de garantizar la privacidad y el derecho a la autodeterminación informativa de las personas."
     t4: "Impacto de Cúrsame"
+    text5: <p>Unete al grupo de patricinadores que hacen posibles que los alumnos y profesores tengan a su alcance una de las mejores tecnologías educativas que se ha desarrollado.</p>
     lic1: "Hemos beneficiado a 145,734 estudiantes de nivel básico, medio-superior y superior."
     lic2: "Participamos en 314 instituciones en distintos estados de la república Mexicana."
     lic3: "Tenemos una adopción del 80% los primeros 6 meses de uso."

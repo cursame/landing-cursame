@@ -112,3 +112,17 @@
   background: #00B2FF;
   border-color: rgba(255,255,255,0.8);
 }
+
+.btn-green{
+  background: rgba(67,180,12,1);
+  font-size: 1em;
+  color: #FFFFFF;
+  font-weight: bold ;
+  z-index: 325;
+  border: 1px solid;
+  border-color: rgba(255,255,255,0.5);
+}
+
+.btn-green:hover  {
+  background-color: rgba(91,161,37,1);
+}
