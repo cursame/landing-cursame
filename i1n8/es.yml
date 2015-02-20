@@ -93,7 +93,7 @@
     f10: Gospel
     f10_sub: "Auto implementación"
     text10: "Ingresa al sistema de implementación especializada de Cúrsame para administradores, profesores y alumnos, capacita a tu escuela rapidamente."
-    features10: "Características: </br></br><li class='block'>Capacitación escolar por tipo de usuario </li><li class='block'> Capacitación escolar por institución </li><li class='block'> Maximizador de capacidades por módulo</li>"
+    features10: "</br> Características: </br></br><li class='block'>Capacitación escolar por tipo de usuario </li><li class='block'> Capacitación escolar por institución </li><li class='block'> Maximizador de capacidades por módulo</li>"
     f11: Analytics
     text11: "Ingresa de manera avanzada a nustro sistema de análisis y reporte que te permitirá de una manera dinámica visualizar las actividades de tu institución."
     features11: ""
