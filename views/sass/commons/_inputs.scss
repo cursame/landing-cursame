@@ -9,9 +9,10 @@
   border: 1px solid #ececec; 
   padding: 9px; 
   width:100%; 
-  margin-bottom: 20px; 
-  box-shadow: inset 0px 1px 1px rgba( 0,0,0,0.51 ); 
+  margin:5px 0 20px 0; 
+  box-shadow: inset 0px 1px 1px rgba( 0,0,0,0.3 ); 
   clear: both;
+  text-align: left;
 }
 
 #{$all-text-inputs-focus}, textarea:focus { 

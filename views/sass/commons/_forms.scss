@@ -1,9 +1,15 @@
 /*GENERAL*/
 
+label {
+  float: left;
+  text-align: left;
+}
+
 textarea {
   width: 100%;
   resize: none;
   padding: 15px 10px;
+  text-align: left;
 }
 
 .check-box-position {
@@ -25,6 +31,7 @@ select {
     font-size: 14px;
     height: 35px;
     width: auto;
+    text-align: left;
 
   @include max-screen (500px) {
     width: 100%;
