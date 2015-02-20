@@ -1,37 +1,63 @@
-<div class="content  bg-gray">
+<%= erb :'/static_renders/simple_header', locals: {title: t.forms.contact_title, icon: true, call_icon: 'contact'}%>
+
+<div class="contact-form">
 	<div class="wrapper">
 		<div class="cols-12">
 			<div class="col col-12">
 				<div class="col-inner">
 					<div class="formsheet">
-						<%= erb :'/static_renders/simple_header', locals: {title: t.forms.contact_title, icon: true, call_icon: 'contact'}%>
+					
 						<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
+						<div class="thirds">
+
+							<div class="left">
+								<ul class="question">
+									<li>
+										<%= t.forms.name %>: <input type="text" name="name" />
+									</li>
+									<li>
+										<%= t.forms.email %>: <input type="text" name="email" />
+									</li>
+									<li>
+										<%= t.forms.phone %>: <input type="text" name="phone" />
+									</li>
+									<li>
+										<%= t.forms.institution %>: <input type="text" name="institution" />
+									</li>
+								</ul>
+							</div>
+
+							<div class="center">
+								<ul class="question">
+									<li>
+										<%= t.forms.content %>: <textarea name="content"></textarea>
+									</li>
+									<li>
+										<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-send menu-get" />
+									</li>
+								</ul>
+							</div>
+
+						<div class="right">
 							<ul class="question">
 								<li>
-									<%= t.forms.name %>: <input type="text" name="name" />
-								</li>
-								<li>
-									<%= t.forms.email %>: <input type="text" name="email" />
-								</li>
-								<li>
-									<%= t.forms.phone %>: <input type="text" name="phone" />
-								</li>
-								<li>
-									<%= t.forms.institution %>: <input type="text" name="institution" />
-								</li>
-								<li>
-									<%= t.forms.content %>: <textarea name="content"></textarea>
-								</li>
-								<li>
-									<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-send menu-get" />
+								  <i class="i i-social5"></i> <a href="mailto:hola@cursa.me">hola@cursa.me</a>
+							  </li>
+		            <li>  
+		            	<i class="i i-social1"></i>+52 (55) 63 6328 93
+		            </li>
+		            <li>
+									<i class="i i-social2"></i>Pomona 7, Roma, Ciudad de México
 								</li>
 							</ul>
-						</form>
-						<div class="form-title bg-darkgray">
-							<center>			 Mail: hola@cursa.me
-							Cel: +52 (55) 63 6328 93
-							Dirección: Pomona 7, Roma Norte, Cuauhtémoc, Ciudad de México </center>
 						</div>
+
+
+						</div>
+					</form>
+
+
+		
 					</div>
 				</div>
 			</div>

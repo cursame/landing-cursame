@@ -3,13 +3,15 @@
 		<div class="col col-12">
 			<div class="col-inner">
 				<div class="loginbox white_transparent">
-					<div class="content">
-							<%= erb :'/static_renders/simple_header', locals: {title: t.forms.login_title , icon: true,  call_icon: 'login'}%>
-						<div class="errors"></div>
+					<div class="title-sign">
+						<h4>	Iniciar sesión</h4>
+					</div>
+					<div class="errors"></div>
+					<div class="content-login">
 						<form class="form" action="http://api.cursa.me/api/sessions/create" method="POST" enctype="multipart/form-data" data-external="true">
 							<%= t.forms.email %>: <input type="email" name="email" value="" placeholder="your@email.com" required/>
 							<%= t.forms.password %>: <input type="password" name="password" value="" placeholder="<%= t.forms.password %>" required/>
-							<input type="submit" value="<%= t.forms.send_login %>" class="btn btn-cta menu-get" />
+							<input type="submit" value="<%= t.forms.send_login %>" class="btn btn-send menu-get" />
 						</form>
 					</div>
 				</div>

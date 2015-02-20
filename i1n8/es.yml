@@ -190,7 +190,7 @@
     email: "Email"
     phone: "Teléfono"
     institution: "Institución"
-    content: "Contenido"
+    content: "Mensaje"
     send_contact: "Enviar"
     password: "Contraseña"
     send_login: "Ingresar"

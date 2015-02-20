@@ -1,6 +1,6 @@
 
 form,label,textarea{
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 5px;
 }
 
@@ -15,6 +15,7 @@ textarea {
   resize: none;
   padding: 15px 10px;
   text-align: left;
+  height: 135px;
 }
 
 .check-box-position {
@@ -33,7 +34,7 @@ select {
     margin-top: 5px;
     appearance:none;
     cursor:pointer;
-    font-size: 14px;
+    font-size: 17px;
     height: 35px;
     width: auto;
     text-align: left;
@@ -109,7 +110,7 @@ input.third-quarter {
 .thirds {
 
   .left  {
-    width: 32%;
+    width: 32.5%;
     float: left;
 
     @include max-screen(800px) {
@@ -119,7 +120,7 @@ input.third-quarter {
 
   .center {
     width: 32%;
-    margin: 0 1%;
+    margin: 0 0.1%;
     float: right;
     float: left;
    

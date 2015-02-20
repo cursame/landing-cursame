@@ -262,9 +262,8 @@ hr.cta {
 }
 
 .form-title {
-	padding: 3% 0 2% 0;
+	padding: 7% 0 2% 0;
 	text-align: left;
-	margin-bottom: 30px;
 
 	h3 {
 		text-align: left;
@@ -697,15 +696,14 @@ ul.social_list {
 
 .loginbox{
 	text-align: left;
-	margin: 100px 30%;
+	margin: 14% 30% 5%;
 	width: auto;
 	height: auto;
 	border-radius: 3px;
 	@include clearfix;
-	border: solid 1px #ececec; 
   width:40%;
   color: #363434;
-	padding: 4%;
+	padding: 0;
 	-webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -718,8 +716,8 @@ ul.social_list {
 		margin-bottom: 25px;
 	}
 
-	.content {
-		padding: 0 10px;
+	.content-login {
+		padding: 0 5%;
 	}
 
 	@include max-screen(500px) {
@@ -735,10 +733,13 @@ ul.social_list {
 	.title-sign {
 		background: white;
 		border-radius: 3px 3px 0 0;
-		padding:12px 20px;
-		padding-bottom: 30px;
+		padding:6% 20px;
 		margin-bottom: 20px;
-		height: 80px;
+		
+
+		h4 {
+			color: rgb(0, 158, 255);
+		}
 		
 		
 		& p {
@@ -779,7 +780,7 @@ ul.social_list {
 }
 
 .contact-form{
-	margin: 30px 0;
+	margin: 10px 0 70px 0;
 	padding-top: 15px;
 
 	@include max-screen (500px) {
@@ -1891,7 +1892,7 @@ ul.question {
 
 	li {
 		list-style: none;
-	  padding: 15px 30px;
+	  padding: 8px 3%;
 	}
 
 
