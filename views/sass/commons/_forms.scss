@@ -13,9 +13,9 @@ textarea {
 
 select {
     box-shadow: 0 1px 0 #fff;
-    background: #f9f9f9;
+    background: #E6F2F7;
     color: #323232;
-    border:1px solid #ddd;
+    border:1px solid #ccc;
     outline:none;
     display: inline-block;
     margin-top: 5px;
@@ -31,6 +31,10 @@ select {
 }
 
 /*FORMS - Columns*/
+.form {
+  background:none;
+}
+
 .full {
   width: 100%;
 
@@ -88,45 +92,6 @@ input.third-quarter {
   }
 }
 
-.l4col-r8col {
-  .left  {
-    width: 24%;
-    float: left;
-
-    @include max-screen(800px) {
-      width: 100% !important;
-    }
-  }
-
-  .right {
-    width: 74%;
-    float: right;
-
-    @include max-screen(800px) {
-      width: 100% !important;
-    }
-  }
-}
-
-.l8col-r4col {
-  .left  {
-    width: 74%;
-    float: left;
-
-    @include max-screen(800px) {
-      width: 100% !important;
-    }
-  }
-
-  .right {
-    width: 24%;
-    float: right;
-
-    @include max-screen(800px) {
-      width: 100% !important;
-    }
-  }
-}
 
 .thirds {
 
@@ -159,4 +124,3 @@ input.third-quarter {
     }
   }
 }
-

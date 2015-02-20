@@ -498,12 +498,11 @@ h6{
 
 .item2 {
 	background:$white;
-	padding: 20% 12%;
+	padding: 16% 12%;
 	font-size: 18px;
 	text-align: left;
 	line-height: 25px;
 	border-radius: 3px 3px 0 0; 
-	height: 350px;
 	
 		span {
 			text-align: justify;
@@ -577,7 +576,7 @@ ul.social_list {
 		color: $white;
 		list-style-image: url('/img/check_color.png');
 		padding: 0 5px;
-		margin: 0 5% 40px 5%;
+		margin: 0 5% 30px 5%;
 		vertical-align: top;
 	}
 }
@@ -700,6 +699,7 @@ ul.social_list {
 
 	form,label,textarea{
 		font-size: 14px;
+		margin-bottom: 5px;
 
 	}
 
@@ -1580,14 +1580,18 @@ padding: 25px 0 10px 0;
 }
 
 .plugins {
-	margin-top: 5%;
-	padding-top: 35px;
+	margin-top: 2%;
+	padding-top: 4%;
 
 	  p {
     color: $white;
-    padding: 5% 0 7% 0;
+    padding: 2% 0 3% 0;
     font-size: 21px;
     font-weight: lighter;
+  }
+
+  h2 {
+  	padding: 20px 0;
   }
 }
 .right {
@@ -1602,7 +1606,7 @@ padding: 25px 0 10px 0;
 .banner_content{
 	background:#EDEDED;
 	width: 100%;
-	padding: 35px;
+	padding-bottom: 25px;
 }
 .bannerx { 
 	    position: relative; 
