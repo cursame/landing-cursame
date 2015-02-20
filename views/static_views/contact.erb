@@ -1,9 +1,9 @@
 <%= erb :'/static_renders/simple_header', locals: {title: t.forms.contact_title, icon: true, call_icon: 'contact'}%>
-<div class="content">
+<div class="content  intro-stats">
 	<div class="wrapper">
 		<div class="cols-12">
 
-			<div class="col col-6">
+			<div class="col col-5">
 				<div class="col-inner">
 					<div class="info">
 						<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
@@ -11,21 +11,30 @@
 							<%= t.forms.email %>: <input type="text" name="email" />
 							<%= t.forms.phone %>: <input type="text" name="phone" />
 							<%= t.forms.institution %>: <input type="text" name="institution" />
-						</form>
 					</div>
 				</div>
 			</div>
-			<div class="col col-6">
+
+			<div class="col col-5">
 				<div class="col-inner">
-					<div class="info">
+					<div class="">
 						<%= t.forms.content %>: <textarea name="content"></textarea>
-						<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-cta menu-get" />
-					</form>
+							<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-send menu-get" />
+					</div>
 				</div>
 			</div>
-		</div>
+			</form>
 
-
+			<div class="col col-2">
+				<div class="col-inner">
+					<div class="info">
+						<p>hola@cursa.me</p>
+						<hr>
+						<p>+52 (55) 63 6328 93</p>
+						<hr><p>Pomona 7, Roma Norte, Cuauhtémoc, Ciudad de México</p>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>

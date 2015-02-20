@@ -82,12 +82,33 @@
 }
 
 .btn-sponsor {
-  background: rgba(233,59,45,1);
+  background: rgba(236,62,44,1);
   font-size: 1.18em;
   color: #FFFFFF;
   font-weight: bold ;
   z-index: 325;
   border: 2px solid;
   border-color: rgba(255,255,255,0.8);
-  padding: 25px 30px;
+  padding: 15px 30px;
+}
+
+.btn-sponsor:hover {
+  background: rgba(192,54,39,1);
+}
+
+
+.btn-send{
+  background: rgba(19,135,217,1);
+  font-size: 1em;
+  color: #FFFFFF;
+  font-weight: bold ;
+  z-index: 325;
+  border: 1px solid;
+  border-color: rgba(255,255,255,0.5);
+  width: 100%;
+}
+
+.btn-send:hover  {
+  background: #00B2FF;
+  border-color: rgba(255,255,255,0.8);
 }
