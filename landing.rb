@@ -52,6 +52,10 @@ register Sinatra::AssetPack
     not_found do
       erb :"errors/notfound", :layout => :"layouts/application"
     end
+
+    error do
+       erb :"errors/generic", :layout => :"layouts/application"
+    end
     get '/' do 
     	R18n::I18n.default = 'es' if session[:locale] == nil
     	session[:locale] = 'es' if session[:locale] == nil
