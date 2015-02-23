@@ -44,6 +44,7 @@ bnefits_text:
   tx1: "Get your institution in touch any moment, any place."
   tx2: "Manage efficiently the process of teaching and learning."
   tx3: "Access your school any time any place"
+  call: "I want to know all benefits"
 footer: 
   contact: Contact
   english: English
