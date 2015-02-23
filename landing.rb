@@ -48,9 +48,13 @@ register Sinatra::AssetPack
  
 
 ###################### routes ####################################
+
+    not_found do
+      erb :"errors/notfound", :layout => :"layouts/application"
+    end
     get '/' do 
     	R18n::I18n.default = 'es' if session[:locale] == nil
-    	session[:locale] = R18n::I18n.default if session[:locale] == nil
+    	session[:locale] = 'es' if session[:locale] == nil
     	session[:current_route] = ''
     	redirect  "/#{session[:locale]}"
     end
@@ -226,7 +230,7 @@ helpers do
   ####### insternal static link ###########
 
   def link_to(name, url, target = '', classhtml = '')
-  	if url == 'es' || url == 'en'
+  	if url == 'to_es' || url == 'to_en'
   	"<a href='#{url}' target='#{target}'>#{name}</a>" 
   	else
   	"<a href='/#{session[:locale]}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"
