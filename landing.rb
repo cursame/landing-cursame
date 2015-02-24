@@ -269,7 +269,7 @@ helpers do
 
   def link_to(name, url, target = '', classhtml = '')
   	if url == 'to_es' || url == 'to_en'
-  	"<a href='#{url}' target='#{target}'>#{name}</a>" 
+  	"<a href='/#{url}' target='#{target}'>#{name}</a>" 
   	else
   	"<a href='/#{session[:locale]}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"
     end
