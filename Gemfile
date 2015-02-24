@@ -15,3 +15,4 @@ gem "aws-ses", "~> 0.6.0", :require => 'aws/ses'
 gem "sanitize"
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem "passenger"
+gem "useragent"

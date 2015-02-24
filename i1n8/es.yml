@@ -212,6 +212,10 @@
     society6: "Sociedad en nombre colectivo"
     society7: "Sociedad cooperativa"
     send_sponsor: "Contactar"
+    type_contact: "Contacta una de las areas"
+    sales_area: "Area de ventas"
+    social_area: "Area de compromiso social"
+    suport_area: "Area de soporte"
   pate:
     t1: "Programa de Acceso a la Tecnología Educativa"
     t2: "¡El esfuerzo es de todos!"

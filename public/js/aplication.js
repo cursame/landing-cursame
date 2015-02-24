@@ -32,6 +32,12 @@ $(document).ready(function(){
     });*/
     addNameINattrToSelect();
     superScroll();
+
+      $('.totarget').click(function(){
+	   var to_div = $(this).data('target');
+	   $('#'+to_div).toggle('blind', 400);
+	   alert('target');
+	  });
 });
 
 function changeTab(tab){

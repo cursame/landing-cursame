@@ -11,48 +11,57 @@
 								<div class="left">
 									<ul class="question">
 										<li>
-											<%= t.forms.name %>: <input type="text" name="name"  required/>
-										</li>
-										<li>
-											<%= t.forms.email %>: <input type="text" name="email" required/>
-										</li>
-										<li>
-											<%= t.forms.phone %>: <input type="number" name="phone" required/>
-										</li>
-										<li>
-											<%= t.forms.institution %>: <input type="text" name="institution" required/>
-										</li>
-									</ul>
-								</div>
-								<div class="center">
-									<ul class="question">
-										<li>
-											<%= t.forms.content %>: <textarea name="content" required></textarea>
-										</li>
-										<li>
-											<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-send menu-get" />
-										</li>
-									</ul>
-								</div>
-								<div class="right">
-									<ul class="question">
-										<li>
-											<i class="i i-social5"></i> <a href="mailto:hola@cursa.me">hola@cursa.me</a>
-										</li>
-										<li>
-											<i class="i i-social1"></i>+52 (55) 63 6328 93
-										</li>
-										<li>
-											<i class="i i-social2"></i>Pomona 7, Roma, Ciudad de México
-										</li>
-									</ul>
-								</div>
+										    <%= t.forms.type_contact %>: 
+											<select name="simglearea">
+												<option value="0"><%= t.forms.sales_area %></option>
+												<option value="1"><%= t.forms.social_area %></option>
+												<option value="2"><%= t.forms.suport_area %></option>
+											</select>
+										</select>
+									</li>
+									<li>
+										<%= t.forms.name %>: <input type="text" name="name"  required/>
+									</li>
+									<li>
+										<%= t.forms.email %>: <input type="text" name="email" required/>
+									</li>
+									<li>
+										<%= t.forms.phone %>: <input type="number" name="phone" required/>
+									</li>
+									<li>
+										<%= t.forms.institution %>: <input type="text" name="institution" required/>
+									</li>
+								</ul>
 							</div>
-						</form>
-						
-					</div>
+							<div class="center">
+								<ul class="question">
+									<li>
+										<%= t.forms.content %>: <textarea name="content" required></textarea>
+									</li>
+									<li>
+										<input type="submit" value="<%= t.forms.send_contact %>" class="btn btn-send menu-get" />
+									</li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="question">
+									<li>
+										<i class="i i-social5"></i> <a href="mailto:hola@cursa.me">hola@cursa.me</a>
+									</li>
+									<li>
+										<i class="i i-social1"></i>+52 (55) 63 6328 93
+									</li>
+									<li>
+										<i class="i i-social2"></i>Pomona 7, Roma, Ciudad de México
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>

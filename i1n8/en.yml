@@ -86,6 +86,10 @@ forms:
   society6: "Sociedad en nombre colectivo"
   society7: "Sociedad cooperativa"
   sponsor_title: "Sponsor Form"
+  type_contact: "Select one area"
+  sales_area: "Sales area"
+  social_area: "Area of social commitment"
+  suport_area: "Support Area"
 functions: 
   bit: Bit
   bittext: "Software for flexible and integral school and administrative control to manage the processes of the institutions."

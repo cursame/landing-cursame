@@ -13,6 +13,7 @@ require 'sanitize'
 require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/cross_origin'
+require 'useragent'
 
 ###################### define run methods #########################
 enable :sessions
@@ -79,6 +80,13 @@ register Sinatra::AssetPack
     
     ###### define index ########
 	get '/:locale' do
+		########## detectar request para mobile #############
+		string = request.user_agent
+		user_agent = UserAgent.parse(string)
+		puts user_agent.browser
+		session[:browser] = user_agent.browser
+		session[:platform] = user_agent.platform
+
 		session[:current_route] = ''
 	    erb :index, :layout => :"layouts/application"
 	end 
@@ -178,9 +186,34 @@ register Sinatra::AssetPack
        puts "************>>>> send mail"	
        mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
        puts "************>>>> sending "	
-       mail_to_as = ['jose_alfredo@cursa.me', 'gabriel@cursa.me', 'rafael@cursa.me', 'juan@cursa.me']
-       #mail_to_as = 'jose_alfredo@cursa.me'
-       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contactado para Cúrsame', mail_stablish )  
+
+       case "#{params[:simglearea]}"
+       	  when  "Area de ventas" 
+       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me']
+       	  contact_title = "Contacto de ventas Cúrsame"
+       	  puts "#{params[:simglearea]}"
+       	  when  "Sales area"
+       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me']
+       	  contact_title = "Contacto de ventas Cúrsame"
+       	  puts "#{params[:simglearea]}"
+       	  when  "Area de compromiso social"
+       	  mail_to_as = 'juan@cursa.me'
+       	  contact_title "Contacto para Impacto social Cúrsame"
+       	  puts "#{params[:simglearea]}"
+       	  when  "Area of social commitment"
+       	  mail_to_as = 'juan@cursa.me'
+       	  contact_title "Contacto para Impacto social Cúrsame"
+       	  puts "#{params[:simglearea]}"
+       	  when   "Area de soporte" 
+       	  mail_to_as = 'fernanda@cursa.me'
+       	  contact_title = "Contacto de soporte"
+       	  puts "#{params[:simglearea]}"
+       	  when "Support Area"
+       	  mail_to_as = 'fernanda@cursa.me'
+       	  contact_title = "Contacto de soporte"
+       	  puts "#{params[:simglearea]}"
+       end
+       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', contact_title, mail_stablish )  
 	end	
 
 	post '/send_call' do 
