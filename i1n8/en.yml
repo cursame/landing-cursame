@@ -101,17 +101,17 @@ functions:
   f7: Grades
   f8: Statistics
   f9: Radar
-  features1: "Some features are: </br> -Create one or more courses </br> -Deadline </br> -Attached Files </br> -Recommended content </br>-Assesment listing"
-  features10: "Some of its features are: </br>-School training according to the user </br>- School training per institution</br>- Maximizer of abilities per module"
-  features11: "Some of its features are"
-  features2: "Some of its features are: </br> -Create one or more courses </br> -Deadline </br> -Attached Files </br> -Recommended content </br>-Assesment listing"
-  features3: "Some features are: </br> -Create one or more courses </br> -Deadline </br> -Attached Files </br> -Recommended content </br>-Assesment listing"
-  features4: "Some of its features are: </br>-Public or private </br>-to one or several courses </br>-Enriched content (multimedia)"
-  features5: "Some of its features are: </br>-Personal chat with friends and classmates </br>-Groupal chats for each course </br>-Share multimedia </br>-Private messages"
-  features6: "Some of its features are: </br>-Find friends </br>- Find classmates and teachers </br>-Friendship requests </br>-Interaction with profiles"
-  features7: "Some of its features are: </br>-Grades per course </br>-Individual Grades </br>-Activity Assessment"
-  features8: "Some of its features are: </br>-Platform tools usage </br>-Access to the system </br>-Grades </br>-per course </br>-Per student"
-  features9: "Some of its features are: </br>-Analysis and reports of  bullying </br>-Bullying Alert System</br>- Advice for prevention, detection and management of bullying"
+  features1: "</br></br>Some features are: </br></br> <li class='block'>Create one or more courses </li> <li class='block'>Deadline </li> <li class='block'>Attached Files </li> <li class='block'>Recommended content </li><li class='block'>Assesment listing</li>"
+  features10: "</br></br>Some of its features are: </br></br><li class='block'>School training according to the user </li><li class='block'> School training per institution</li><li class='block'> Maximizer of abilities per module</li>"
+  features11: "</br></br>Some of its features are"
+  features2: "</br></br>Some of its features are: </br></br> <li class='block'>Create one or more courses </li> <li class='block'>Deadline </li> <li class='block'>Attached Files </li> <li class='block'>Recommended content </li><li class='block'>Assesment listing</li>"
+  features3: "</br></br>Some features are: </br> </br><li class='block'>Create one or more courses </li> <li class='block'>Deadline </li> <li class='block'>Attached Files </li> <li class='block'>Recommended content </li><li class='block'>Assesment listing</li>"
+  features4: "</br></br>Some of its features are: </br></br><li class='block'>Public or private </li><li class='block'>to one or several courses </li><li class='block'>Enriched content (multimedia)</li>"
+  features5: "</br></br>Some of its features are: </br></br><li class='block'>Personal chat with friends and classmates </li><li class='block'>Groupal chats for each course </li><li class='block'>Share multimedia </li><li class='block'>Private messages</li>"
+  features6: "</br></br>Some of its features are: </br></br><li class='block'>Find friends </li><li class='block'> Find classmates and teachers </li><li class='block'>Friendship requests </li><li class='block'>Interaction with profiles</li>"
+  features7: "</br></br>Some of its features are: </br></br><li class='block'>Grades per course </li><li class='block'>Individual Grades </li><li class='block'>Activity Assessment</li>"
+  features8: "</br></br>Some of its features are: </br></br><li class='block'>Platform tools usage </li><li class='block'>Access to the system </li><li class='block'>Grades </li><li class='block'>per course </li><li class='block'>Per student</li>"
+  features9: "</br></br>Some of its features are: </br></br><li class='block'>Analysis and reports of  bullying </li><li class='block'>Bullying Alert System </li><li class='block'> Advice for prevention, detection and management of bullying</li>"
   mixpanel: MixPanel
   mixpaneltext: "The most advanced  plataform for data analysis of the market de análisis de datos del mercado and the biggest legal plaform in Mexico."
   plugins: Integrations
