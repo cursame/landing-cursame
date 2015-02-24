@@ -72,7 +72,6 @@ function sendForm(){
 	   	   sendingAJAX(url, formData, dataexternal,function(data, err){
 	   	   	if (err) 
 	            return console.log("Ha ocurrido un error al enviar el formulario");
-	        console.log('Se ha enviado correctamente su solicitud.')
 	        rescueValueSelect();
 	        $('form')[0].reset();
 
@@ -104,6 +103,8 @@ function sendingAJAX(url, formData, external ,callback){
 	        if ( external == true ) {
 	        	var token =  data.response.token
 	        	window.location.href = "http://"+data.response.subdomain+".cursa.me/users/sign_in?auth_token="+data.response.token;
+	        } else {
+	           headNotice("<p style='font-size:20px; color: #fff; margin-top:20px;'>Formulario enviado correctamente</p>");
 	        }
 	    },
 	    error: function(err) {
@@ -159,4 +160,11 @@ function superScroll(){
 	 	$("html, body").animate({ scrollTop: $(target).offset().top}, 200);
 	 	return false;
 	});
+}
+
+function headNotice(text){
+	$('.notice_head').html(text);
+	$('.notice_head').slideToggle();
+    setTimeout(function(){ $('.notice_head').slideToggle(); }, 3000);
+
 }
