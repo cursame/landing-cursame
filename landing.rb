@@ -178,9 +178,9 @@ register Sinatra::AssetPack
        puts "************>>>> send mail"	
        mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
        puts "************>>>> sending "	
-       #mail_to_as = ['jose_alfredo@cursa.me', 'gabriel@cursa.me', 'rafael@cursa.me', 'juan@cursa.me']
-       mail_to_as = 'jose_alfredo@cursa.me'
-       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Te han contactado para Cúrsame', mail_stablish )  
+       mail_to_as = ['jose_alfredo@cursa.me', 'gabriel@cursa.me', 'rafael@cursa.me', 'juan@cursa.me']
+       #mail_to_as = 'jose_alfredo@cursa.me'
+       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contactado para Cúrsame', mail_stablish )  
 	end	
 
 	post '/send_call' do 
