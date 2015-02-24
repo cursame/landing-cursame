@@ -116,6 +116,7 @@ function sendingAJAX(url, formData, external ,callback){
 	         		var des = "Contraseña Incorrecta";
 
 	         	}
+	         	$('.errors').show();
 	         	$('.errors').html(des);
 	         }
 
