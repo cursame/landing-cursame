@@ -90,6 +90,7 @@ forms:
   sales_area: "Sales area"
   social_area: "Area of social commitment"
   suport_area: "Support Area"
+  charge: "Job title"
 functions: 
   bit: Bit
   bittext: "Software for flexible and integral school and administrative control to manage the processes of the institutions."

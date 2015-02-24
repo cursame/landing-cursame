@@ -184,7 +184,7 @@ register Sinatra::AssetPack
 
 	post '/mailer' do 
        puts "************>>>> send mail"	
-       mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution]}, :layout => false
+       mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution], charge: params[:charge]}, :layout => false
        puts "************>>>> sending "	
 
        case "#{params[:simglearea]}"
