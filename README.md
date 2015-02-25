@@ -53,8 +53,32 @@ Este es el mapa de la aplicación por vistas y renders
 			- us.erb        > Nosotros
 			- news.erb      > Noticias
 			- index_renders
-				- banner_head.erb > parte inicial de lindex de la landing
-				- pitch.erb       > segunta parte landing 
+				- banner_head.erb 	> parte inicial de lindex de la landing
+				- pitch.erb       	> segunta parte landing 
+				- clients.erb     	> tercera parte de landing 
+				- stats.erb       	> cuarta parte del landing 
+				- functions.erb   	> quinta parte muestra las funciones del landing
+				- offer.erb       	> sexta parte del landing
+				- trust_us.erb    	> septima parte del landing muestra testimonios
+			- pate
+				- browsers        	 > contiene los erb para formularios con los navegadores y sus versiones
+				- locations      	 > contiene los erb para formularios con los estados y municipios de México
+				- call.erb       	 > esta vista contiene la convocatoria de Escuelas Públicas
+				- sponsor_form.erb   > contiene el formulario para ser patrocinador
+				- head.erb           > primera parte de pate
+				- objetive.erb       > segunda parte de pate
+				- whowork.erb        > tercera parte de pate
+				- chart.erb          > cuarta parte de pate contiene datos y gráficas
+				- sponsors.erb       > quinta parte de pate contiene la parte de patrocinadores
+				- privacy.erb        > sexta parte de pate contiene la política de privacidad
+			- simple_renders
+                - testimonials.erb   > contiene un render genérico de testimonios
+            - static_renders
+                - header.erb         > contiene el head de aplication
+                - pateheader.erb     > contiene el head de pate
+                - simple_heather.erb > contiene el head en colores standar
+                - footer.erb         > contiene el footer
+
 
 
  

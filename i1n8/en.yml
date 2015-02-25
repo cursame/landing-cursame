@@ -118,7 +118,7 @@ functions:
   features8: "</br></br>Some of its features are: </br></br><li class='block'>Platform tools usage </li><li class='block'>Access to the system </li><li class='block'>Grades </li><li class='block'>per course </li><li class='block'>Per student</li>"
   features9: "</br></br>Some of its features are: </br></br><li class='block'>Analysis and reports of  bullying </li><li class='block'>Bullying Alert System </li><li class='block'> Advice for prevention, detection and management of bullying</li>"
   mixpanel: MixPanel
-  mixpaneltext: "The most advanced  plataform for data analysis of the market de análisis de datos del mercado and the biggest legal plaform in Mexico."
+  mixpaneltext: "The most advanced  platform for data analysis of the market and the biggest legal platform in Mexico."
   plugins: Integrations
   radar: Radar
   radartext: "Identifies, anticipates and deals with cases of school violence, be  part of the solution in you educative comunity."
@@ -229,7 +229,7 @@ social:
   li13: "Increases productivity, allows to strenghten teaching and improve learning."
   li21: "We deliver servers and tablets to those schools in need thanks to our allies."
   li22: "We provide teachers with technological training and advice."
-  li23: "The plataform promotes the digitalof academic content."
+  li23: "The platform promotes the digitalof academic content."
   li31: "Through some indicators we help detect:  Risk of dropping out."
   li32: "Drug use."
   li33: " School \"Bullying\" ."
