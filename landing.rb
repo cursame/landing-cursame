@@ -268,10 +268,15 @@ helpers do
   ####### insternal static link ###########
 
   def link_to(name, url, target = '', classhtml = '')
+    if session[:locale] == nil
+       locale = 'es'
+     else
+       locale = session[:locale]
+    end
   	if url == 'to_es' || url == 'to_en'
   	"<a href='/#{url}' target='#{target}'>#{name}</a>" 
   	else
-  	"<a href='/#{session[:locale]}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"
+  	"<a href='/#{locale}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"
     end
   end
 
