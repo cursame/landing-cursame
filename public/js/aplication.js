@@ -118,7 +118,7 @@ function sendingAJAX(url, formData, external ,callback){
 	         if ( external == true ) {
 	         	var description = err.responseJSON.description;
 	         	if (description == 'Email incorrect'){
-	         		var des = "Email Incorrecto";
+	         		var des = "Email Incorrecto, favor de verificar";
 	         	} else {
 	         		var des = "Contraseña Incorrecta";
 

@@ -81,6 +81,7 @@ h2.pate {
     color: $white;
     font-size: 15px;
     padding: 25px 10px;
+    text-align: left;
   }
 
   & a:hover {
@@ -98,7 +99,7 @@ h2.pate {
 
 .item3 {
   background:$white;
-  padding: 10% 12%;
+  padding: 10% 25px;
   text-align: center;
   line-height: 25px;
   border-radius: 3px 3px 0 0; 
@@ -109,11 +110,14 @@ h2.pate {
       line-height: 45px;
     }
   
-    span {
+    p {
       font-size: 18px;
-      text-align: justify;
       color: #323232;
       line-height: 25px;
+    }
+
+    span {
+      color: #323232;
     }
 
     img {

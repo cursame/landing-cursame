@@ -19,6 +19,7 @@ p{
 	color: #323232;
 }
 
+
 h1,h2,h3,h4,h5{
 	font-family: $font-radar;
 }
@@ -92,7 +93,7 @@ hr.cta {
 	border-top: solid 1px #cecece;
 	margin: 0;
 	position: relative;
-	top: 125px;
+	top: 55px;
 	z-index: -1;
 }
 
@@ -558,7 +559,7 @@ hr.cta {
 		margin: 1% 4%;
 	}
 	h3 {
-		color: rgba(181,198,199,1);
+		color: #1AB0D3;
 	}
 }
 .pitch {
@@ -596,6 +597,7 @@ ul.social_list {
 		padding: 0 5px;
 		margin: 0 5% 40px 5%;
 		vertical-align: top;
+		line-height: 26px;
 	}
 
 	li.title  {
@@ -1658,7 +1660,7 @@ padding: 25px 0 10px 0;
 
 	      p {
 	       	font-size: 17px;
-	       	line-height: 26px;
+	       	line-height: 30px;
 	       	color: #333;
 	       	margin-left: 5%;
 	       	margin-right: 3%;
@@ -1720,7 +1722,7 @@ padding: 25px 0 10px 0;
 	    text-align: justify ;
 	    border-left:none;
 	    background: #fff; 
-	    padding: 4% 3% 4% 0;
+	    padding: 3% 3% 4% 0;
 	    height: 240px;
 		}
 
@@ -1778,6 +1780,8 @@ padding: 25px 0 10px 0;
 			display: block;
 			text-align: center;
 			cursor: pointer;
+			font-size: 15px;
+
 		}
 	    
     & li{
@@ -1787,6 +1791,8 @@ padding: 25px 0 10px 0;
 			display: block;
 			text-align: center;
 			cursor: pointer;
+			font-size: 12px;
+			line-height: 3;
 
 			&:hover {
 				opacity: 99;
@@ -1904,14 +1910,12 @@ ul.question {
 
 .errors{
 	width: 100%;
-	padding: 5px;
-	background: #D52828;
+	padding: 10px 0 10px 30px;
+	background: #E84C27;
 	color:#fff;
-	margin-bottom: 15px;
-	margin-top: -19px;
-	height: 35px;
+	margin-bottom: 25px;
+	margin-top: -25px;
 }
-
 .notice_head{
 	width: 100%;
 	padding: 5px;

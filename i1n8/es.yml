@@ -92,10 +92,10 @@
     features9: "</br>Características: </br></br><li class='block'>Análisis y reportes de bullying </li><li class='block'> Sistema de alerta de bullying </li><li class='block'> Asesoría para prevención, detección y manejo de bullying</li>"
     f10: Gospel
     f10_sub: "Auto implementación"
-    text10: "Ingresa al sistema de implementación especializada de Cúrsame para administradores, profesores y alumnos, capacita a tu escuela rapidamente."
+    text10: "Ingresa al sistema de implementación especializada de Cúrsame para administradores, profesores y alumnos, capacita a tu escuela rápidamente."
     features10: "</br> Características: </br></br><li class='block'>Capacitación escolar por tipo de usuario </li><li class='block'> Capacitación escolar por institución </li><li class='block'> Maximizador de capacidades por módulo</li>"
     f11: Analytics
-    text11: "Ingresa de manera avanzada a nustro sistema de análisis y reporte que te permitirá de una manera dinámica visualizar las actividades de tu institución."
+    text11: "A través de nuestro sistema de análisis y reporte visualiza de una manera dinámica las actividades de tu institución"
     features11: ""
     plugins: Integraciones
     radar: Radar
@@ -221,25 +221,25 @@
     t1: "Programa de Acceso a la Tecnología Educativa"
     t2: "¡El esfuerzo es de todos!"
     b1: "Aplicar a la convocatoria"
-    txt1: "¿ Quieres ser patrocinador ? da click"
+    txt1: "¿Quieres ser patrocinador? da click"
     here: "aquí"
     ob1: "Objetivo general"
     textob1: "Promover el acceso a la tecnología educativa de calidad a través de subsidios a las escuelas de nivel básico, medio superior y superior de sostenimiento público."
     ob2: "Objetivo específico"
     textob2: "Implementar la plataforma educativa Cúrsame en las escuelas que lo soliciten y cumplan con los requisitos de selección."
     t3: "¿Cómo funciona?"
-    text2: "<p> La convocatoria para aplicar al programa será lanzada en Enero del 2015 y hasta el 1 de diciembre del 2015 estará vigente, o en su defecto hasta alcanzar un máximo de 500,000 Usuarios.</p> <p> Los participantes podrán ser todas las escuelas de la República Méxicana desde nivel básico hasta nivel superior, estas escuelas deben ser de sostenimiento público las escuelas privadas no podrán participar.</p>"
-    full_call: "Para obtener la convocatoria completa da click aquí"
+    text2: "<p> La convocatoria para aplicar al programa será lanzada en 1 marzo 2015 a 1 de abril 2015 estará vigente, o en su defecto hasta alcanzar un máximo de 500,000 Usuarios.</p> <p> Los participantes podrán ser todas las escuelas de la República Méxicana desde nivel básico hasta nivel superior, estas escuelas deben ser de sostenimiento público las escuelas privadas no podrán participar.</p>"
+    full_call: "Aplica aquí"
     testimonials: "Testimonios"
     be_sponsor: "Quiero ser patrocinador"
     sponsors: "Patrocinadores"
-    text3: "<p>La plataforma Cúrsame tiene un costo anual por plantel (Cuarenta mil pesos mexicanos) al año por plantel educativo. El subsidio como beneficio del Programa de Acceso a la Tecnología Educativa varía del 20% al 100% por institución.</p>"
+    text3: "<p>La plataforma Cúrsame tiene un costo anual por plantel al año por plantel educativo. El subsidio como beneficio del Programa de Acceso a la Tecnología Educativa varía del 20% al 100% por institución.</p>"
     private: Privacidad
     text4: "Aplica la Ley Federal Protección de Datos Personales en Posesión de Particulares. Esta ley tiene la finalidad de regular el tratamiento legítimo controlado e informado de datos personales, a efecto de garantizar la privacidad y el derecho a la autodeterminación informativa de las personas."
     t4: "Impacto de Cúrsame"
     text5: <p>Unete al grupo de patricinadores que hacen posibles que los alumnos y profesores tengan a su alcance una de las mejores tecnologías educativas que se ha desarrollado.</p>
     lic1: "Hemos beneficiado a 145,734 estudiantes de nivel básico, medio-superior y superior."
-    lic2: "Participamos en 314 instituciones en distintos estados de la república Mexicana."
+    lic2: "Participamos en 314 instituciones en distintos estados de la República Mexicana."
     lic3: "Tenemos una adopción del 80% los primeros 6 meses de uso."
     lic4: "El 90% de maestros consideran que cúrsame tiene un impacto positivo en el aprendizaje."
     lic5: "El 70% considera que cúrsame promueve el intercambio y búsqueda de información."
@@ -250,7 +250,7 @@
     impact_chart_txt1: "La percepción que se tiene de la mejora de gestión, organización y administración a través de la plataforma de las actividades de enseñanza aprendizaje en el aula y que tanto se favorecen con el uso de la plataforma."
     impact_chart_t2: "Adopción por escuela (6 meses después de implementación)"
     impact_chart_txt2: "La percepción que los docentes tienen sobre la mejora en el desarrollo de competencias a través de la plataforma."
-
+    
 
 
 
