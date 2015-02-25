@@ -781,6 +781,23 @@ ul.social_list {
 	width: 700px;
 }
 
+.contact-title {
+	padding: 9% 0 6% 0;
+	text-align: left;
+	color: $white;
+	margin-top: 1%;
+
+	h3 {
+		text-align: left;
+		font-size: 25px;
+	}
+
+	h4 {
+		font-weight: lighter;
+		opacity: 0.7;
+	}
+}
+
 .contact-form{
 	margin: 10px 0 70px 0;
 	padding-top: 15px;
@@ -792,6 +809,7 @@ ul.social_list {
 		}
 	}
 }
+
 
 .form-contenido{
 	text-align: left;

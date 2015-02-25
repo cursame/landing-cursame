@@ -138,3 +138,23 @@ input.third-quarter {
     }
   }
 }
+
+ul.direction {
+  margin-bottom: 2%;
+  padding: 3%;
+  border-radius: 3px;
+
+    li {
+    list-style: none;
+    padding: 3%;
+  }
+
+  a {
+    color: $white;
+  }
+
+  h5 {
+    color: $white;
+    font-weight: bold;
+  }
+}

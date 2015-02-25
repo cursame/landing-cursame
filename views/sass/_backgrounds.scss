@@ -16,6 +16,9 @@
   &.pate-how {
     background-image: url('img/pate/how.jpg');
 }
+ &.intro-contact {
+    background-image: url('/img/bg-contact.png');
+  }
 
     p,span {
     color: $white;
@@ -60,6 +63,17 @@
   background-position: center; 
 }
 
+
+.intro-contact {
+  top: 0;
+  height:auto;
+  width: 100%;
+  background-image: url('/img/bg-contact.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position: center; 
+}
 
 .main_blue{
 background: #00b7ea; 
@@ -114,7 +128,7 @@ border-collapse: collapse;
 }
 
 .white_transparent {
-  background: rgba(255,255,255,0.5) !important;
+  background: rgba(255,255,255,0.3) !important;
 }
 .black_transparent {
   background: rgba(5,31,52,0.7) !important;

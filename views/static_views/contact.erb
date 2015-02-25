@@ -1,4 +1,59 @@
-<%= erb :'/static_renders/simple_header', locals: {title: t.forms.contact_title, icon: true, call_icon: 'contact'}%>
+<div class="contact-title intro-contact ">
+	<div class="wrapper">
+		<div class="cols-12">
+
+			<div class="col col-6">
+				<div class="col-inner">
+					<h3><i class="i i-contact"></i><%= t.forms.contact_title %></h3>
+				</div>
+			</div>
+
+			<div class="col col-3">
+				<div class="col-inner">
+					<ul class="direction white_transparent">
+					  <li>
+							<h5>Latino América</h5>
+						</li>
+						<li>
+							<i class="i i-social5"></i> <a href="mailto:hola@cursa.me">hola@cursa.me</a>
+						</li>
+						<li>
+							<i class="i i-social1"></i>+52 (55) 63 6328 93
+						</li>
+						<li>
+							<i class="i i-social2"></i>Pomona 7, Roma, Ciudad de México
+						</li>
+					</ul>				
+				</div>
+			</div>
+
+			<div class="col col-3">
+				<div class="col-inner">
+					<ul class="direction white_transparent">
+					  <li>
+							<h5>Europa</h5>
+						</li>
+						<li>
+							<i class="i i-social5"></i> <a href="mailto:hola@cursa.me">europe@cursa.me</a>
+						</li>
+						<li>
+							<i class="i i-social1"></i>(+34) 910 841 022
+						</li>
+						<li>
+							<i class="i i-social2"></i> José María Lacort 9, 47002, Valladolid, España
+						</li>
+					</ul>				
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
 <div class="contact-form">
 	<div class="wrapper">
 		<div class="cols-12">
@@ -7,7 +62,8 @@
 					<div class="formsheet">
 						
 						<form class="form" action="/mailer" method="POST" enctype="multipart/form-data">
-							<div class="thirds">
+							<div class="half-half">
+
 								<div class="left">
 									<ul class="question">
 										<li>
@@ -31,13 +87,15 @@
 									<li>
 										<%= t.forms.phone %>: <input type="number" name="phone" required/>
 									</li>
+
+								</ul>
+							</div>
+
+							<div class="right">
+								<ul class="question">
 									<li>
 										<%= t.forms.institution %>: <input type="text" name="institution" required/>
 									</li>
-								</ul>
-							</div>
-							<div class="center">
-								<ul class="question">
 									<li>
 										<%= t.forms.content %>: <textarea name="content" required></textarea>
 									</li>
@@ -46,37 +104,8 @@
 									</li>
 								</ul>
 							</div>
-							<div class="right border_box bg-greymid-grandient">
-								<ul class="question">
-								    <li>
-										<h3>Latino América</h3>
-									</li>
-									<li>
-										<i class="i i-social5"></i> <a href="mailto:hola@cursa.me">hola@cursa.me</a>
-									</li>
-									<li>
-										<i class="i i-social1"></i>+52 (55) 63 6328 93
-									</li>
-									<li>
-										<i class="i i-social2"></i>Pomona 7, Roma, Ciudad de </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; México
-									</li>
-								</ul>
 
-								<ul class="question">
-								    <li>
-										<h3>Europa</h3>
-									</li>
-									<li>
-										<i class="i i-social5"></i> <a href="mailto:europe@cursa.me"> europe@cursa.me</a>
-									</li>
-									<li>
-										<i class="i i-social1"></i>(+34) 910 841 022
-									</li>
-									<li>
-										<i class="i i-social2"></i>Calle José María Lacort, 9 47002 – </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valladolid España
-									</li>
-								</ul>
-							</div>
+
 						</div>
 					</form>
 					
