@@ -35,6 +35,27 @@ Estos son los CSS mas importantes de la aplicación y los que más usamos
 		- backgrounds
 		- pate (css de impacto social)
 
+# Orden de la aplicación 
+
+Este es el mapa de la aplicación por vistas y renders 
+
+	- Carpeta Views
+		- Vista index.erb
+		- static views
+			- functions.erb > funciones
+			- benefits.erb  > beneficios
+			- inpact.erb    > impacto
+			- pate.erb      > Educación Pública
+			- contact.erb   > contacto
+			- login.erb     > Inicia sesión
+			- terms.erb     > Términos y condiciones
+			- private.erb   > Aviso de privacidad
+			- us.erb        > Nosotros
+			- news.erb      > Noticias
+			- index_renders
+				- banner_head.erb > parte inicial de lindex de la landing
+				- pitch.erb       > segunta parte landing 
+
 
  
 
