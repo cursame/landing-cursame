@@ -1921,3 +1921,15 @@ ul.question {
     z-index: 9999998888898989;
 
 }
+
+.border_box {
+	border: #CBCBCB solid 2px;
+	-webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: #676767;
+     & h3 {
+     	color: #6E6D6D;
+     }
+}
