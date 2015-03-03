@@ -1,21 +1,40 @@
+<form class="form validate" action="/send_call" method="POST" enctype="multipart/form-data">
+	<ul class="question">	
 
-<div class="content  bg-gray">
-	<div class="wrapper">
-		<div class="cols-12">
-			<div class="col col-12">
-				<div class="col-inner">
-					<div class="formsheet">	
-					<%= erb :'/static_renders/simple_header', locals: {title: 'Convocatoria', icon: true,  call_icon: 'contact'}%>
-					<form class="form validate" action="/send_call" method="POST" enctype="multipart/form-data">
-						<ul class="question">	
-							<li>	Nombre Completo: <input type="text" name="name" required/></li>
-							<li>	Cargo que actualmente ocupa: <input type="text" name="charge" required/></li>
-							<li>	Email de contacto: <input type="email" name="email" required/> </li>
-							<li>	Teléfono de la escuela: <input type="text" name="phone" required/></li>
-							<li>	Nombre de la Institución: <input type="text" name="institution" required/> </li>
-							<li>	<%= erb :'/static_views/pate/locations/states'%> </li>
-							<li>	<p>Nivel de escolaridad</p></li>
-									<li class="formcheck">
+		<div class="form-title bg-purple">
+			<div class="wrapper">
+				<div class="cols-12">
+					<div class="col col-12">
+						<div class="col-inner">
+							<h3> Convocatoria</h3>
+							<div class="half-half">
+								<div class="left">
+									<li>	Nombre Completo: <input type="text" name="name" required/></li>
+								</div>
+								<div class="right">
+									<li>	Email de contacto: <input type="email" name="email" required/> </li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="wrapper">
+				<div class="cols-12">
+					<div class="col col-12">
+						<div class="col-inner">
+
+							<div class="half-half">
+								<div class="left">
+								<li>	Nombre de la Institución: <input type="text" name="institution" required/> </li>
+								<li>	Cargo que actualmente ocupa: <input type="text" name="charge" required/></li>
+								<li>	Teléfono de la escuela: <input type="text" name="phone" required/></li>
+								<li>	<%= erb :'/static_views/pate/locations/states'%> </li>
+								<li>	<p>Nivel de escolaridad</p></li>
+								<li class="formcheck">
 									<input type="checkbox" name="option1" value="Básica" > Básica<br>
 								</li>	
 								<li class="formcheck">
@@ -35,6 +54,8 @@
 								<li class="formcheck">
 									<input type="checkbox" name="option6" value="Vespertino"> Vespertino<br>
 								</li>
+							</div>
+							<div class="right">
 								<li><p>¿En su escuela se ha realizado la prueba ENLACE?</p></li>
 								<li class="formcheck">
 									<input type="radio" name="enlace" value="si" checked> Si<br>
@@ -60,134 +81,153 @@
 									<input type="radio" name="internet" value="no"> No<br>
 								</li>
 								<li><p>¿En que zonas de la escuela se tiene servicio de internet? (puede marcar más de una opción)</p></li>
-								<li class="formcheck">
-									<input type="checkbox" name="option7" value="Aulas"> Aulas<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option8" value="Dirección"> Dirección<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option9" value="Centro de computo"> Centro de computo<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option10" value="Otras zonas"> Otras zonas<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option11" value="No se cuenta con internet"> No se cuenta con internet<br>
-								</li>
-								<li><p>¿Cuál es la velocidad de navegación del servicio de internet en su escuela?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="velinternet" value="2a10 MB" checked>2a10 MB<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="velinternet" value="11 a 20 MB" checked>11 a 20 MB<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="velinternet" value="21 a más"> 21 a más<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="velinternet" value="No se cuenta con internet"> No se cuenta con internet<br>
-								</li>
-								<%= erb :'/static_views/pate/browsers/browsers'%>
-								<li><p>¿Su escuela cuenta con aula de medios/ centro de computo?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="computers" value="si" checked> Si<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="computers" value="no"> No<br>
-								</li>
-								<li><p>Si contesto afirmativamente indique cuantos equipos funcionales tiene dicha aula.</p></li>
-								<li class="formcheck">
-									<input type="text" name="functional_computers" />
-								</li>
-								<li><p>¿ En qué medida cree usted que los docentes de la escuela estarían interesados en utilizar tecnologías de la información y la comunicación en su práctica académica?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="interesdedocentes" value="Nada" checked>Nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="interesdedocentes" value="Casi nada" >Casi nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="interesdedocentes" value="Regular"> Regular<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="interesdedocentes" value="Mucho" checked> Mucho<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="interesdedocentes" value="Totalmente"> Totalmente<br>
-								</li>
-								<li><p>¿En su escuela ya se utilizan las TIC en e l proceso de enseñanza aprendizaje?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="usodetics" value="si" checked> Si<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="usodetics" value="no"> No<br>
-								</li>
-								<li><p>¿De qué manera se hace? poner ejemplos.</p></li>
-								<li><textarea name="examples_from_user_tics"></textarea></li>
-								<li><p>¿Qué porcentaje de maestros aproximadamente tiene computadora personal en su escuela?</p></li>
-								<li class="formcheck">
-									<input type="text" name="teacheshavecomputers" />
-								</li>
-								<li><p>¿En qué medida cree usted que las Tecnología de la Información y la Comunicación pueden impactar el aprendizaje?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="imactfromtecnologicineducation" value="Nada" checked>Nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="imactfromtecnologicineducation" value="Casi nada" >Casi nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="imactfromtecnologicineducation" value="Regular"> Regular<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="imactfromtecnologicineducation" value="Mucho" checked> Mucho<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="imactfromtecnologicineducation" value="Totalmente"> Totalmente<br>
-								</li>
-								<li><p>¿Desde dónde considera usted que los alumnos regularmente acceden a internet? (puede marcar más de una opción)</p></li>
-								<li class="formcheck">
-									<input type="checkbox" name="option12" value="Computadora personal (lap top)"> Computadora personal (lap top)<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option13" value="Computadora de la escuela"> Computadora de la escuela<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option14" value="Cyber café"> Cyber café<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option15" value="Teléfono inteligente"> Teléfono inteligente<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option16" value="Tablet"> Tablet<br>
-								</li>
-								<li class="formcheck">
-									<input type="checkbox" name="option17" value="Computadora de escritorio de su hogar"> Computadora de escritorio </
-									de su hogar<br>
-								<li><p>En general ¿Qué tan familiarizados considera usted que se encuentran los maestros de su escuela con las Tecnologías de la Información y la Comunicación?</p></li>
-								<li class="formcheck">
-									<input type="radio" name="familiarizadoprofesores" value="Nada" checked>Nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="familiarizadoprofesores" value="Casi nada" >Casi nada<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="familiarizadoprofesores" value="Regular"> Regular<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="familiarizadoprofesores" value="Mucho" checked> Mucho<br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="familiarizadoprofesores" value="Totalmente"> Totalmente<br>
-								</li>
-								<li class="formcheck">
-									<input type="submit" value="Enviar convocatoria" class="btn btn-send menu-get" />
-							</li> 
-						</ul>
-					</form>
+									<li class="formcheck">
+										<input type="checkbox" name="option7" value="Aulas"> Aulas<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option8" value="Dirección"> Dirección<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option9" value="Centro de computo"> Centro de computo<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option10" value="Otras zonas"> Otras zonas<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option11" value="No se cuenta con internet"> No se cuenta con internet<br>
+									</li>
+									<li><p>¿Cuál es la velocidad de navegación del servicio de internet en su escuela?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="velinternet" value="2a10 MB" checked>2a10 MB<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="velinternet" value="11 a 20 MB" checked>11 a 20 MB<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="velinternet" value="21 a más"> 21 a más<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="velinternet" value="No se cuenta con internet"> No se cuenta con internet<br>
+									</li>
+									<%= erb :'/static_views/pate/browsers/browsers'%>
+								</div>
+						</div>
+
+<div class="thirds">
+
+<div class="left">
+									<li><p>¿Su escuela cuenta con aula de medios/ centro de computo?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="computers" value="si" checked> Si<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="computers" value="no"> No<br>
+									</li>
+									<li><p>Si contesto afirmativamente indique cuantos equipos funcionales tiene dicha aula.</p></li>
+									<li class="formcheck">
+										<input type="text" name="functional_computers" />
+									</li>
+									<li><p>¿ En qué medida cree usted que los docentes de la escuela estarían interesados en utilizar tecnologías de la información y la comunicación en su práctica académica?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="interesdedocentes" value="Nada" checked>Nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="interesdedocentes" value="Casi nada" >Casi nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="interesdedocentes" value="Regular"> Regular<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="interesdedocentes" value="Mucho" checked> Mucho<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="interesdedocentes" value="Totalmente"> Totalmente<br>
+									</li>
+																		<li><p>¿En su escuela ya se utilizan las TIC en e l proceso de enseñanza aprendizaje?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="usodetics" value="si" checked> Si<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="usodetics" value="no"> No<br>
+									</li>
+								</div>
+								<div class="center">
+
+									<li><p>¿De qué manera se hace? poner ejemplos.</p></li>
+									<li><textarea name="examples_from_user_tics"></textarea></li>
+									<li><p>¿Qué porcentaje de maestros aproximadamente tiene computadora personal en su escuela?</p></li>
+									<li class="formcheck">
+										<input type="text" name="teacheshavecomputers" />
+									</li>
+									<li><p>¿En qué medida cree usted que las Tecnología de la Información y la Comunicación pueden impactar el aprendizaje?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="imactfromtecnologicineducation" value="Nada" checked>Nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="imactfromtecnologicineducation" value="Casi nada" >Casi nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="imactfromtecnologicineducation" value="Regular"> Regular<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="imactfromtecnologicineducation" value="Mucho" checked> Mucho<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="imactfromtecnologicineducation" value="Totalmente"> Totalmente<br>
+									</li>
+
+									</div>
+
+									<div class="right">
+									<li><p>¿Desde dónde considera usted que los alumnos regularmente acceden a internet? (puede marcar más de una opción)</p></li>
+									<li class="formcheck">
+										<input type="checkbox" name="option12" value="Computadora personal (lap top)"> Computadora personal (lap top)<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option13" value="Computadora de la escuela"> Computadora de la escuela<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option14" value="Cyber café"> Cyber café<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option15" value="Teléfono inteligente"> Teléfono inteligente<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option16" value="Tablet"> Tablet<br>
+									</li>
+									<li class="formcheck">
+										<input type="checkbox" name="option17" value="Computadora de escritorio de su hogar"> Computadora de escritorio </li>
+										de su hogar<br>
+									<li><p>En general ¿Qué tan familiarizados considera usted que se encuentran los maestros de su escuela con las Tecnologías de la Información y la Comunicación?</p></li>
+									<li class="formcheck">
+										<input type="radio" name="familiarizadoprofesores" value="Nada" checked>Nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="familiarizadoprofesores" value="Casi nada" >Casi nada<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="familiarizadoprofesores" value="Regular"> Regular<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="familiarizadoprofesores" value="Mucho" checked> Mucho<br>
+									</li>
+									<li class="formcheck">
+										<input type="radio" name="familiarizadoprofesores" value="Totalmente"> Totalmente<br>
+									</li>
+								</div>
+							</div>
+									
+									<li class="formcheck">
+										<input type="submit" value="Enviar convocatoria" class="btn btn-send menu-get" />
+								</li> 
+
+
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+							</ul>
+						</form>
 <%= erb :'/static_renders/footer'%>

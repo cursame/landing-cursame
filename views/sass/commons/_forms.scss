@@ -38,6 +38,7 @@ select {
     height: 35px;
     width: auto;
     text-align: left;
+    width: 100%;
 
   @include max-screen (500px) {
     width: 100%;
@@ -86,9 +87,9 @@ input.third-quarter {
 }
 
 .half-half {
-  
+
   .left  {
-    width: 49%;
+    width: 50%;
     float: left;
 
     @include max-screen(800px) {
@@ -97,7 +98,7 @@ input.third-quarter {
   }
 
   .right {
-    width: 49%;
+    width: 50%;
     float: right;
 
     @include max-screen(800px) {
@@ -108,6 +109,8 @@ input.third-quarter {
 
 
 .thirds {
+  float: left;
+  margin-top: 50px;
 
   .left  {
     width: 32.5%;

@@ -60,9 +60,9 @@ h2.pate {
 
   p,span {
     font-size: 17px;
-    padding: 0 10%;
+    padding: 0;
     color: $white;
-    line-height: 50px;
+    line-height: 30px;
   }
 }
 
@@ -99,9 +99,8 @@ h2.pate {
 
 .item3 {
   background:$white;
-  padding: 10% 25px;
+  padding: 25px 8%;
   text-align: center;
-  line-height: 25px;
   border-radius: 3px 3px 0 0; 
   height: 350px;
 
