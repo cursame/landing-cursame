@@ -175,12 +175,52 @@ hr.cta {
 	display: none;
 	cursor: pointer;
 
-	ul {
+	& ul {
 		list-style: none;
 	}
 
 	@include max-screen (900px) {
 		display: inline-block;
+	}
+}
+
+#menu-mobile-open{
+	background: #fff;
+	width:100%;
+	text-align: left;
+	& ul {
+		text-align: center;
+		list-style: none;
+	    width:100%;
+	}
+
+	& li {
+		color:#e1e1e1;
+		padding: 30px;
+		font-size: 20px; 
+		width: 100%;
+		list-style-type: none;
+		border-bottom: solid 1px #eee;
+		& :hover {
+			color:#58D3EC;
+		}
+	}
+
+	& .close {
+          text-align: right;
+           width:100%;
+           color: #6D6E6E;
+          font-size: 30px; 
+          z-index: 99999999999;
+          cursor: pointer;
+
+	}
+
+	& .logoimg {
+
+		 margin-top: -30px;
+		 width: 100%;
+
 	}
 }
 

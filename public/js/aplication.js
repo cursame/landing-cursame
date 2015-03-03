@@ -36,9 +36,21 @@ $(document).ready(function(){
       $('.totarget').click(function(){
 	   var to_div = $(this).data('target');
 	   $('#'+to_div).toggle('blind', 400);
-	   alert('target');
 	  });
+      var height_local = $( window ).height();
+      $('#menu-mobile-open').height(height_local);
+
+      $('.close').click(function(){
+      	$('#menu-mobile-open').hide();
+      })
+
+      $('.open').click(function(){
+      	$('#menu-mobile-open').show();
+      })
 });
+
+
+
 
 function changeTab(tab){
   
