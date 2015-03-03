@@ -61,6 +61,7 @@ register Sinatra::AssetPack
     	R18n::I18n.default = 'es' if session[:locale] == nil
     	session[:locale] = 'es' if session[:locale] == nil
     	session[:current_route] = ''
+
     	redirect  "/#{session[:locale]}"
     end
 
@@ -83,7 +84,6 @@ register Sinatra::AssetPack
 		########## detectar request para mobile #############
 		string = request.user_agent
 		user_agent = UserAgent.parse(string)
-		puts user_agent.browser
 		session[:browser] = user_agent.browser
 		session[:platform] = user_agent.platform
 
@@ -296,7 +296,28 @@ helpers do
   def external_link(name, url)
   	"<a href='#{url}' target='_blank'>#{name}</a>"
   end
+  
 
+  ############## mobile helper ##############
+
+  def mobile_validate?
+    platform = session[:platform].to_s
+    #puts "#{platform}"
+     case platform.downcase  
+     when 'iphone'
+      true
+     when 'android'
+      true
+     when 'firefox'
+      true
+     when 'windows phone'
+      true
+     when 'linux'
+      true
+     else
+      false
+     end  
+  end
 
   ############# mail method SES #############
 
