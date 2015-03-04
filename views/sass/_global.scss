@@ -213,14 +213,11 @@ hr.cta {
           font-size: 30px; 
           z-index: 99999999999;
           cursor: pointer;
-
-	}
+				}
 
 	& .logoimg {
-
 		 margin-top: -30px;
 		 width: 100%;
-
 	}
 }
 
@@ -248,7 +245,7 @@ hr.cta {
 		}
 
 	}
-		@include max-screen (900px) {
+	@include max-screen (900px) {
 		display: none;
 	}
 }
@@ -284,6 +281,14 @@ hr.cta {
 
 .main-title {
 	padding: 12% 0 1% 0;
+
+	@include max-screen (900px) {
+		h1.home {
+			font-size: 2.1em;
+			line-height: 1.3em;
+			margin-bottom: 5px;
+		}
+	}
 }
 
 .head-title {
@@ -332,9 +337,15 @@ hr.cta {
   vertical-align: bottom;
 
   img {
-  	width: auto;
-  	display: block;
   	vertical-align: bottom;
+  }
+
+  @include max-screen(600px) {
+
+  	img {
+  		position: relative;
+  		top: 16px;
+  	}
   }
 }
 
@@ -343,7 +354,6 @@ hr.cta {
 		position: relative;
 		bottom: -2em;
 	}
-
 
 
 .footer{
@@ -1609,6 +1619,10 @@ padding: 25px 0 10px 0;
 	text-align: right;
 	margin-left: 20px;
 	padding-top: 4px;
+
+		@include max-screen(900px) {
+		display: none;
+	}
 }
 
 .buttons_cta{
@@ -1987,11 +2001,11 @@ ul.question {
 .border_box {
 	border: #CBCBCB solid 2px;
 	-webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    color: #676767;
-     & h3 {
-     	color: #6E6D6D;
-     }
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #676767;
+	 & h3 {
+	 	color: #6E6D6D;
+	 }
 }

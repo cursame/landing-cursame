@@ -41,11 +41,11 @@ $(document).ready(function(){
       $('#menu-mobile-open').height(height_local);
 
       $('.close').click(function(){
-      	$('#menu-mobile-open').hide();
+      	$('#menu-mobile-open').slideToggle(300);
       })
 
       $('.open').click(function(){
-      	$('#menu-mobile-open').show();
+      	$('#menu-mobile-open').slideToggle(500);
       })
 });
 

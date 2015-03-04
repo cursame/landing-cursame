@@ -261,8 +261,8 @@ helpers do
   
   ####### call image ########
 
-  def image_tag(name, width_x = '')
-    "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' />"
+  def image_tag(name, width_x = '', classx = '')
+    "<img src='/img/#{name}' alt='#{name}' width='#{width_x}' class='#{classx}' />"
   end
 
   ####### insternal static link ###########

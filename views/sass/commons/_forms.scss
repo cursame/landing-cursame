@@ -4,7 +4,6 @@ form,label,textarea{
   margin-bottom: 5px;
 }
 
-
 label {
   float: left;
   text-align: left;
@@ -159,5 +158,14 @@ ul.direction {
   h5 {
     color: $white;
     font-weight: bold;
+  }
+}
+
+ul.m_mobile {
+  list-style: none;
+
+  a {
+    color: #333;
+    text-align: left;
   }
 }

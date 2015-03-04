@@ -21,6 +21,12 @@
       border: none;
     }
   }
+
+  @include max-screen (600px) {
+    float: left;
+    margin-bottom: 25px;
+    width: 100%;
+  }
 }
 
 .btn-cta{
