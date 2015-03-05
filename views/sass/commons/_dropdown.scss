@@ -45,7 +45,7 @@
   list-style: none;
 
 
-  @include screen(0px,   500px) {
+  @include max-screen(500px) {
 
     .dropdown-wrap .dropdown-v {
       display: none;

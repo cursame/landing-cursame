@@ -39,7 +39,7 @@ select {
     text-align: left;
     width: 100%;
 
-  @include screen (0  500px) {
+  @include max-screen (500px) {
     width: 100%;
   }
 }
@@ -91,7 +91,7 @@ input.third-quarter {
     width: 50%;
     float: left;
 
-    @include screen(0px,   800px) {
+    @include max-screen(800px) {
       width: 100% !important;
     }
   }
@@ -100,7 +100,7 @@ input.third-quarter {
     width: 50%;
     float: right;
 
-    @include screen(0px,   800px) {
+    @include max-screen(800px) {
       width: 100% !important;
     }
   }
@@ -115,7 +115,7 @@ input.third-quarter {
     width: 32.5%;
     float: left;
 
-    @include screen(0px,   800px) {
+    @include max-screen(800px) {
       width: 100% !important;
     }
   }
@@ -126,7 +126,7 @@ input.third-quarter {
     float: right;
     float: left;
    
-    @include screen(0px,   800px) {
+    @include max-screen(800px) {
       width: 100% !important;
     }
   }
@@ -135,7 +135,7 @@ input.third-quarter {
     width: 32%;
     float: right;
 
-    @include screen(0px,  800px) {
+    @include max-screen(800px) {
       width: 100% !important;
     }
   }

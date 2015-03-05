@@ -8,7 +8,7 @@
   margin: 60px 0;
   box-shadow: 0px -1px 5px #999;
 
-  @include screen(0px,   600px) {
+  @include max-screen(600px) {
     background:$white;
     padding: 0;
     margin: 20px 0;
@@ -71,7 +71,7 @@
       color: $white;
     }
 
-    @include screen (0  500px) {
+    @include max-screen (500px) {
       .text-box {
       float: left;
       text-align: left;
@@ -148,6 +148,7 @@ label.error {
 }
 
 .column {
+
   label.error {
     position: relative;
     top: -20px;
@@ -232,7 +233,7 @@ label.error {
     font-family: $font-radar;
   }
 
-  @include screen (0  500px) {
+  @include max-screen (500px) {
     padding: 10px;
     margin: 10px 0 5px 0;
   }
@@ -287,7 +288,7 @@ label.error {
     padding: 25px;
   }
 
-  @include screen (0  670px) {
+  @include max-screen (670px) {
 
     table, td {
       text-align: left;
@@ -363,7 +364,7 @@ label.error {
   padding: 30px 60px;
   margin-bottom: 35px;
 
-  @include screen (0  650px) {
+  @include max-screen (650px) {
     margin: 15px 0;
     padding: 10px 20px;
   }

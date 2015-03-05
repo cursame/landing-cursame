@@ -3,11 +3,11 @@
   margin: 0 auto;
   @include clearfix;
 
-  @include screen(0px,   1170px) {
+  @include max-screen(1170px) {
     width: 960px;
   }
 
-  @include screen(0px,   960px) {
+  @include max-screen(960px) {
     width: 85%;
   }
 }
@@ -23,7 +23,7 @@
       padding: 0 10px 0 10px;
       @include clearfix;
 
-      @include screen(0px,   630px) {
+      @include max-screen(630px) {
         padding: 0;
       }
     }
@@ -36,7 +36,7 @@
       padding-right: 0;
     }   
 
-    @include screen(630px) {
+    @include max-screen(630px) {
       width: 100%;
       clear: both;
     }
