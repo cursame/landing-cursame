@@ -41,7 +41,7 @@
       }
   }
 
-  @include max-screen(600px) {
+  @include screen(0px,   600px) {
     .dashboard-menu{
       float: left;
 
@@ -92,7 +92,7 @@
   }
 
 
-  @include max-screen(500px) {
+  @include screen(0px,   500px) {
   .dashboard-menu {
     float: left;
   }
@@ -118,7 +118,7 @@
     color: #cdd2d5;
   }
   
-  @include max-screen (500px) {
+  @include screen (0  500px) {
 
     &.title-dashboard {
       text-align: left;
@@ -170,7 +170,7 @@
     bottom: 30px;
   }
 
-  @include max-screen (500px) {
+  @include screen (0  500px) {
 
   &.dashboard-footer {
     text-align: center;
