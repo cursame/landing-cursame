@@ -22,9 +22,21 @@
     }
   }
 
-  @include max-screen (600px) {
+  @include screen(1px, 900px) {
     float: left;
-    margin-bottom: 25px;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+    @include iphone5 {
+    float: left;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+    @include iphone4 {
+    float: left;
+    margin: 15px 0;
     width: 100%;
   }
 }

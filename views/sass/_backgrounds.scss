@@ -34,7 +34,7 @@
     }
   }
 
-  @include max-screen (900px) {
+  @include screen(1px, 900px) {
     margin-top: 55px;
     padding-top: 15px;
   }
@@ -51,7 +51,7 @@
   background-position: center;
   color: $white; 
 
-  @include max-screen (900px) {
+  @include screen (1px, 900px) {
     height:60%;
     width: 60%;
     background-size: 100%;

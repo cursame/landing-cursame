@@ -7,7 +7,7 @@
   border-bottom: #682283 solid 1px;
   padding: 0 2%;
   z-index: 9999999;
-	@include max-screen (900px) {
+	@include screen(1px, 9900px) {
 	 position: fixed;
 	 top: 0;
 	 text-align: center;
@@ -37,7 +37,7 @@ h2.pate {
   top:18px;
   margin-right: 30px;
 
-  @include max-screen(900px) {
+  @include screen(1px, 900px) {
   	position: absolute;
 		left: 10px;
 		right: 0;
@@ -46,8 +46,27 @@ h2.pate {
 		 	width: 120px;
 		}
 	}
-}
 
+    @include iphone4 {
+    position: absolute;
+    left: 10px;
+    right: 0;
+     
+     img {
+      width: 120px;
+    }
+  }
+
+    @include iphone5 {
+    position: absolute;
+    left: 10px;
+    right: 0;
+     
+     img {
+      width: 120px;
+    }
+  }
+}
 
 .objetive{
   margin: 0;
@@ -89,9 +108,15 @@ h2.pate {
     border-radius:0 0 3px 3px;
     display: block;
     }
-
   }
-    @include max-screen (900px) {
+  
+  @include screen(1px, 900px) {
+    display: none;
+  }
+    @include iphone4 {
+    display: none;
+  }
+    @include iphone5 {
     display: none;
   }
 }

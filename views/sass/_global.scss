@@ -342,21 +342,21 @@ hr.cta {
 
 	@include screen(1px, 900px) {
 		h1.home {
-			font-size: 2.1em;
+			font-size: 4em;
 			line-height: 1.3em;
 			margin-bottom: 5px;
 		}
 	}
 	@include iphone5 {
 		h1.home {
-			font-size: 2.1em;
+			font-size: 4em;
 			line-height: 1.3em;
 			margin-bottom: 5px;
 		}
 	}
 	@include iphone4 {
 		h1.home {
-			font-size: 2.1em;
+			font-size: 4em;
 			line-height: 1.3em;
 			margin-bottom: 5px;
 		}
@@ -1442,31 +1442,27 @@ ul.social_list {
 	}
 
 	@include screen(1px, 600px) {
-
 		.total {
 			padding:10px 0;
 		}
-
 		.experts {
 		top: 50px;
 		}
 	}
+
 	@include iphone5 {
-
 		.total {
 			padding:10px 0;
 		}
-
 		.experts {
 		top: 50px;
 		}
 	}
-	@include iphone4 {
 
+	@include iphone4 {
 		.total {
 			padding:10px 0;
 		}
-
 		.experts {
 		top: 50px;
 		}
