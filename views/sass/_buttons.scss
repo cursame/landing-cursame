@@ -23,21 +23,24 @@
   }
 
   @include screen(1px, 900px) {
+    padding: 5%;
     float: left;
-    margin: 15px 0;
     width: 100%;
+    margin: 2% 0;
   }
 
-    @include iphone5 {
+  @include iphone5 {
+    padding: 5%;
     float: left;
-    margin: 15px 0;
     width: 100%;
+    margin: 2% 0;
   }
 
-    @include iphone4 {
+  @include iphone4 {
+    padding: 5%;
     float: left;
-    margin: 15px 0;
     width: 100%;
+    margin: 2% 0;
   }
 }
 

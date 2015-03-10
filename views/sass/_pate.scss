@@ -147,7 +147,20 @@ h2.pate {
     img {
       padding-bottom: 45px;
     }
+
+  @include screen(1px, 900px) {
+    width: 100%;
+    float: left;
   }
+  @include iphone5 {
+     width: 100%;
+     float: left;
+  }
+  @include iphone4 {
+    width: 100%;
+    float: left;
+  }
+}
 .itempl {
   padding: 7% 20%;
   text-align: center;
