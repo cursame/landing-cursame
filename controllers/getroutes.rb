@@ -148,4 +148,15 @@
 		session[:current_route] = '/login'
 		erb  :"static_views/login", :layout => :"layouts/application" 
     end
+
+    ###### defin plugins ##########
+
+    get '/:locale/plugin_login' do 
+        session[:current_route] = '/plugin_login'
+		erb  :"static_views/plugin_login", :layout => :"layouts/application" 
+    end
+
+    get '/:locale/call_login_plugin' do 
+    	localities = erb :"/static_views/plugins/form_login", :layout => false
+    end
     

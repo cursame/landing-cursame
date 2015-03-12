@@ -139,8 +139,6 @@ function sendingAJAX(url, formData, external ,callback){
 	         	$('.errors').html(des);
 	         }
 
-
-
 	    }
 	});
 }
