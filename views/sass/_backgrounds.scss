@@ -50,14 +50,6 @@
   background-attachment: fixed;
   background-position: center;
   color: $white; 
-
-  @include screen (1px, 900px) {
-    height:60%;
-    width: 60%;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-  }
 }
 
 .pate-how {

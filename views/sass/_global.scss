@@ -123,16 +123,6 @@ hr.cta {
 	 top: 0;
 	 text-align: center;
 	}
-	@include iphone5 { 
-	 position: fixed;
-	 top: 0;
-	 text-align: center; 
-  } 	
-  @include iphone4 {
-	 position: fixed;
-	 top: 0;
-	 text-align: center; 
-  } 
 }
 
 .header_scroll{
@@ -268,13 +258,6 @@ hr.cta {
 		 margin-top: -30px;
 		 width: 100%;
 	}
-
-@include iphone4 {
-	li {
-	padding: 10% 0;
-	}
-}
-
 }
 
 .menu-main{
@@ -302,12 +285,6 @@ hr.cta {
 
 	}
 	@include screen(1px, 900px) {
-		display: none;
-	}
-	@include iphone5 {
-		display: none;
-	}
-	@include iphone4 {
 		display: none;
 	}
 }
@@ -339,12 +316,6 @@ hr.cta {
 	@include screen(1px, 900px) {
 		display: none;
 	}
-	@include iphone5 {
-		display: none;
-	}
-	@include iphone4 {
-		display: none;
-	}
 }
 
 .main-title {
@@ -355,20 +326,6 @@ hr.cta {
 			font-size: 2.2em;
 			line-height: 1.3em;
 			margin-bottom: 5px;
-		}
-	}
-	@include iphone5 {
-		h1.home {
-			font-size: 5em;
-			line-height: 1.3em;
-			margin: 13% 0 0 0;
-		}
-	}
-	@include iphone4 {
-		h1.home {
-			font-size: 5em;
-			line-height: 1.3em;
-			margin: 13% 0 0 0;
 		}
 	}
 }
@@ -721,7 +678,6 @@ hr.cta {
 	}
 }
 
-
 .funcion{
 	text-align: left;
 	padding: 80px 0;
@@ -761,7 +717,7 @@ hr.cta {
 	
 	@include screen(1px, 900px) {
 		width: 100%;
-		padding: 5% 20%;
+		padding: 9% 20%;
 		color: $white;
 		text-align: center;
 	}
@@ -871,7 +827,6 @@ ul.social_list {
 	}
 }
 
-
 .call{
 	text-align: center;
 	padding: 80px 0 100px 0;
@@ -909,16 +864,6 @@ ul.social_list {
 	} 
 
 	@include screen(1px, 500px) {
-		.suscribe-field {
-			width: 50%;
-		}
-	}
-	@include iphone5 {
-		.suscribe-field {
-			width: 50%;
-		}
-	}
-	@include iphone4 {
 		.suscribe-field {
 			width: 50%;
 		}

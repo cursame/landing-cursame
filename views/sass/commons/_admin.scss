@@ -14,10 +14,6 @@
   margin: 0 auto;
   text-align: left;
 
-    @include max-screen (500px) { 
-      margin: 0;
-    }
-
   h5 {
     color: #323232;
     line-height: 13px;
@@ -48,17 +44,14 @@
     left: 0;
     bottom: 0;
     top: 0;
-
     li, span, h4 {
       display: none;
       padding: 0;
       margin-left: 0;
     }
-
     .logo2 {
       display: none;
       }
-
     a {
     padding: 17px 15px !important
     }
