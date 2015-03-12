@@ -1,25 +1,55 @@
+<% transparent_head = false %>
 <div class="notice_head" style="display:none;"></div>
-<div class="header_pate">
+<div class=" bg-purple header_pate">
   <div class="wrapper">
     <div class="cols-12">
       <div class="col col-12">
         <div class="col-inner">
-          <div class="logo-pate">
-            <%= link_to  image_tag('mainlogo.png', '100%'),'../'%>
-          </div>
+          <a href="/<%=session[:locale] %>">
+            <div class="logo">
+              <%= image_tag 'mainlogo.png', '100%' %>
+            </div>
+          </a>
           <div class="menu-home">
-            <ul class="menu-main-pate nav-pate">
-              <li><%= link_to(t.menu.contact, 'contact')%></li>
-              <li><%= link_to(t.menu.inpact, 'impact')  %></li>
-              <li><%= link_to(t.menu.benefits, 'benefits') %></li>
+            <ul class=" menu-main nav-top">
               <li><%= link_to(t.menu.functions, 'features') %></li>
+              <li><%= link_to(t.menu.benefits, 'benefits') %></li>
+              <li><%= link_to(t.menu.inpact, 'impact')  %></li>
+              <li><%= link_to(t.menu.rse, 'pate') %></li>
+              <li><%= link_to(t.menu.contact, 'contact')%></li>
             </ul>
           </div>
-          <div class="menu-mobile totarget" data-target="menu-imobile"></div>
           <div class="login">
-            <ul class="singin-button">
+            <ul class=" <%= 'signin-button' if transparent_head %>
+              <%= 'signin-button-bottom' if !transparent_head %>">
+              <li><%=link_to t.menu.loggin, 'login' %></li>
             </ul>
           </div>
+          <div  class="menu-mobile open">
+            <ul>
+              <li><i class="i i-menu" ></i></li>
+            </ul>
+          </div>
+          <div class="menu-mobile " id="menu-mobile-open" style="display:none;" >
+            <div class="close" >x</div>
+
+            <div class="logoimg">
+                <%= image_tag 'mainlogo_color.png'%>
+            </div>
+
+            <div style=" width:100%;">
+            <ul class="m_mobile">
+              <li><%= link_to(t.menu.functions, 'features') %></li>
+              <li><%= link_to(t.menu.benefits, 'benefits') %></li>
+              <li><%= link_to(t.menu.inpact, 'impact')  %></li>
+              <li><%= link_to(t.menu.rse, 'pate') %></li>
+              <li><%= link_to(t.menu.contact, 'contact')%></li>
+              <li><%=link_to t.menu.loggin, 'login' %></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div id="loginbox" class=" featherlight featherlight-content">
         </div>
       </div>
     </div>

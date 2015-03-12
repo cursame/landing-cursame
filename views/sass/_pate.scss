@@ -1,19 +1,15 @@
 .header_pate{
-	width: 100%;
-	margin: auto;
-	display: block;;
-  position: fixed;
-  background: #49054A;
-  border-bottom: #682283 solid 1px;
-  padding: 0 2%;
-  z-index: 9999999;
-	@include screen(1px, 9900px) {
-	 position: fixed;
-	 top: 0;
-	 text-align: center;
-	}
-}
 
+  height: 75px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 0 2% 12px 2%;
+  position: fixed;
+  border-bottom: #682283 solid 1px;
+  z-index: 9999999;
+
+}
 h1.pate {
   font-size: 4.5em;
   line-height: 1.3em;
@@ -21,6 +17,10 @@ h1.pate {
   color: white;
   font-weight: normal;
   padding-top: 2em;
+
+  @include screen(1px, 900px) {
+   font-size: 2em;
+  }
 }
 
 h2.pate {
@@ -29,6 +29,10 @@ h2.pate {
   color: white;
   font-weight: normal;
   padding-top: 1em;
+
+  @include screen(1px, 900px) {
+   font-size: 0.4em;
+  }
 }
 
 .logo-pate {
@@ -46,26 +50,6 @@ h2.pate {
 		 	width: 120px;
 		}
 	}
-
-    @include iphone4 {
-    position: absolute;
-    left: 10px;
-    right: 0;
-     
-     img {
-      width: 120px;
-    }
-  }
-
-    @include iphone5 {
-    position: absolute;
-    left: 10px;
-    right: 0;
-     
-     img {
-      width: 120px;
-    }
-  }
 }
 
 .objetive{
@@ -113,12 +97,6 @@ h2.pate {
   @include screen(1px, 900px) {
     display: none;
   }
-    @include iphone4 {
-    display: none;
-  }
-    @include iphone5 {
-    display: none;
-  }
 }
 
 
@@ -149,14 +127,6 @@ h2.pate {
     }
 
   @include screen(1px, 900px) {
-    width: 100%;
-    float: left;
-  }
-  @include iphone5 {
-     width: 100%;
-     float: left;
-  }
-  @include iphone4 {
     width: 100%;
     float: left;
   }
