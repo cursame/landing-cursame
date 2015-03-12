@@ -184,16 +184,16 @@ register Sinatra::AssetPack
 
 	post '/mailer' do 
        puts "************>>>> send mail"	
-       mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution], charge: params[:charge]}, :layout => false
+       mail_stablish = erb :"mailer/simple_contact", locals: {content: params[:content], name: params[:name], phone: params[:phone], institution: params[:institution], charge: params[:charge], email: params[:email]}, :layout => false
        puts "************>>>> sending "	
 
        case "#{params[:simglearea]}"
        	  when  "Area de ventas" 
-       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me']
+       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
        	  contact_title = "Contacto de ventas Cúrsame"
        	  puts "#{params[:simglearea]}"
        	  when  "Sales area"
-       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me']
+       	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
        	  contact_title = "Contacto de ventas Cúrsame"
        	  puts "#{params[:simglearea]}"
        	  when  "Area de compromiso social"
