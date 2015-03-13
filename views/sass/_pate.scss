@@ -1,5 +1,4 @@
 .header_pate{
-
   height: 75px;
   width: 100%;
   margin: auto;
@@ -8,8 +7,8 @@
   position: fixed;
   border-bottom: #682283 solid 1px;
   z-index: 9999999;
-
 }
+
 h1.pate {
   font-size: 4.5em;
   line-height: 1.3em;
@@ -46,8 +45,8 @@ h2.pate {
 		left: 10px;
 		right: 0;
 		 
-		 img {
-		 	width: 120px;
+		img {
+		 	width: 100px;
 		}
 	}
 }
@@ -93,7 +92,7 @@ h2.pate {
     display: block;
     }
   }
-  
+   
   @include screen(1px, 900px) {
     display: none;
   }

@@ -155,27 +155,7 @@ hr.cta {
 		right: 0;		 
 		 img {
 		 	padding-top: 2%;
-		 	width: 120px;
-		}
-	}
-
-	@include iphone5 {
-  	position: absolute;
-		left: 10px;
-		right: 0;
-		 img {
-		 	width: 30%;
-		 	padding-top: 2%;
-		}
-	}
-
-	@include iphone4 {
-  	position: absolute;
-		left: 10px;
-		right: 0;
-		 img {
-		 	padding-top: 2%;
-		 	width: 30%;
+		 	width: 100px;
 		}
 	}
 }
@@ -203,12 +183,6 @@ hr.cta {
 	@include screen(1px, 900px) {
 		display: inline-block;
 	}
-	@include iphone5 {
-		display: inline-block;
-	}
-	@include iphone4 {
-		display: inline-block;
-	}
 }
 
 #menu-mobile-open{
@@ -223,8 +197,8 @@ hr.cta {
 
 	& li {
 		color:#e1e1e1;
-		padding: 8% 0;
-		font-size: 1.6em; 
+		padding: 6% 0;
+		font-size: 1.4em; 
 		width: 100%;
 		list-style-type: none;
 		border-bottom: solid 1px #eee;
@@ -370,29 +344,16 @@ hr.cta {
   @include screen(1px,600px) {
   	img {
   		position: relative;
-  		top: 16px;
-  	}
-  }
-  @include iphone5 {
-  	img {
-  		position: relative;
-  		top: 7%;
-  	}
-  }
-  @include iphone4 {
-  	img {
-  		position: relative;
-  		top: 7%;
+  		bottom: 0-12px;
   	}
   }
 }
 
-	.img-bottom {
-		z-index: 1;
-		position: relative;
-		bottom: -2em;
-	}
-
+.img-bottom {
+	z-index: 1;
+	position: relative;
+	bottom: 0;
+}
 
 .footer{
 	text-align: left;
@@ -759,7 +720,7 @@ hr.cta {
 	}
 }
 .pitch {
-	padding: 6% 0 3% 0;
+	padding: 9% 0 5% 0;
 
 	h2 {
 		padding-bottom: 4%;
@@ -997,6 +958,15 @@ ul.social_list {
 	h4 {
 		font-weight: lighter;
 		opacity: 0.7;
+	}
+
+	@include screen (1px, 900px) {
+		padding: 23% 0 6% 0;
+
+		img {
+			background: none;
+			display: none;
+		}
 	}
 }
 
