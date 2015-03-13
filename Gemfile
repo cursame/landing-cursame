@@ -16,3 +16,4 @@ gem "sanitize"
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem "passenger"
 gem "useragent"
+gem "sinatra-cross_origin", "~> 0.3.1"

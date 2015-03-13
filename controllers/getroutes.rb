@@ -153,10 +153,21 @@
 
     get '/:locale/plugin_login' do 
         session[:current_route] = '/plugin_login'
+        response.headers["Access-Control-Allow-Origin"] = "*"
+
 		erb  :"static_views/plugin_login", :layout => :"layouts/application" 
+
     end
 
     get '/:locale/call_login_plugin' do 
+    	response.headers["Access-Control-Allow-Origin"] = "*"
+
     	localities = erb :"/static_views/plugins/form_login", :layout => false
+
     end
-    
+
+    get '/cross_origin' do
+	  cross_origin
+	  "This is available to cross-origin javascripts"
+	end
+

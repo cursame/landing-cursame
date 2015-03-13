@@ -1,13 +1,11 @@
 $(document).ready(function(){
-  $.getJSON( "../../plugins/loggin_plugin/login.json", function( data ) {
-
-  })
-  .done(function(data) {
-
-    callViewRemote(data.render , data.div_to);
-  })
-  .fail(function() {
-    console.log( "error al cargar el plugin" );
-  });
+     callViewRemoteX("http://localhost:9393/es/call_login_plugin", "#plugin_loggin_cursame");
 });
+
+function callViewRemoteX(urlToLoad, divTo){
+	$.get( urlToLoad, function( data ) {
+    	$( divTo ).html( data );
+    });
+    return false; 
+}
 
