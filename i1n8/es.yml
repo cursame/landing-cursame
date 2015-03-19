@@ -101,9 +101,9 @@
     radar: Radar
     radartext: "Identifica, prevé y atiende casos de violencia escolar y se parte de la solución en tu comunidad educativa."
     bit: Bit
-    bittext: "Software de control escolar y administrativo flexible e integral para llevar el control de todos los procesos de las instituciones."
+    bittext: "Software de control escolar administrativo que lleva el control de todo proceso de las instituciones."
     mixpanel: Analytics
-    mixpaneltext: "La más avanzada plataforma de análisis de datos del mercado y la plataforma jurídica más grande de México."
+    mixpaneltext: "La más avanzada plataforma jurídica y de análisis de datos del mercado."
     textplugins: "Tenemos diversas integraciones que te permitirán sacar el máximo porvecho a tu aplicación."
   benefits:
     title: Beneficios

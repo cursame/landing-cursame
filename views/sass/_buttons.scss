@@ -80,6 +80,11 @@
   font-weight: bold ;
   padding: 10px 35px;
   margin-top: 50px;
+
+  @include screen(1px, 900px) {
+    margin-top: 5px;
+    padding: 5% 0;
+  }
 }
 
 .btn-goto:hover  {

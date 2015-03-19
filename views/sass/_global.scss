@@ -366,6 +366,10 @@ hr.cta {
 	@include clearfix;
 	float: left;
 
+	@include screen(1px, 900px) {
+		display: none;
+	}
+
 	.rights {
 		float: left;
 		color: #C8CFD7;
@@ -663,25 +667,33 @@ hr.cta {
 		margin-top: 15px;
 		text-align: left;
 	}
+
+	.i-left {
+			float: center;
+		}
+
+		.updiv {
+			text-align: center;
+		}
 	
 	@include screen(1px, 900px) {
 		width: 100%;
-		padding: 9% 20%;
+		padding: 5% 0%;
 		color: $white;
-		text-align: center;
-	}
+		float: left;
+		text-align: left;
 
-	@include iphone5 {
-		width: 100%;
-		padding: 5% 20%;
-		color: $white;
-		text-align: center;
-	}
-		@include iphone4 {
-		padding: 5% 20%;
-		color: $white;
-		text-align: center;
-		width: 100%;
+	.i-left {
+			float: left;
+			width: 24%;
+			margin-right: 1%;
+		}
+
+		.updiv {
+			float: left;
+			text-align: left;
+			width: 70%;
+		}
 	}
 }
 
@@ -845,6 +857,10 @@ ul.social_list {
 
 	h4 {
 		padding-bottom: 25px;
+	}
+
+	@include screen(1px, 900px) {
+		padding: 0 5%;
 	}
 } 
 
@@ -1930,18 +1946,16 @@ padding: 25px 0 10px 0;
 	@include screen(1px, 900px) {
 		display: none;
 	}
-	@include iphone5 {
-		display: none;
-	}
-	@include iphone4 {
-		display: none;
-	}
 }
 
 .buttons_cta{
 	width:100%;
 	margin-top: 4%;
 	margin-bottom: 4%;
+
+	@include screen(1px, 900px) {
+		margin: 0;
+	}
 }
 
 .button_banner{
@@ -1952,9 +1966,6 @@ padding: 25px 0 10px 0;
     list-style-type: none;
     padding-right: 20px;
 	}
-
-
-
 }
 
 .functions{
@@ -2324,4 +2335,19 @@ ul.question {
 	 & h3 {
 	 	color: #6E6D6D;
 	 }
+}
+
+.footerm {
+	display: none;
+
+
+
+
+		@include screen(1px, 900px) {
+					display: block;
+
+		ul.footermobile {
+		padding: 50px 0;
+			}
+	}
 }

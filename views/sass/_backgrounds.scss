@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   color: white;
   @include cover-background(cover);
-  background-size: 115%;
 
   &.intro-main {
     background-image: url('/img/bg_main.jpg');
@@ -18,10 +17,8 @@
     background-image: url('img/pate/how.jpg');
 }
  &.intro-contact {
-    background-image: url('/img/bg-contact.png');
-    background-position: bottom center !important;
-
-  }
+  background-image: url('/img/bg-contact.png');
+}
 
     p,span {
     color: $white;
@@ -39,7 +36,7 @@
 
   @include screen(1px, 900px) {
     margin-top: 55px;
-    padding-top: 6%;
+    padding-top: 18%;
   }
 }
 
@@ -168,3 +165,4 @@ border-collapse: collapse;
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
 }
+
