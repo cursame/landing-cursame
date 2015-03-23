@@ -394,6 +394,10 @@ hr.cta {
 			padding-right: 30px;
 			font-weight: lighter;
 		}
+
+		@include screen (1px, 600px) {
+			display: none;
+		}
 	}
 
 	.language {
@@ -407,21 +411,11 @@ hr.cta {
 	}
 
 	@include screen(1px, 500px) {
-		height: 50px;
-
-		.footermenu {
-			display: none;
-		}
-	}
-	@include iphone5 {
-		height: 50px;
-
-		.footermenu {
-			display: none;
-		}
-	}
-	@include iphone4 {
-		height: 50px;
+		height: 90px;
+		margin: 0;
+		padding-bottom: 130px;
+		padding-top: 10px;
+		margin-top: 30px;
 
 		.footermenu {
 			display: none;
@@ -1991,6 +1985,12 @@ padding: 25px 0 10px 0;
 		float: left;
 		text-align: center;
 	}
+
+	@include screen(1px, 600px) {
+		.tool {
+			margin-right: 8%;
+		}
+	}
 }
 
 .stats {
@@ -2044,119 +2044,133 @@ padding: 25px 0 10px 0;
 	padding-bottom: 25px;
 }
 .bannerx { 
-	    position: relative; 
-	    overflow: auto;
-	    width:100%;
-	    margin:3% 0 5% 0;
-	    padding:0;
+	  position: relative; 
+	  overflow: auto;
+	  width:100%;
+	  margin:3% 0 5% 0;
+	  padding:0;
 
-      & ul { 
-      	float: left;
-      }
+	  & ul { 
+	  	float: left;
+	  }
 
-	    & li {
-	       list-style: none; 
-	       float: left;
-	       font-size: 13px;
+	  & li {
+	     list-style: none; 
+	     float: left;
+	     font-size: 13px;
 
-	      p {
-	       	font-size: 17px;
-	       	line-height: 30px;
-	       	color: #333;
-	       	margin-left: 5%;
-	       	margin-right: 3%;
-	      }
+	    p {
+	     	font-size: 17px;
+	     	line-height: 30px;
+	     	color: #333;
+	     	margin-left: 5%;
+	     	margin-right: 3%;
+	    }
 
-	      span {
-	       	font-size: 20px;
-	       	line-height: 26px;
-	       	color: $white;
-	       	margin-left: 5%;
-	       	margin-right: 3%;
-	       }
-		   }
+	    span {
+	     	font-size: 20px;
+	     	line-height: 26px;
+	     	color: $white;
+	     	margin-left: 5%;
+	     	margin-right: 3%;
+	    }
+	  }
 
-	    & .dots {
-	    	display: block;
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0px;
-				padding:0 5% 45px 2% ;
+	  & .dots {
+	  	display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0px;
+			padding:0 5% 45px 2% ;
 
 
-		  & li {
-				cursor: pointer !important;
-				display: inline-block;
-				width: 18px;
-				height: 18px;
-				margin: 0 13px;
-				text-indent: -999em;
-				border: 2px solid #ececec;
-				border-radius: 10px;
-				opacity: .6;
-				-webkit-transition: background .6s, opacity .6s;
-				-moz-transition: background .6s, opacity .6s;
-				transition: background .6s, opacity .6s;
-				bottom:0;
-			}
-
-			& li.active {
-				background: #0D5C84;
-				opacity: 0.6;
-			}
+	  & li {
+			cursor: pointer !important;
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			margin: 0 13px;
+			text-indent: -999em;
+			border: 2px solid #ececec;
+			border-radius: 10px;
+			opacity: .6;
+			-webkit-transition: background .6s, opacity .6s;
+			-moz-transition: background .6s, opacity .6s;
+			transition: background .6s, opacity .6s;
+			bottom:0;
 		}
 
-		& .divimage {
-			float:left;
-			width:16%;
-			padding-top: 4%;
-      background: #fff; 
-      height: 240px;
-      border-right: 1px solid #ececec;
-      border-right-style: dashed;
+		& li.active {
+			background: #0D5C84;
+			opacity: 0.6;
+		}
+	}
+
+	& .divimage {
+		float:left;
+		width:16%;
+		padding-top: 4%;
+	  background: #fff; 
+	  height: 240px;
+	  border-right: 1px solid #ececec;
+	  border-right-style: dashed;
+	}
+
+	& .divtestimonial{
+		float: right;
+		width: 84%;
+	  text-align: justify ;
+	  border-left:none;
+	  background: #fff; 
+	  padding: 3% 3% 4% 0;
+	  height: 240px;
+	}
+
+	& .autor{
+		float: right;
+		margin: 15px 15px 20px 0;
+		text-align: right;
+		color: $white;
+	}
+
+	& .triangle {
+		width: 0;
+		height: 0;
+		border-top: 50px solid #fff;
+		border-right: 50px solid transparent;
+		float:right;
+		margin-top:-18px;
+		margin-right: 3%;
+	}
+
+	& .quote {
+		color: #9BE5FF;
+		text-align: right;
+		float: right;
+		padding-top: 5px;
+		font-size: 18px;
+	}
+
+	@include screen (1px, 600px) {
+		.divimage {
+			display: none;
 		}
 
-		& .divtestimonial{
-			float: right;
-			width: 84%;
-	    text-align: justify ;
-	    border-left:none;
-	    background: #fff; 
-	    padding: 3% 3% 4% 0;
-	    height: 240px;
-		}
+		.slider {
+			padding: 0;
+		} 
 
-		& .autor{
-			float: right;
-			margin: 15px 15px 20px 0;
-			text-align: right;
-			color: $white;
+		.divtestimonial {
+			float: left;
+			width: 100%;
 		}
-
-		& .triangle {
-			width: 0;
-			height: 0;
-			border-top: 50px solid #fff;
-			border-right: 50px solid transparent;
-			float:right;
-			margin-top:-18px;
-			margin-right: 3%;
-
-		}
-
-		& .quote {
-			color: #9BE5FF;
-			text-align: right;
-			float: right;
-			padding-top: 5px;
-			font-size: 18px;
-		}
+	}
 }
 
 .tools-info {
     margin-bottom: 40px;
-  p{
+  p {
   	color: #323232;
   }
 
@@ -2173,7 +2187,6 @@ padding: 25px 0 10px 0;
   list-style: none;
   position: relative;
 
-
     & li.ben{
 	    width: 138px;
 	    float:left;
@@ -2182,7 +2195,6 @@ padding: 25px 0 10px 0;
 			text-align: center;
 			cursor: pointer;
 			font-size: 15px;
-
 		}
 	    
     & li{
