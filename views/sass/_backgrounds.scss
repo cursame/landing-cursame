@@ -15,10 +15,10 @@
 
   &.pate-how {
     background-image: url('img/pate/how.jpg');
-}
- &.intro-contact {
-  background-image: url('/img/bg-contact.png');
-}
+  }
+  &.intro-contact {
+    background-image: url('/img/bg-contact.png');
+  }
 
     p,span {
     color: $white;
@@ -60,6 +60,11 @@
   background-size: 100%;
   background-attachment: scroll;
   background-position: center; 
+
+
+  @include screen(1px, 900px) {
+     background:none;
+   }
 }
 
 
@@ -72,6 +77,13 @@
   background-size: 100%;
   background-attachment: scroll;
   background-position: center; 
+
+  @include screen(1px, 600px) {
+    width: auto;
+    background-size: inherit;
+    background-position: top; 
+    background-repeat: repeat;
+  }
 }
 
 .main_blue{
