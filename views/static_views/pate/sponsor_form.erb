@@ -1,91 +1,102 @@
-<div class="content  bg-gray">
-	<div class="wrapper">
-		<div class="cols-12">
-			<div class="col col-12">
-				<div class="col-inner">
-					<div class="formsheet">	
-					<%= erb :'/static_renders/simple_header', locals: {title: t.forms.sponsor_title, icon: true,  call_icon: 'contact'}%>	
-						<form class="form validate" action="/contact_sponsor" method="POST" enctype="multipart/form-data">	
-							<ul class="question">		
-								<li>
-									<%= t.forms.institution_pate %>:
-									<input type="text" name="nameinstitution" required/>
-								</li>
-								<li>
-									<%= erb :'/static_views/pate/locations/states'%>
-								</li>
-								<li>
-									<%= t.forms.adress %>:
-									<textarea name="adress" required></textarea>
-								</li>
-								<li>
-								 <%= t.forms.name_of_representative %>:</br> <input type="text" name="name" required/>
-								</li>
-								<li>
-									<%= t.forms.email %>:</br> <input type="email" name="email" required/>
-								</li>
-								<li>
-									<%= t.forms.phone %>:</br> <input type="number" name="phone" required/>
-								</li>
-
-								<li> 
-									<h5>	Giro de la organización (puede marcar más de una):  </h5>
-								</li>
-
-								<li class="formcheck">
-									<input type="checkbox" name="option1" value="Industrial" > <%= t.forms.industrial %><br>
-								</li>
-								<li class="formcheck">	
-									<input type="checkbox" name="option2" value="Comercial" > <%= t.forms.commercial %><br>
-								</li>
-								<li class="formcheck">	
-									<input type="checkbox" name="option3" value="Servicios"> <%= t.forms.services %><br>
-								<li class="formcheck">
-								</li>
-								<li class="formcheck">	
-									<input type="checkbox" name="option4" value="Pública"> <%= t.forms.public %><br>
-								</li>
-								<li class="formcheck">	
-									<input type="checkbox" name="option5" value="Privada"> <%= t.forms.private %><br>
-								</li>
-								<li>
-								 <%= t.forms.another %> <input type="text" name="option6" /></br>
-								</li>
-								<li>
-									<%= t.forms.business_scheme %>: </br>
-								</li>
-
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society1 %>" checked> <%= t.forms.society1 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society2 %>" > <%= t.forms.society2 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society3 %>"> <%= t.forms.society3 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society4 %>"> <%= t.forms.society4 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society5 %>"> <%= t.forms.society5 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society6 %>"> <%= t.forms.society6 %> <br>
-								</li>
-								<li class="formcheck">
-									<input type="radio" name="society" value="<%= t.forms.society7 %>o"><%= t.forms.society7 %><br>
-								</li>
-								<li class="formcheck">
-									<input type="submit" value="<%= t.forms.send_sponsor %>" class="btn btn-send menu-get" />
-								</li>
-						</form>
-
+<form class="form validate" action="/contact_sponsor" method="POST" enctype="multipart/form-data">	
+	<ul class="question">	
+		<div class="form-title bg-darkgray">
+			<div class="wrapper">
+				<div class="cols-12">
+					<div class="col col-12">
+						<div class="col-inner">		
+							<li>
+								<%= t.forms.institution_pate %>:
+								<input type="text" name="nameinstitution" required/>
+							</li>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+
+
+
+		<div class="content ">
+			<div class="wrapper">
+				<div class="cols-12">
+					<div class="col col-12">
+						<div class="col-inner">
+							<li>
+								<%= erb :'/static_views/pate/locations/states'%>
+							</li>
+							<li>
+								<%= t.forms.adress %>:
+								<textarea name="adress" required></textarea>
+							</li>
+							<li>
+							 <%= t.forms.name_of_representative %>:</br> <input type="text" name="name" required/>
+							</li>
+							<li>
+								<%= t.forms.email %>:</br> <input type="email" name="email" required/>
+							</li>
+							<li>
+								<%= t.forms.phone %>:</br> <input type="number" name="phone" required/>
+							</li>
+
+							<li> 
+								<h5>	Giro de la organización (puede marcar más de una):  </h5>
+							</li>
+
+							<li class="formcheck">
+								<input type="checkbox" name="option1" value="Industrial" > <%= t.forms.industrial %><br>
+							</li>
+							<li class="formcheck">	
+								<input type="checkbox" name="option2" value="Comercial" > <%= t.forms.commercial %><br>
+							</li>
+							<li class="formcheck">	
+								<input type="checkbox" name="option3" value="Servicios"> <%= t.forms.services %><br>
+							</li>
+							<li class="formcheck">	
+								<input type="checkbox" name="option4" value="Pública"> <%= t.forms.public %><br>
+							</li>
+							<li class="formcheck">	
+								<input type="checkbox" name="option5" value="Privada"> <%= t.forms.private %><br>
+							</li>
+							<li>
+							 <%= t.forms.another %> <input type="text" name="option6" /></br>
+							</li>
+							<li>
+								<%= t.forms.business_scheme %>: </br>
+							</li>
+
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society1 %>" checked> <%= t.forms.society1 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society2 %>" > <%= t.forms.society2 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society3 %>"> <%= t.forms.society3 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society4 %>"> <%= t.forms.society4 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society5 %>"> <%= t.forms.society5 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society6 %>"> <%= t.forms.society6 %> <br>
+							</li>
+							<li class="formcheck">
+								<input type="radio" name="society" value="<%= t.forms.society7 %>o"><%= t.forms.society7 %><br>
+							</li>
+							<li class="formcheck">
+								<input type="submit" value="<%= t.forms.send_sponsor %>" class="btn btn-send menu-get" />
+							</li>
 </div>
+</div>
+</div>
+</div>
+</div>
+
+
+</ul>
+</form>
 
 <%= erb :'/static_renders/footer'%>

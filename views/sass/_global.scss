@@ -83,9 +83,8 @@ h6{
 }
 
 hr {
-	border-top: solid 1px #ececec;
-	margin: 0;
-
+	border-top: solid 1px #ccc;
+	margin-bottom: 4%;
 }
 
 hr.cta {
@@ -332,6 +331,10 @@ hr.cta {
 		font-weight: lighter;
 		opacity: 0.7;
 		padding-left: 60px;
+	}
+
+	@include screen(1px, 600px) {
+		padding: 25% 0 3% 0px;
 	}
 }
 
