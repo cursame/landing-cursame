@@ -47,7 +47,7 @@
 
 	post '/contact_sponsor' do 
 	   puts  "************>>>> send mail"
-       mail_stablish = erb :"mailer/sponsor", locals: {institution: params[:nameinstitution], name: params[:name], phone: params[:phone], email: params[:email], states: params[:states], locations: params[:municipios], adress: params[:adress], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], option5: params[:option5], option5: params[:option5], option6: params[:option6], society: params[:society] }, :layout => false
+          mail_stablish = erb :"mailer/sponsor", locals: {institution: params[:nameinstitution], name: params[:name], phone: params[:phone], email: params[:email], states: params[:states], locations: params[:municipios], adress: params[:adress], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], option5: params[:option5], option6: params[:option6], society: params[:society] }, :layout => false
 	   puts "************>>>> sending "	
 	   mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me', 'fernanda@cursa.me', 'juan@cursa.me']
 	   #mail_to_as = 'jose_alfredo@cursa.me'

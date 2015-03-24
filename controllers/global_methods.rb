@@ -44,7 +44,7 @@ helpers do
 
   def mobile_validate?
     platform = session[:platform].to_s
-    #puts "#{platform}"
+    puts "#{platform.downcase}"
      case platform.downcase  
      when 'iphone'
       true
