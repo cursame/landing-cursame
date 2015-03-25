@@ -1,4 +1,10 @@
 <div class="notice_head" style="display:none;"></div>
+<% if params[:error] == 813 %>
+<div class="notice_head" >
+<p style='font-size:20px; color: #E92C2C; margin-top:20px;'>Error: Ha ocurrido porque hay campos faltantes</p>
+</div>
+
+<%end%>
 <div class=" <%= 'header' if transparent_head %>  <%= 'header_scroll' if !transparent_head%>">
   <div class="wrapper">
     <div class="cols-12">

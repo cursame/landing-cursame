@@ -69,7 +69,7 @@
 	end
 
 	get '/:locale/contact' do 
-		session[:current_route] = '/contact'		
+		session[:current_route] = '/contact'
 	  erb  :"static_views/contact", :layout => :"layouts/application"
 	end
 
