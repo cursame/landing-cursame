@@ -9,7 +9,6 @@
        if params[:name].empty? || params[:phone].empty? || params[:email].empty?
               puts '>>>>>> error in send email'
               redirect "/#{session[:locale]}/contact?error=813"
-
        else
               case "#{params[:simglearea]}"
               	  when  "Area de ventas" 
