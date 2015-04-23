@@ -31,4 +31,12 @@ register Sinatra::AssetPack
 	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
+
+  get 'robots.txt' do
+
+     erb :'robots.txt.erb'
+
+  end
+
+
  
