@@ -31,6 +31,15 @@ register Sinatra::AssetPack
 	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
+  require 'sitemap_generator'
+
+  SitemapGenerator::Sitemap.default_host = 'http://cursa.me'
+  SitemapGenerator::Sitemap.create do
+    add '/es', :changefreq => 'daily', :priority => 0.9
+    add '/es/contact', :changefreq => 'weekly'
+  end
+  SitemapGenerator::Sitemap.ping_search_engines # Not needed if you use the rake tasks
+
 
   get 'robots.txt' do
 
