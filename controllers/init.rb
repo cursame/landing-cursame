@@ -32,10 +32,8 @@ register Sinatra::AssetPack
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
 
-  get 'robots.txt' do
-
-     erb :'robots.txt.erb'
-
+  get '/robots.txt' do
+     erb :'robots.txt'
   end
 
 
