@@ -15,7 +15,7 @@ helpers do
      else
        locale = session[:locale]
     end
-  	if url == 'to_es' || url == 'to_en'
+  	if url == 'toes' || url == 'toen'
   	"<a href='/#{url}' target='#{target}'>#{name}</a>" 
   	else
   	"<a href='/#{locale}/#{url}' target='#{target}' class='#{classhtml}' >#{name}</a>"

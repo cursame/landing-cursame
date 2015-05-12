@@ -15,13 +15,13 @@
     	redirect  "/#{session[:locale]}"
     end
 
-    get '/to_en' do 
+    get '/toen' do 
     	R18n::I18n.default = 'en'
         session[:locale] = 'en'
     	redirect  "/#{session[:locale]}#{session[:current_route]}"  
     end
 
-    get '/to_es' do 
+    get '/toes' do 
     	R18n::I18n.default = 'es'
         session[:locale] = 'es'
         redirect  "/#{session[:locale]}#{session[:current_route]}"  
