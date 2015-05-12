@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require './configs/seo'
 require 'sass/plugin/rack'
 require './landing'
  
