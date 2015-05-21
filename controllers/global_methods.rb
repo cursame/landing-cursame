@@ -1,6 +1,9 @@
 ################################ helpers ###############################
 helpers do
   
+  def actual_lang
+    session[:locale] = params[:locale]
+  end
   ####### call image ########
 
   def image_tag(name, width_x = '', classx = '')
@@ -82,4 +85,5 @@ helpers do
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
+
 end

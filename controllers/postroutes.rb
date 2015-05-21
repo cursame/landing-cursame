@@ -12,31 +12,29 @@
        else
               case "#{params[:simglearea]}"
               	  when  "Area de ventas" 
-              	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
-              	  #mail_to_as = "jose_alfredo@cursa.me"
-                       contact_title = "Contacto de ventas Cúrsame"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['ignacio@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
+                    contact_title = "Contacto de ventas Cúrsame"
+                	  puts "#{params[:simglearea]}"
               	  when  "Sales area"
-              	  mail_to_as = ['gabriel@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
-              	  #mail_to_as = "jose_alfredo@cursa.me"
-                       contact_title = "Contacto de ventas Cúrsame"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['ignacio@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
+                    contact_title = "Contacto de ventas Cúrsame"
+                	  puts "#{params[:simglearea]}"
               	  when  "Area de compromiso social"
-              	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
-              	  contact_title "Contacto para Impacto social Cúrsame"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['ignacio@cursa.me', 'juan@cursa.me', 'fernanda@cursa.me']
+                	  contact_title "Contacto para Impacto social Cúrsame"
+                	  puts "#{params[:simglearea]}"
               	  when  "Area of social commitment"
-              	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
-              	  contact_title "Contacto para Impacto social Cúrsame"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['ignacio@cursa.me', 'juan@cursa.me', 'fernanda@cursa.me']
+                	  contact_title "Contacto para Impacto social Cúrsame"
+                	  puts "#{params[:simglearea]}"
               	  when   "Area de soporte" 
-              	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
-              	  contact_title = "Contacto de soporte"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
+                	  contact_title = "Contacto de soporte"
+                	  puts "#{params[:simglearea]}"
               	  when "Support Area"
-              	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
-              	  contact_title = "Contacto de soporte"
-              	  puts "#{params[:simglearea]}"
+                	  mail_to_as = ['juan@cursa.me', 'fernanda@cursa.me']
+                	  contact_title = "Contacto de soporte"
+                	  puts "#{params[:simglearea]}"
               end
               mail_to(mail_to_as, 'cursame-non-reply@cursa.me', contact_title, mail_stablish )  
        end
@@ -57,7 +55,6 @@
           mail_stablish = erb :"mailer/sponsor", locals: {institution: params[:nameinstitution], name: params[:name], phone: params[:phone], email: params[:email], states: params[:states], locations: params[:municipios], adress: params[:adress], option1: params[:option1], option2: params[:option2], option3: params[:option3], option4: params[:option4], option5: params[:option5], option6: params[:option6], society: params[:society] }, :layout => false
 	   puts "************>>>> sending "	
 	   mail_to_as = ['leon@cursa.me', 'ignacio@cursa.me', 'fernanda@cursa.me', 'juan@cursa.me']
-	   #mail_to_as = 'jose_alfredo@cursa.me'
-       mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
+     mail_to(mail_to_as, 'cursame-non-reply@cursa.me', 'Contacto de PATE', mail_stablish )  
 	end
     
