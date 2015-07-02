@@ -120,7 +120,8 @@ function sendingAJAX(url, formData, external ,callback){
 	        //console.log(external_to);
 	        if ( external == true ) {
 	        	var token =  data.response.token
-	        	window.location.href = "http://"+data.response.subdomain+".cursa.me/users/sign_in?auth_token="+data.response.token;
+            var location = window.location.host;
+	        	window.location.href = "http://"+data.response.subdomain+"."+location+"/users/sign_in?auth_token="+data.response.token;
 	        } else {
 	           headNotice("<p style='font-size:20px; color: #fff; margin-top:20px;'>Formulario enviado correctamente</p>");
 	        }
