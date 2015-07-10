@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y --force-yes build-essential wget git
 RUN apt-get install -y --force-yes zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
 RUN apt-get clean
-RUN apt-get install -y --force-yes git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+RUN apt-get install -y --force-yes git-core curl zlib1g-dev libreadline-dev libsqlite3-dev sqlite3 libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
 # Install Ruby
 RUN wget -P /root/src http://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.0.tar.gz

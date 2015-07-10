@@ -48,6 +48,8 @@ GEM
       nokogiri (>= 1.4.4)
       nokogumbo (= 1.2.0)
     sass (3.4.9)
+    shotgun (0.9.1)
+      rack (>= 1.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -94,6 +96,7 @@ DEPENDENCIES
   pony
   sanitize
   sass
+  shotgun
   sinatra (~> 1.4.5)
   sinatra-assetpack
   sinatra-cross_origin (~> 0.3.1)
