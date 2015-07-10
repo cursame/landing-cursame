@@ -26,8 +26,9 @@ RUN mkdir /root/.ssh/
 
 
 # Clone Repo and install 
+RUN cd /root/sinatra; gem install foreman
 RUN git clone https://55334a7f8de2cca03cc6144eb5cb5aa4877110c3@github.com/cursame/landing-cursame /root/sinatra
 RUN cd /root/sinatra; bundle install
 
 EXPOSE 4567
-RUN cd /root/sinatra; foreman start;
+RUN cd /root/sinatra; foreman start
