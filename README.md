@@ -8,6 +8,15 @@ landing page cúrsame
 - Sass
 - YAML
 
+# Vagrant y Dockerfile (instalable con configuració)
+
+Se generó un instalable que corre con una maquina virtual configurada
+para sinatra.
+- Funciona mediante Dockerfile con su maquina virtual y vagrant con su maquina virtual en ubuntu
+- maquina: vagrant init gajdaw/sinatra; vagrant up --provider virtualbox
+- Compila Ruby desde cero en la versión 2.2.0
+- También funciona de una manera dinámica pero sencilla con Foreman.
+- Para poder ingresar en la consola de vagrant "vagrant ssh"
 
 # Métodos importantes Ruby 
 

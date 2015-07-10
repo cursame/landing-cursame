@@ -20,3 +20,4 @@ gem "sitemap_generator"
 gem "foreman"
 gem 'thin'
 gem "shotgun"
+gem 'foreman_docker'
