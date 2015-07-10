@@ -4,6 +4,7 @@
 *.swp
 *.rbc
 /.sass-cache
+/.vagrant
 /pkg
 /doc/api
 /Gemfile.lock

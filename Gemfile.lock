@@ -13,6 +13,10 @@ GEM
     builder (3.2.2)
     crass (1.0.1)
     daemon_controller (1.2.0)
+    daemons (1.2.3)
+    eventmachine (1.0.7)
+    foreman (0.78.0)
+      thor (~> 0.19.1)
     haml (4.0.6)
       tilt
     jsmin (1.0.1)
@@ -68,6 +72,10 @@ GEM
       sinatra-contrib
     sitemap_generator (5.0.5)
       builder
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
     thor (0.19.1)
     tilt (1.4.1)
     useragent (0.11.0)
@@ -79,6 +87,7 @@ PLATFORMS
 DEPENDENCIES
   aws-ses (~> 0.6.0)
   bourbon
+  foreman
   haml
   json
   passenger
@@ -91,4 +100,5 @@ DEPENDENCIES
   sinatra-r18n
   sinatra-reloader
   sitemap_generator
+  thin
   useragent

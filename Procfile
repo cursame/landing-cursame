@@ -1,0 +1,1 @@
+web: bundle exec rackup config.ru -p 9393 -s thin -o 0.0.0.0
