@@ -19,4 +19,4 @@ gem "sinatra-cross_origin", "~> 0.3.1"
 gem "sitemap_generator"
 gem "foreman"
 gem 'thin'
-gem shotgun
+gem "shotgun"
