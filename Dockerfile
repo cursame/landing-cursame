@@ -26,11 +26,12 @@ RUN mkdir /root/.ssh/
 
 
 # Clone Repo and install 
-RUN cd /root/sinatra; gem install foreman
 RUN git clone https://55334a7f8de2cca03cc6144eb5cb5aa4877110c3@github.com/cursame/landing-cursame /root/sinatra
 RUN cd /root/sinatra; bundle install
+RUN  gem install foreman
+RUN  gem install foreman_docker
 
 EXPOSE 4567
-RUN cd /root/sinatra; foreman start -f ./Procfile
+#RUN cd /root/sinatra; foreman start -f ./Procfile
 CMD ["/usr/local/bin/foreman","start","-d","/root/sinatra"]
 #vagrant init gajdaw/sinatra; vagrant up --provider virtualbox
