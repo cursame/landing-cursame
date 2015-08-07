@@ -80,12 +80,14 @@ helpers do
     
     puts @to_email.class
     puts @to_email
-	  ses.send_email(
-	    :to =>  @to_email, 
-	    :from => from_email, 
-	    :subject => subject,
-	    :body => body_mail
-    )
+    @to_email.each do |email|
+  	  ses.send_email(
+  	    :to =>  email.to_s, 
+  	    :from => from_email, 
+  	    :subject => subject,
+  	    :body => body_mail
+      )
+    end
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
