@@ -66,7 +66,7 @@ helpers do
 
   ############# mail method SES #############
 
-  def mail_to(to_email, from_email, subject, body_mail )
+  def mail_to(to_email, from_email, subject, body_mail)
 
   	ses = AWS::SES::Base.new(
 	  :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
@@ -77,7 +77,7 @@ helpers do
   	body_mail = Sanitize.clean(body_mail)
 	
 	  ses.send_email(
-	    :to => to_email, 
+	    :to => to_email.to_a, 
 	    :from => from_email, 
 	    :subject => subject,
 	    :body => body_mail

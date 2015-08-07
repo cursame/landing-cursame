@@ -13,7 +13,7 @@
               case "#{params[:simglearea]}"
               	  when  "Area de ventas" 
                 	  #mail_to_as = ['ignacio@cursa.me', 'rafael@cursa.me', 'fernanda@cursa.me', 'jose_alfredo@cursa.me']
-                    mail_to_as = "jose_alfredo@cursa.me"
+                    mail_to_as = ["jose_alfredo@cursa.me", "alfredo@cursa.me"]
                     contact_title = "Contacto de ventas Cúrsame"
                 	  puts "#{params[:simglearea]}"
               	  when  "Sales area"
