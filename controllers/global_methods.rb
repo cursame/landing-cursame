@@ -71,12 +71,12 @@ helpers do
   	ses = AWS::SES::Base.new(
 	  :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
 	  :secret_access_key => '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'
-	)
+	  )
 
   	subject = Sanitize.clean(subject)
   	body_mail = Sanitize.clean(body_mail)
 	
-	ses.send_email(
+	  ses.send_email(
 	    :to => to_email, 
 	    :from => from_email, 
 	    :subject => subject,
