@@ -8,7 +8,6 @@ register Sinatra::AssetPack
     set :scss, {:style => :compressed, :debug_info => false}
     set :allow_origin, :any
     set :allow_methods, [:get, :post, :options]
-
   end
   
   get '/css/:name.css' do |name|
@@ -18,7 +17,7 @@ register Sinatra::AssetPack
 
 
 	###### tranlating methods ########
-
+    Time.zone = "Mexico City"
     R18n.default_places { './i1n8' }
 
     ###### compresors ########
@@ -31,6 +30,9 @@ register Sinatra::AssetPack
 	    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
 	    css_compression :sass   # :simple | :sass | :yui | :sqwish
 	  }
+    puts Time.zone
+
+
 
   get '/robots.txt' do
      erb :'robots.txt'
