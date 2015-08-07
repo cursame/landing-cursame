@@ -69,21 +69,21 @@ helpers do
   def mail_to(to_email, from_email, subject, body_mail)
 
   	ses = AWS::SES::Base.new(
-	  :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
-	  :secret_access_key => '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'
+	   :access_key_id     => 'AKIAIDEOIKQ6IJYTQ24A',
+	   :secret_access_key => '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'
 	  )
+
+    puts ses
 
   	subject = Sanitize.clean(subject)
   	body_mail = Sanitize.clean(body_mail)
 	  
-    @to_email = to_email.split(',')
-    logger.info(@to_email)
-  	  #ses.send_email(
-  	   # :to =>  @to_email, 
-  	   # :from => from_email, 
-  	   # :subject => subject,
-  	   # :body => body_mail
-      # )
+  	 ses.send_raw_email(
+  	    :to =>  to_email, 
+  	    :from => from_email, 
+  	    :subject => subject,
+  	    :body => body_mail
+      )
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
