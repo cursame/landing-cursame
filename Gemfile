@@ -20,7 +20,7 @@ gem "passenger"
 gem "useragent"
 gem "sinatra-cross_origin", "~> 0.3.1"
 gem "sitemap_generator"
-gem "foreman"
-gem 'thin'
+#gem "foreman"
+#gem 'thin'
 gem "shotgun"
-gem 'foreman_docker'
+#gem 'foreman_docker'
