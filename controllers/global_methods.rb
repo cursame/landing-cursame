@@ -77,8 +77,7 @@ helpers do
   	body_mail = Sanitize.clean(body_mail)
 	  
     @to_email = to_email.split(',')
-    puts @to_email
-
+    logger.info(@to_email)
   	  #ses.send_email(
   	   # :to =>  @to_email, 
   	   # :from => from_email, 
