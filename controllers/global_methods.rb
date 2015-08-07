@@ -76,18 +76,15 @@ helpers do
   	subject = Sanitize.clean(subject)
   	body_mail = Sanitize.clean(body_mail)
 	  
-    @to_email = to_email
-    
-    puts @to_email.class
+    @to_email = to_email.split(',')
     puts @to_email
-    @to_email.each do |email|
+
   	  ses.send_email(
-  	    :to =>  email.to_s, 
+  	    :to =>  @to_email, 
   	    :from => from_email, 
   	    :subject => subject,
   	    :body => body_mail
       )
-    end
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
