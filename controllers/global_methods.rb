@@ -75,9 +75,13 @@ helpers do
 
   	subject = Sanitize.clean(subject)
   	body_mail = Sanitize.clean(body_mail)
-	
+	  
+    @to_email = to_email
+    
+    puts @to_email.class
+    puts @to_email
 	  ses.send_email(
-	    :to => to_email.to_a, 
+	    :to =>  @to_email, 
 	    :from => from_email, 
 	    :subject => subject,
 	    :body => body_mail

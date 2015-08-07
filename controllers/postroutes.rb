@@ -37,7 +37,7 @@
                 	  contact_title = "Contacto de soporte"
                 	  puts "#{params[:simglearea]}"
               end
-              mail_to(mail_to_as, 'cursame-non-reply@cursa.me', contact_title, mail_stablish )  
+              mail_to(mail_to_as.to_a, 'cursame-non-reply@cursa.me', contact_title, mail_stablish )  
        end
 	end	
 
