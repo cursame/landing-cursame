@@ -77,7 +77,7 @@ helpers do
 
   	subject = Sanitize.clean(subject)
   	body_mail = Sanitize.clean(body_mail)
-	  
+	  puts to_email
   	 ses.send_raw_email(
   	    :to =>  to_email, 
   	    :from => from_email, 
