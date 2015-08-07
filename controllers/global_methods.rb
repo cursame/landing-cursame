@@ -82,7 +82,8 @@ helpers do
   	    :to =>  to_email, 
   	    :from => from_email, 
   	    :subject => subject,
-  	    :body => body_mail
+  	    :body => body_mail,
+        :timestamp => Time.now
       )
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
