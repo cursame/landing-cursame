@@ -79,12 +79,12 @@ helpers do
     @to_email = to_email.split(',')
     puts @to_email
 
-  	  ses.send_email(
-  	    :to =>  @to_email, 
-  	    :from => from_email, 
-  	    :subject => subject,
-  	    :body => body_mail
-      )
+  	  #ses.send_email(
+  	   # :to =>  @to_email, 
+  	   # :from => from_email, 
+  	   # :subject => subject,
+  	   # :body => body_mail
+      # )
 
   	#Pony.mail(:to => to_email, :from => from_email, :subject => subject, :body => ERB.new(body_mail).result, content_type: "text/html", :via => :ses)
   end
