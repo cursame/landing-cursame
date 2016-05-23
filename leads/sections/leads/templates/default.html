@@ -1,0 +1,112 @@
+<!-- BEGIN: main -->
+
+<div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Leads <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Leads</h1>
+
+          <div id="search-filter">
+	<!--<form class="report-filter" name="frmSearch" method="get" action="{__SITE_DOMAIN__}">
+
+        <label></label>
+        <input type="text" name="keywords" class="search-field" value="{__SEARCH_KEYWORDS__}" placeholder="Buscar por nombre o e-mail">
+        <input type="submit" name="search" value="buscar"/>
+    </form>-->
+</div>
+
+<div id="content-filter">
+	<form class="report-filter" name="frmFilter" method="get" action="{__SITE_DOMAIN__}">
+		<select name="filter_source">
+			<option value="">-- filtrar por fuente --</option>
+			<!-- BEGIN: source_filter -->
+			<option value="{__SOURCE_VALUE__}" {__SOURCE_SELECTED__}>{__SOURCE_NAME__}</option>
+			<!-- END: source_filter -->
+		</select>
+    	<label>Fecha inicial:</label>
+        <input type="text" name="filter_date_begin" class="field-show-date" value="{__FILTER_DATE_BEGIN__}" />
+        <label>Fecha final:</label>
+        <input type="text" name="filter_date_end" class="field-show-date" value="{__FILTER_DATE_END__}" /> <span class="note">aaaa-mm-dd</span>
+
+        <input type="submit" name="filter" value="filtrar"/>
+        <input type="hidden" name="section" value="leads">
+        <input type="button" name="export" value="exportar" onClick="location.href='{__SITE_DOMAIN__}index.php?action=export-leads&filter_date_begin='+frmFilter.filter_date_begin.value+'&filter_date_end='+frmFilter.filter_date_end.value"/>
+        <input type="button" name="clean" value="limpiar" onClick="location.href='{__SITE_DOMAIN__}leads'"/>
+
+
+    </form>
+
+
+</div>
+
+          <!-- BEGIN: leads -->
+
+<p class="total-results">Resultados totales: <strong>{__TOTAL_LEADS__}</strong></p>
+<div class="table-responsive">
+<table class="table">
+	<tr>
+    	<th>Nombre</th>
+        <th>Teléfono</th>
+        <th>E-mail</th>
+		<th>Escuela</th>
+		<th>Estudiantes</th>
+		<th>Comentarios</th>
+		<th>Origen</th>
+        <th>Creado el</th>
+    </tr>
+    <!-- BEGIN: lead -->
+    <tr>
+    	<td>{__LEAD_NAME__}</td>
+        <td>{__LEAD_PHONE__}</td>
+        <td>{__LEAD_EMAIL__}</td>
+		<td>{__LEAD_SCHOOL__}</td>
+		<td>{__LEAD_STUDENTS__}</td>
+		<td>{__LEAD_COMMENTS__}</td>
+		<td>{__LEAD_SOURCE__}</td>
+        <td>{__LEAD_CREATED__}</td>
+    </tr>
+    <!-- END: lead -->
+</table>
+<div class="table-responsive">
+
+<!-- BEGIN: pager -->
+<nav class="pager">
+
+	<a href="{__SITE_DOMAIN__}index.php?section=leads&page=1&filter_date_begin={__FILTER_DATE_BEGIN__}&filter_date_end={__FILTER_DATE_END__}" title="primer página">&laquo;</a>
+	<!-- BEGIN: prev -->
+   	<a href="{__SITE_DOMAIN__}index.php?section=leads&page={__PAGER_PREV__}&filter_date_begin={__FILTER_DATE_BEGIN__}&filter_date_end={__FILTER_DATE_END__}" title="página anterior">&lt;</a>
+    <!-- END: prev -->
+
+    <!-- BEGIN: number -->
+    <a href="{__SITE_DOMAIN__}index.php?section=leads&page={__PAGER_NUMBER__}&filter_date_begin={__FILTER_DATE_BEGIN__}&filter_date_end={__FILTER_DATE_END__}" class="{__PAGER_CLASS__}">{__PAGER_NUMBER__}</a>
+    <!-- END: number -->
+
+    <!-- BEGIN: next -->
+    <a href="{__SITE_DOMAIN__}index.php?section=leads&page={__PAGER_NEXT__}&filter_date_begin={__FILTER_DATE_BEGIN__}&filter_date_end={__FILTER_DATE_END__}" title="página siguiente">&gt;</a>
+    <!-- END: next -->
+
+    <a href="{__SITE_DOMAIN__}index.php?section=leads&page={__TOTAL_PAGES__}&filter_date_begin={__FILTER_DATE_BEGIN__}&filter_date_end={__FILTER_DATE_END__}" title="última página">&raquo;</a>
+</nav>
+<!-- END: pager -->
+
+<!-- END: leads -->
+
+<!-- BEGIN: msg -->
+<p>No hay registros</p>
+<!-- END: msg -->
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+</div>
+<!-- END: main -->

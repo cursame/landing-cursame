@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Default Style */
+
+.main-wrapper{
+	margin: 0 auto;
+	width: 1000px; /*950px*/
+}
+
+#main-messages{
+	display: none;
+	left: 50%;
+	position: fixed;
+	top: 0;
+	width: 1px;
+	z-index: 10000;
+}
+
+	#main-messages ul{
+		left: 0;
+		margin: 10px 0 0 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 500px;
+	}
+	
+		#main-messages ul li{
+			color: #FFF;
+			display: none;
+			font-size: 15px;
+			line-height: 20px;
+			list-style: none;
+			margin: 5px 0 0 0;
+			padding: 10px 42px 10px 20px;
+			position: relative;
+			text-align: left;
+			
+			-webkit-box-shadow: 2px 2px 4px 0px rgba(50, 50, 50, 1);
+			-moz-box-shadow: 2px 2px 4px 0px rgba(50, 50, 50, 1);
+			box-shadow: 2px 2px 4px 0px rgba(50, 50, 50, 1);
+		}
+		
+		#main-messages.success ul li{
+			background: #0C9;	
+		}
+		
+		#main-messages.error ul li{
+			background: #C30;	
+		}
+		
+			#main-messages ul li a.close-icon{
+				background: url(../images/main-message-close-sprite.png) 0 0 no-repeat;
+				display: block;
+				height: 21px;
+				position: absolute;
+				right: 10px;
+				top: 0;
+				width: 21px;
+				z-index: 5;
+			}
+			
+			#main-messages ul li a.close-icon:hover{
+				background: url(../images/main-message-close-sprite.png) -21px 0 no-repeat;
+			}
